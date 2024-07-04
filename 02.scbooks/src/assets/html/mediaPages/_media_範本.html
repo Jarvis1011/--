@@ -1,0 +1,143 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="media-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/media">獲獎／媒體報導</a></li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+			<div class="col-12">
+				<h2 class="mt-2">YYYYYYY</h2>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+
+		<h3>內文標題使用 h3</h3>
+
+		<p>XXXXXX</p>
+
+		<img src="assets/images/media/media_2-1.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ XXXXXXX</p>
+
+
+
+
+		<!-- ********* -->
+		<!-- 發布時間 -->
+		<p class="media-date">發布時間：2022 年 mm 月 dd 日</p>
+
+
+
+
+
+
+
+
+		<!-- *************** -->
+		<!-- 以下範本區 -->
+		<hr class="mt-5">
+		
+		<h3>內文標題使用 h3</h3>
+
+		
+		<!-- 圖片 -->
+		<img src="assets/images/media/media_2-1.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ XXXXXX</p>
+		
+
+		<!-- 置中圖片 -->
+		<p class="text-center mb-0">
+			<img src="assets/images/media/media_2-1.jpg" class="w-100 img-fluid mt-4" style="max-width: 300px;">
+		</p>
+		<p class="img-info text-center">▲ xxxxxx</p>
+
+
+		<!-- 並排圖片，並排欄寬依不同圖片自行調整 -->
+		<div class="row g-3 mt-4">
+			<div class="col-12 col-md-6">
+				<img src="assets/images/media/media_2-1.jpg" class="w-100 img-fluid">
+				<p class="img-info">▲ XXXXXXXX</p>
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="assets/images/media/media_2-1.jpg" class="w-100 img-fluid">
+				<p class="img-info">▲ XXXXXXXX</p>
+			</div>
+
+
+			
+		</div>
+
+
+
+		<!-- 引用 -->
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>XXXXX</p>
+			
+				<p>XXXXX</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title">YYYYYYY</cite>
+			</figcaption>
+		</figure>	
+
+		
+
+		<!-- youtube -->
+		<div class="ratio ratio-16x9">
+			<iframe src="https://www.youtube.com/embed/XXXXXX" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		</div>
+
+
+
+
+
+	</div>
+</div>

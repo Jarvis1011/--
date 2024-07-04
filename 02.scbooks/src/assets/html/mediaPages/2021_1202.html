@@ -1,0 +1,81 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="media-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/media">獲獎／媒體報導</a></li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+			<div class="col-12">
+				<h2 class="mt-2">千華 × 郁傑集團 攜手打造財會金融學院</h2>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+		<p>千華數位文化(股)公司與業界知名的郁傑集團攜手合作打造財會金融學院，將於千華棒學校推出一系列的財務、會計、稅務影音課程，希望藉此協助建立中小企業主、二代接班人、青創企業等，建構財務、會計、稅務內控、風險正確認知與正向心態，使企業能健康穩健成長。</p>
+
+		<p>郁傑集團執行長 劉郁純會計師目前擔任多家政府機構的顧問，包括經濟部中小企業處、行政院青輔會、勞委會等等，及上市櫃公司的獨立監察人，是一位深入瞭解上市櫃公開發行企業的公司治理的會計師；而更重要的是，他更深切瞭解中小企業的需要及處境。</p>
+
+		<p>【看懂還不夠！企業經營不可不知的財會稅務秘訣】影音課程為劉會計師潛心投入多年的心思，將財務管理運作的核心精神及 know-how，以一套最有效可行的「現金流黃金法則」模式，協助中小企業、青創企業建構財務預警診斷執行機制，將企業之財務指標由落後指標轉化為領先指標，在後疫情時代掌握財務營運必勝方程式。（更多的課程資訊：<a href="https://reurl.cc/jgKvz1" target="_blank">https://reurl.cc/jgKvz1</a>）</p>
+
+		<p>融入與時俱進的學習科技，提供多元有效的學習教材及課程，培養產業人才並媒合企業需求，敬請期待千華與各產業專家，帶給您的滿滿學習力~</p>
+
+		
+		<div class="row g-4 mt-4">
+			<div class="col-12 col-md-6">
+				<img src="assets/images/media/media_2-1.jpg" class="w-100 img-fluid">
+			</div>
+			<div class="col-12 col-md-6">
+				<img src="assets/images/media/media_2-2.jpg" class="w-100 img-fluid">
+			</div>
+		</div>
+
+
+		<!-- 發布時間 -->
+		<p class="media-date">發布時間：2021 年 12 月 02 日</p>
+
+
+
+	</div>
+</div>

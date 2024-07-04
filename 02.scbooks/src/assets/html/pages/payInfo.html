@@ -1,0 +1,203 @@
+
+<!--
+注意事項：
+
+外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+-->
+
+<style>
+
+.help-block-title{
+	text-align: center;
+	font-weight: bold;
+	background-color: #666;
+	color: #fff;
+	padding: 8px 0;
+	margin-bottom: 40px;
+}
+</style>
+
+<div class="position-relative">
+	<img src="assets/images/header_payInfo.jpg" class="img-fluid fit page-photo">
+	<div class="container-xxl">
+
+		<div class="page-photo-title">
+			<h1>付款資訊</h1>
+		</div>
+	</div>
+</div>
+
+<div class="py-4" >
+
+<div class="container-xxl text-start">
+
+	<!-- ATM -->
+	<h4 class="help-block-title mt-4 mt-lg-5">ATM 轉帳說明</h4>
+
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-md-5 text-start">		
+
+		<!-- step 1 -->
+		<div class="col">
+			<div class="d-flex">
+				<div class="flex-num-item">1</div>
+				<div class="flex-content">
+					<h4 class="h-title">轉帳繳費</h4>
+					<p>您可以使用<span class="fw-bold">實體 ATM</span> 或<span class="fw-bold">手機 App</span> 進行轉帳繳費：</p>
+
+					<ul class="fixed-left-pl">
+						<li>戶名：商鼎數位出版有限公司</li>
+						<li>轉入銀行：<span class="text-danger fw-bold">第一銀行</span> 信義分行</li>
+						<li>銀行代碼：<span class="text-danger fw-bold">007</span></li>
+						<li>帳號：<span class="text-danger fw-bold">162-1005-8148</span></li>
+					</ul>
+
+					<p>輸入繳費金額，確認繳費成功。</p>
+				</div>
+			</div>
+
+			<!-- <div class="alert alert-danger" role="alert">
+			<i class="bi bi-exclamation-triangle-fill me-1"></i>此虛擬帳戶只限本次交易使用，繳費後不需另外通知我們。
+		</div> -->
+		</div>
+
+		<!-- step 2 -->
+		<div class="col">
+			<div class="d-flex">
+				<div class="flex-num-item">2</div>
+				<div class="flex-content">
+					<h4 class="h-title">回傳轉帳收據</h4>
+
+					<p class="mb-2">收據可使用實體 ATM 的收據，或手機 App 的轉帳完成畫面。</p>
+
+					<p class="mb-2">有兩種方式回傳收據：</p>
+					<ol class="fixed-left-pl">
+						<li>使用傳真；</li>
+						<li>或（用手機拍照）以電子郵件寄送。</li>
+					</ol>
+
+					<ul class="fixed-left-pl">
+						<li>傳真號碼：<span class="fw-bold text-danger">+886-2-2228-9076</span></li>
+						<li>客服信箱：<a href="mailto:scbkservice@gmail.com">scbkservice@gmail.com</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- step 3 -->
+		<div class="col">
+			<div class="d-flex">
+				<div class="flex-num-item">3</div>
+				<div class="flex-content">
+					<h4 class="h-title">完成訂購</h4>
+					<p class="mb-2">收到產品時程：</p>
+					<ol class="fixed-left-pl">
+						<li>有回傳轉帳收據，約需 3 個工作天。</li>
+						<li>若未回傳收據，約需 3-5 個工作天。</li>
+					</ol>
+
+					<p>若您有急用，除了回傳收據外，亦請來電 <span class="fw-bold text-danger">+886-2-2228-9070</span> 向客服部說明需求，我們將盡速處理。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 間距 -->
+	<div style="height: 40px;"></div>
+
+
+	<!-- 郵政劃撥 -->
+	<h4 class="help-block-title mt-5">郵政劃撥轉帳說明</h4>
+
+	<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 g-md-5 text-start">
+
+	<!-- step 1 -->
+	<div class="col">
+		<div class="d-flex">
+			<div class="flex-num-item">1</div>
+			<div class="flex-content">
+				<h4 class="h-title">完成劃撥繳費</h4>
+				<p>前往郵局，到櫃檯取<span class="fw-bold">郵政劃撥儲金存款單</span>。</p>
+	
+				<p>填寫以下資料（可參考下方範例）：</p>
+	
+				<ul class="fixed-left-pl">
+					<li>帳戶名稱：<span class="fw-bold text-danger">商鼎數位出版有限公司</span></li>
+					<li>劃撥帳號：<span class="fw-bold text-danger">5014-0536</span></li>
+					<li>通訊欄註明：產品名稱／書號，或訂單編號，以及數量。</li>
+				</ul>
+	
+				<p>到櫃檯付款完成劃撥手續。</p>
+	
+			</div>
+		</div>
+	</div>
+	
+	<!-- step 2 -->
+	<div class="col">
+		<div class="d-flex">
+			<div class="flex-num-item">2</div>
+			<div class="flex-content">
+				<h4 class="h-title">回傳劃撥收據</h4>
+				<p class="mb-2">有兩種方式回傳劃撥收據：</p>
+				<ol class="fixed-left-pl">
+					<li>使用傳真；</li>
+					<li>或用手機拍照，以電子郵件寄送。</li>
+				</ol>
+	
+				<ul class="fixed-left-pl">
+					<li>傳真號碼：<span class="fw-bold text-danger">+886-2-2228-9076</span></li>
+					<li>客服信箱：<a href="mailto:scbkservice@gmail.com">scbkservice@gmail.com</a></li>
+				</ul>
+	
+			</div>
+		</div>
+	
+	</div>
+	
+	<!-- step 3 -->
+	<div class="col">
+		<div class="d-flex">
+			<div class="flex-num-item">3</div>
+			<div class="flex-content">
+				<h4 class="h-title">完成訂購</h4>
+	
+				<p class="mb-2">收到產品時程：</p>
+				<ol class="fixed-left-pl">
+					<li>有回傳劃撥收據，約需 3 個工作天。</li>
+					<li>若未回傳收據，約需 3-5 個工作天。</li>
+				</ol>
+	
+				<p>若您有急用，除了回傳劃撥收據外，亦請來電 <span class="fw-bold text-danger">+886-2-2228-9070</span> 向客服部說明需求，我們將盡速處理。</p>
+	
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<hr>
+	<div class="text-center">
+		<h4 class="mt-4">郵政劃撥儲金存款單填寫範例</h4>
+		<img src="assets/images/postoffice.jpg" class="img-fluid w-100" style="max-width: 800px;">
+	</div>
+
+	<h4 class="help-block-title mt-4 mt-lg-5">防詐騙提醒</h4>
+	<div class="alert alert-warning" role="alert">
+		<ol>
+			<li><span class="text-danger">商鼎數位出版不會以任何名義通知更改付款方式或要求您到ATM進行任何操作！</span>若您接獲類似電話，請勿提供任何個人金融資料，並請撥165反詐騙專線查詢或與我們客服中心聯繫。</li>
+			<li>詐騙電話通常在客服下班後於晚上或假日聯繫，商鼎數位出版客服時間為：週一至週五 09:00-18:00，客服人員不會於下班時間與您聯繫。</li>
+		</ol>
+	</div>
+</div>
+
+
+
+
+
+
+	<!-- 間距 -->
+	<div style="height: 100px;"></div>
+</div>

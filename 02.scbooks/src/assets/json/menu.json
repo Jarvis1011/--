@@ -1,0 +1,275 @@
+﻿{
+  "menuTitle": "商鼎數位出版",
+  "說明": "必須要有 dropDownID，才會出現下拉清單。若不需要下拉清單，subMenu 必須保持空陣列。",
+  "menu": [
+    {
+      "title": "商品分類",
+      "link": "/books",
+      "active": ["books", "book", "search"],
+      "dropDownID": "id-book",
+      "subMenu": [
+        {
+          "header": "學術／教科書",
+          "items": [
+            { "title": "法政", "id": "SC1A", "link": "/search/series/SC1A/1" },
+            { "title": "管理", "id": "SC1B", "link": "/search/series/SC1B/1" },
+            {
+              "title": "社會科學",
+              "id": "SC1C",
+              "link": "/search/series/SC1C/1"
+            },
+            {
+              "title": "公共衛生",
+              "id": "SC1D",
+              "link": "/search/series/SC1D/1"
+            },
+            { "title": "社會", "id": "SC1E", "link": "/search/series/SC1E/1" },
+            { "title": "教育", "id": "SC1G", "link": "/search/series/SC1G/1" },
+            { "title": "其他", "id": "SC1F", "link": "/search/series/SC1F/1" }
+          ]
+        },
+        {
+          "header": "人文史哲",
+          "items": [
+            { "title": "歷史", "id": "SC2A", "link": "/search/series/SC2A/1" },
+            { "title": "宗教", "id": "SC2B", "link": "/search/series/SC2B/1" },
+            { "title": "哲學", "id": "SC2C", "link": "/search/series/SC2C/1" },
+            {
+              "title": "人物／傳記",
+              "id": "SC2D",
+              "link": "/search/series/SC2D/1"
+            },
+            {
+              "title": "Vision 先知",
+              "id": "SC2E",
+              "link": "/search/series/SC2E/1"
+            }
+          ]
+        },
+
+        {
+          "header": "文學小說",
+          "items": [
+            {
+              "title": "華文創作",
+              "id": "SC3A",
+              "link": "/search/series/SC3A/1"
+            },
+            {
+              "title": "旅遊文學",
+              "id": "SC3B",
+              "link": "/search/series/SC3B/1"
+            },
+            {
+              "title": "國學常識",
+              "id": "SC3C",
+              "link": "/search/series/SC3C/1"
+            },
+            {
+              "title": "歷史／小說",
+              "id": "SC3D",
+              "link": "/search/series/SC3D/1"
+            },
+            {
+              "title": "世界文學",
+              "id": "SC3E",
+              "link": "/search/series/SC3E/1"
+            },
+            {
+              "title": "河洛文庫",
+              "id": "SC3F",
+              "link": "/search/series/SC3F/1"
+            },
+            {
+              "title": "夏學叢書",
+              "id": "SC3G",
+              "link": "/search/series/SC3G/1"
+            }
+          ]
+        },
+        {
+          "header": "生活風格",
+          "items": [
+            {
+              "title": "風尚服裝",
+              "id": "SC4A",
+              "link": "/search/series/SC4A/1"
+            },
+            {
+              "title": "時裝體系",
+              "id": "SC4B",
+              "link": "/search/series/SC4B/1"
+            },
+            {
+              "title": "手工藝",
+              "id": "SC4C",
+              "link": "/search/series/SC4C/1"
+            },
+            {
+              "title": "醫療保健",
+              "id": "SC4E",
+              "link": "/search/series/SC4E/1"
+            },
+            { "title": "綜合", "id": "SC4D", "link": "/search/series/SC4D/1" }
+          ]
+        },
+        {
+          "header": "藝術設計",
+          "items": [
+            { "title": "建築", "id": "SC5A", "link": "/search/series/SC5A/1" },
+            { "title": "設計", "id": "SC5B", "link": "/search/series/SC5B/1" },
+            { "title": "美術", "id": "SC5C", "link": "/search/series/SC5C/1" },
+            {
+              "title": "表演藝術",
+              "id": "SC5D",
+              "link": "/search/series/SC5D/1"
+            },
+            {
+              "title": "藝術評論",
+              "id": "SC5E",
+              "link": "/search/series/SC5E/1"
+            }
+          ]
+        },
+        {
+          "header": "科普／教育",
+          "items": [
+            {
+              "title": "生態館",
+              "id": "SC6A",
+              "link": "/search/series/SC6A/1"
+            },
+            {
+              "title": "暖化戰爭",
+              "id": "SC6B",
+              "link": "/search/series/SC6B/1"
+            },
+            {
+              "title": "兒童教育",
+              "id": "SC6C",
+              "link": "/search/series/SC6C/1"
+            }
+          ]
+        },
+        {
+          "header": "社會科學",
+          "items": [
+            {
+              "title": "心理勵志",
+              "id": "SC7A",
+              "link": "/search/series/SC7A/1"
+            },
+            { "title": "政治", "id": "SC7B", "link": "/search/series/SC7B/1" },
+            {
+              "title": "商業財經",
+              "id": "SC7D",
+              "link": "/search/series/SC7D/1"
+            },
+            { "title": "其他", "id": "SC7C", "link": "/search/series/SC7C/1" }
+          ]
+        },
+        {
+          "header": "獨立出版",
+          "items": [
+            {
+              "title": "獨立出版",
+              "id": "SC8A",
+              "link": "/search/series/SC8A/1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "優惠活動",
+      "link": "/discounts",
+      "active": ["discounts", "discount"],
+      "dropDownID": "id-disc",
+      "subMenu": [
+        {
+          "header": "",
+          "items": [
+            {
+              "title": "感謝師恩 好禮大放送",
+              "link": "/discount/22_TeacherDay"
+            },
+            {
+              "title": "2021 服裝製作新書",
+              "link": "/discount/chienhua_20211203"
+            },
+            {
+              "title": "商鼎蝦皮 & 優惠活動",
+              "link": "https://shopee.tw/jnov80atsc"
+            },
+            { "title": "** 所有優惠活動 **", "link": "/discounts" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "活動／講座",
+      "link": "/activities",
+      "active": ["activities", "activity"],
+      "dropDownID": "id-acti",
+      "subMenu": [
+        {
+          "header": "",
+          "items": [
+            {
+              "title": "<與你相鬱的日子> 新書暖心發表",
+              "link": "/activity/0W021121_NB"
+            },
+            {
+              "title": "《2022高雄城市書展》左圖右書",
+              "link": "/activity/2022_ksml_bleubook"
+            },
+            {
+              "title": "在自己的土地上徒步：帶著「陌生人」的觀點走綠道",
+              "link": "/mediaPage/2022_0919"
+            },
+            {
+              "title": "探險時代 臺灣山城海",
+              "link": "https://www.chienhua.com.tw/chienhua_EDM/20220218/"
+            },
+            {
+              "title": "素養學堂 從生活情境開啟創新學習",
+              "link": "https://www.chienhua.com.tw/chienhua_EDM/20211005/20211005.html"
+            },
+            { "title": "** 所有活動／講座 **", "link": "/activities" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "禮品兌換",
+      "link": "/gifts",
+      "active": ["gifts"],
+      "subMenu": [],
+      "memberShow": ""
+    },
+    {
+      "title": "專欄",
+      "link": "/columns",
+      "active": ["columns", "column"],
+      "subMenu": []
+    },
+    {
+      "title": "獨立出版服務",
+      "link": "/pub",
+      "active": ["pub"],
+      "subMenu": []
+    },
+    {
+      "title": "團購服務",
+      "link": "/buy",
+      "active": ["buy"],
+      "subMenu": []
+    },
+    {
+      "title": "關於",
+      "link": "/about",
+      "active": ["about"],
+      "subMenu": []
+    }
+  ]
+}

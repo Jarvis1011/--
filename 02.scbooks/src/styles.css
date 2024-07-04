@@ -1,0 +1,390 @@
+/* @import '~@ngx-gallery/core/styles/scss/gallery'; */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: justify;
+}
+
+/* 主容器間距 */
+.main-pt {
+  padding-top: 74px;
+}
+.main-pb {
+  padding-bottom: 160px;
+}
+.main-page {
+  padding-top: 74px;
+  min-height: calc(100vh - 100px);
+  /* padding-bottom: 120px; */
+}
+
+/* 導覽列圖示 */
+.icon-nav {
+  opacity: 0.55;
+}
+.icon-nav:hover {
+  opacity: 1;
+}
+
+@media (max-width: 280px) {
+  .logo-small {
+    display: none !important;
+  }
+}
+
+.search-box {
+  flex-grow: 2 !important;
+  flex-shrink: 2 !important;
+  /* width: 160px !important; */
+  /* max-width: 200px;
+	min-width: 100px; */
+}
+
+/* 導覽列子功能表標題 */
+.sub-header {
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 0rem;
+}
+
+/* 導覽列啟用格式 */
+.navbar .nav-item .active {
+  font-weight: bold;
+}
+
+/* 導覽列 **搜尋** 子功能表（手機版用） */
+.search-menu {
+  min-width: 300px;
+}
+@media (max-width: 991px) {
+  .search-menu {
+    position: absolute !important;
+    top: 40px !important;
+  }
+}
+@media (max-width: 575px) {
+  .search-menu {
+    right: -140px !important;
+  }
+}
+@media (max-width: 290px) {
+  .search-menu {
+    right: -150px !important;
+    min-width: 100px;
+    width: 100vw;
+  }
+}
+
+/* 導覽列 **帳號** 子功能表（手機版用） */
+@media (max-width: 991px) {
+  .account-menu {
+    position: absolute !important;
+    top: 40px !important;
+  }
+}
+@media (max-width: 575px) {
+  .account-menu {
+    right: -80px !important;
+  }
+}
+
+/* 不同尺寸導覽列設定 */
+
+/* 手機版 */
+@media (max-width: 991px) {
+  .pc-menu {
+    display: none !important;
+  }
+
+  /* 修正導覽列用深色時，手機版 offcanvas 文字顏色仍是白色 */
+  .navbar-dark .fix-dark-color {
+    color: #343a40 !important;
+  }
+
+  .sidebar-bg {
+    background-color: #f5f5f5;
+  }
+
+  /* 修正手機版功能表邊框 */
+  .fix-side-menu {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  /* 設定子功能表陰影 */
+  .side-menu-shadow {
+    box-shadow: none !important;
+  }
+}
+
+/* PC 版 */
+@media (min-width: 992px) {
+  .moble-menu {
+    display: none !important;
+  }
+}
+
+/* 小型輪播控制鈕外觀 */
+.small-carousel-btn-box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.small-carousel-btn {
+  position: relative !important;
+  background-color: #000;
+  width: auto;
+  opacity: 0.2 !important;
+  margin: 0;
+  padding: 0.5em;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+.small-carousel-btn.darker {
+  opacity: 0.5 !important;
+}
+
+/* 麵包屑分隔符 */
+nav.bread-nav {
+  --bs-breadcrumb-divider: ">";
+}
+
+/* 容器最大寬度 */
+.max-w-article {
+  max-width: 900px;
+}
+.max-w-title {
+  max-width: 1080px;
+}
+
+/* 公用 */
+.rounded-4 {
+  border-radius: 6px;
+}
+.rounded-5 {
+  border-radius: 12px;
+}
+
+/* 行數限制 */
+.clamp-2,
+.clamp-3,
+.clamp-4,
+.clamp-5,
+.clamp-6 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp-2 {
+  -webkit-line-clamp: 2;
+}
+.clamp-3 {
+  -webkit-line-clamp: 3;
+}
+.clamp-4 {
+  -webkit-line-clamp: 4;
+}
+.clamp-5 {
+  -webkit-line-clamp: 5;
+}
+.clamp-6 {
+  -webkit-line-clamp: 6;
+}
+
+/* 表單通用類別 */
+.account {
+  color: #198754;
+  font-family: "Times New Roman", Times, "微軟正黑體", serif;
+  font-weight: bold;
+}
+.form-card {
+  width: 100%;
+  max-width: 800px;
+}
+.field {
+  display: flex;
+}
+.field-name {
+  color: #999;
+  width: 10em;
+  text-align: right;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+@media (max-width: 575px) {
+  .field-name {
+    width: 9em;
+  }
+}
+.field-data {
+  /* font-weight: bold; */
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.field-data-date {
+  max-width: 160px;
+}
+
+.field-short-text {
+  max-width: 300px;
+}
+
+.field-tel-1 {
+  width: 3.5em;
+}
+.field-tel-2 {
+  max-width: 230px;
+}
+.field-tel-ext {
+  width: 4em;
+}
+
+@media (min-width: 650px) {
+  .subscribed-field {
+    display: none;
+  }
+}
+
+/* 必要欄位、錯誤訊息 */
+.invalid-fieldname,
+.invalid-msg,
+.required {
+  color: #dc3545;
+}
+
+input:focus.invalid-border,
+.invalid-border {
+  border-color: #dc3545;
+}
+
+/* step buttons */
+.nav-pills .nav-link.step-button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50% !important;
+  padding: 0;
+  /* font-size: 24px;
+	font-weight: bold; */
+  border: 4px solid #aad1e0 !important;
+  line-height: 1em;
+  margin-right: 0.5rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.step-msg {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.step-line {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 0.25em;
+}
+@media (max-width: 767px) {
+  .step-line {
+    display: none;
+  }
+  .step-button {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+/* gap */
+.gap-2x {
+  gap: 0.75rem !important;
+}
+
+/* padding custom */
+.py-1s {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* 參考：
+https://www.w3schools.com/css/css_tooltip.asp
+ */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* width: 120px; */
+  background-color: #424242;
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  white-space: nowrap !important;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  /* z-index: 1; */
+}
+
+/* 位置 */
+.tooltip .tooltiptext.navi {
+  top: calc(100% + 7px);
+  left: calc(-100% + 12px);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #424242 transparent;
+}
+
+/* 數字輸入外觀 */
+/* Chrome, Safari, Edge, Opera */
+input.no-arrow::-webkit-outer-spin-button,
+input.no-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.no-arrow[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* modal */
+.myModal_JumpOut {
+  transition: all 0.4s;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.myModal_JumpOut.show.modal {
+  z-index: 9999;
+}
+.myModal_JumpOut.modal {
+  display: block;
+  z-index: -1;
+}

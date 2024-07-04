@@ -1,0 +1,129 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="column-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/columns">專欄</a></li>
+				<li class="breadcrumb-item active" aria-current="page">時裝體系</li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+
+			<div class="col-12">
+
+				<p class="mb-0">
+					<span class="column-name text-primary">時裝體系</span>
+				</p>
+
+				<h2 class="mt-2">「人生舞台，璀璨由你」－美貌只是其一，而非唯一</h2>
+				
+				<img src="assets/images/column/0B531091-0.jpg" class="w-100 img-fluid">
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+		<p>「That's all.」一句經典台詞，美國影星 Meryl Streep 在 2006 年上映的電影「穿著 PRADA 的惡魔（The Devil Wears Prada）」完美詮釋<span class="text-decoration-line-through">機車</span>嚴厲上司 Miranda Priestly，時至今日已過十六年，每每重播都讓人回味無窮。其引人入勝的不僅是劇情和演員精湛的演技，隨著這部電影的問世，確實在時尚界引起軒然大波，甚至讓被影射為劇中惡魔的時尚教母 Anna Wintour 在 2009 年拍了紀錄片「時尚惡魔的聖經（September Issue）」，目的只為讓普羅大眾更能清楚時尚產業的真面目。</p>
+
+		<img src="assets/images/column/0B531091-1.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">圖片引自：葉立誠著，《時尚模特兒》（新北市：商鼎數位出版），頁 203、220。</p>
+
+		<p>「關於流行時尚界，你對它的印象是什麼？」</p>
+
+		<p>相信一般人腦中應該會閃過「一群 BMI 指數 17 以下的美女穿著精緻設計的衣服的舞台秀」的直觀畫面。無可厚非的，「美感」、「設計」、「包裝」、「媒體」是流行時尚不可或缺的要素之一，但：</p>
+
+		<figure>
+		
+			<blockquote class="blockquote">
+		
+				<p>「美」，它原本是如此的模糊不清、難以捉摸，但透過這些藝術家的繆思，讓我們得以清楚一窺美的具象所在。
+					西方的時尚流行，在發展成為一種大眾普及文化的20世紀之前，對於「穿著」與「形體」這兩者所建立的審美價值，相當程度是受到藝術界畫家與雕刻家的主導所致。
+				</p>
+		
+				<p>在 "Modelling"（時裝模特兒）尚未確立成形、建立模式之前，一般大眾對 "Model"（模特兒）一詞，所認知的概念，大抵上就是指「作為藝術家所臨摹的特定對象」，我們姑且就稱他們為「藝術模特兒」。</p>
+				<p>
+					這些做為藝術家所臨摹的對象，尤其是女性模特兒，她們是藝術家創作靈感的泉源、是藝術家夢寐以求完美的繆思。當然，她們所代表的也就是每一個時代最具象的「美的化身」。
+				</p>
+		
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title">《時尚模特兒》</cite>
+			</figcaption>
+
+		</figure>
+	
+		<p>簡單來說，所謂的流行時尚是藝術家（設計者）透過模特兒將「美」傳遞給眾人的一種方式，最早是繪畫、雕塑，隨著時間推演與科技的進步，開始出現在攝影、電視等大眾傳播媒體上，也因此藝術家（設計者）是整場秀的「主導者」。</p>
+		
+		<p>有趣的是，今日的我們會注意到林志玲而不是林國基，會注意到 Gisele 而不會注意到 Victoria's Secret & Co. 的設計師是何許人也，這種狀況和最早的模特兒截然不同：</p>
+
+		<figure>
+
+			<blockquote class="blockquote">
+
+				<p>「時尚模特兒」從一開始是位沒沒無名，如同衣架般，僅供做為陪襯服裝的「跑龍套」小角色，到逐漸發展出稍具知名的專業人士，最後再衍生成為享有超高人氣、坐擁萬貫財富、讓眾人稱羨愛慕的「頂尖超模」。這整個發展過程，就像是一部麻雀變鳳凰的傳奇小說，令人不可思議。</p>
+
+			</blockquote>
+
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title">《時尚模特兒》</cite>
+			</figcaption>
+
+		</figure>
+
+		<p>這種反客為主的現象，除了她們姣好的外貌、魔鬼身材、風花雪月（比方短暫收服<span class="text-decoration-line-through">情場浪子系的神奇寶貝</span> Leonardo DiCaprio）的故事外，模特兒經紀公司多角化的經營策略、名模本身的努力與智慧也是功不可沒。例如，2015 年上映的電影「瘋狂麥斯：憤怒道（Mad Max：Fury Road）除了女神 Charlize Theron 外，片中大反派不死老喬的後宮更是集結了 Rosie Huntin &amp; gton-Whiteley、Riley Keough、Zoe Kravitz、Courtney Eaton、Abbey Lee 等五位名模，電影大獲好評也連帶使名模聲名大噪。</p>
+
+
+		<img src="assets/images/column/0B531091-2.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">圖片引自：葉立誠著，《時尚模特兒》（新北市：商鼎數位出版），頁 87、179。</p>
+
+		<p>漢武帝的寵妃李夫人曾言：「以色事人者，色衰而愛馳」，瞬息萬變的流行時尚圈猶如現今我們所處的社會，<span class="text-decoration-line-through">「多的是你不知道的事」</span>你不只需要美貌、運氣，更需要智慧、經營和努力。</p>
+
+
+		<!-- 連結 -->
+		<a routerLink="/book/0B531091" class="btn btn-primary text-light px-5 mt-4">前往《時尚模特兒》</a>
+
+
+
+	</div>
+</div>

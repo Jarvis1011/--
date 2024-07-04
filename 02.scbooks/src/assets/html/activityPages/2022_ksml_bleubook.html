@@ -1,0 +1,187 @@
+﻿
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<style>
+	.icon-list{
+		font-size: 2rem;
+		line-height: 1.3em;
+		margin-bottom: 0.2em;
+		font-weight: bold;
+		display: inline-flex;
+		align-items: top;
+	}
+	.icon-list-icon{
+		fill: rgb(18, 170, 69);
+		height: 1.1em;
+		width: 1.1em;
+		margin-right: 0.2em;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-top: 0.1em;
+	}
+	@media(max-width: 575px) {
+		.icon-list{
+			font-size: 1.6rem;
+		}
+	}
+
+	.symbol{
+		max-width: 220px;
+	}
+	.medium-size{
+		font-size: 20px;
+	}
+	.course-size{
+		font-size: 22px;
+	}
+
+	.num-item{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 5rem;
+		line-height: 4rem;
+		width: 3.6rem;
+		color: #ff8e25;
+		margin-top: 0px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	.teacher-intro{
+		font-size: 1.8rem;
+	}
+	@media(max-width: 575px) {
+		.teacher-intro{
+			font-size: 1.3rem;
+		}
+	}
+
+	.medium-height{
+		line-height: 1.4em;
+	}
+
+	h1.section{
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		font-weight: bold;
+		font-size: 2.8rem;
+		background-color: rgb(26, 161, 139);
+		color: #fff;
+
+		text-align: center;
+	}
+
+
+	
+	
+
+
+</style>
+
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/activities">活動／講座</a></li>
+				<li class="breadcrumb-item active" aria-current="page">《2022高雄城市書展》左圖右書</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<!-- 主圖 -->
+		<div style="background-color: #e0ffff;">
+			<img src="assets/images/activity/2022_ksml_bleubook_01.jpg" class="w-100 img-fluid">
+
+
+		<h1 class="text-danger fw-bold text-center mt-5">《2022高雄城市書展》左圖右書</h1>
+		
+		<div class="mt-5 pb-4">
+			
+			<div class="text-center fs-4 fw-bold mb-3">
+				9/24、9/25 商鼎數位出版與千華數位文化<br>
+				與您相約高雄城市書展<br>
+				<span class="text-danger">#港灣書展 B7、B8 展位(總館1樓廣場)</span>
+			</div>
+			<div>
+				<img src="assets/images/activity/2022_ksml_bleubook_02.jpg" class="w-100 img-fluid">
+				<img src="assets/images/activity/2022_ksml_bleubook_03.jpg" class="w-100 img-fluid">
+			</div>
+			
+
+			<div class="fs-5 p-3 mt-5">
+				《 2022 高雄城市書展》左圖右書，為高雄今年最盛大書展活動！<br>
+				<br>
+				共有六大主題書展，邀請舊雨新知一同更襄盛舉！<br>
+				<br>
+				#港灣書展 #總館1樓廣場 (我們在這！)<br>
+				港灣書展以出版社為軸、輔以獨立書店、獨立出版，在總圖 1 樓開放。<br>
+				<br>
+				#設計主題書展 #總館3樓天井<br>
+				設計主題書展從文博會、台設展出發，規劃三大主題展區－博覽會、文化策展、設計與品牌。<br>
+				<br>
+				#青鳥嚮往高雄想望書展 #總館4樓潮間帶<br>
+				位於總館四樓潮間帶空間的三間主題書屋，選書包括三大主題： 2022 年亮點新書、高雄主題書籍、高雄城市書展講者著作。<br>
+				<br>
+				#我家旁邊的書店 #總館4樓文化積澱<br>
+				高市圖與 9 間高雄在地獨立書店合作，以「來去踅(迺)高雄」、「欸！我想欲看這本」兩大主軸，帶領讀者走進高雄的在地生活。<br>
+				<br>
+				#乘風書展 #承風青鳥<br>
+				選書主軸港口與海洋<br>
+				港口：聚焦人文歷史文化厚度；<br>
+				海洋：代表閱讀無限延伸，回看這座城市的音樂、電影、藝術、建築、表演、攝影。<br>
+				<br>
+				#漫潮聚落 #總館4樓潮間帶<br>
+				「漫畫家的漫畫屋」以小屋展示3位不同型態漫畫家的畫作、漫畫作品與靈感選書。<br>
+				<br>
+				更多書展資訊：<a href="https://www.facebook.com/KSMLMain" target="_blank">https://www.facebook.com/KSMLMain</a>
+				<br>
+				
+			</div>
+		</div>
+
+
+		</div>
+		
+
+
+	<!-- 額外空間 -->
+	<!-- <div style="height: 80px;"></div> -->
+
+
+</div>
+

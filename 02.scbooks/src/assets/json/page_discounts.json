@@ -1,0 +1,42 @@
+﻿[
+
+	{
+		"title": "感謝師恩 好禮大放送",
+		"image": "assets/images/discounts/2022_TeacherDay_BN_600X400.jpg",
+		"link": "/discount/22_TeacherDay",
+		"items": [
+			{ "header": "優惠期間", "content": "即日起 ~ 2022.10.15" },
+			{ "header": "免運到家", "content": "消費滿 199" },
+			{ "header": "贈百元折價券", "content": "消費滿 299" }
+		],
+		"contents": [
+			" "
+		]
+	},
+	{
+		"title": "2021 服裝製作新書",
+		"image": "assets/images/discounts/discounts_default_2.jpg",
+		"link": "/discount/chienhua_20211203",
+		"items": [
+			{ "header": "基礎服裝製作", "content": "女裝甲級證照老師親自教授。" },
+			{ "header": "基礎服裝製作真人實大紙型包", "content": "1:1 真人大小印刷，每個版型都是女裝甲級業界名師獨家製作。"},
+			{ "header": "強力推薦：【基礎女裝】影音課程", "content": "女裝甲級業界名師與實踐大學數位教育出版辦公室聯手打造！"}
+		],
+		"contents": [
+			"【基礎女裝套組】－影音課程＋書＋紙型包，一次購齊更有值優惠！"
+		]
+	},
+	{
+		"title": "商鼎蝦皮 & 優惠活動",
+		"image": "assets/images/discounts/discounts_default_3.jpg",
+		"link": "https://shopee.tw/jnov80atsc",
+		"items": [
+			{ "header": "優惠期間", "content": "即日起 ~ 2022.07.31" },
+			{ "header": "全館單書特價 75 折", "content": "" },
+			{ "header": "團購優惠 三本 7 折", "content": "不限定同本書" }
+		],
+		"contents": [
+			" "
+		]
+	}
+]

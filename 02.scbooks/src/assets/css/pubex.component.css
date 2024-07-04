@@ -1,0 +1,37 @@
+.ex-img{
+	max-height: 290px;
+	width: 100%;	
+	display: flex;
+	justify-content: center;
+}
+.ex-content{
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding-top: 1.5rem;
+}
+
+@media(min-width: 768px) {
+	.ex-img{
+		height: 290px;
+		width: 290px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.ex-content{		
+		padding-top: 0rem;
+	}
+}
+
+.catalog{
+	background-color: #03A9F4;
+	border-color: #03A9F4 !important;
+	color: #fff;
+}
+
+@media(max-width: 575px) {
+	.extra{
+		line-height: 2.4em;
+	}
+}

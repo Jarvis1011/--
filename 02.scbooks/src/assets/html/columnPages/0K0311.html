@@ -1,0 +1,155 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="column-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/columns">專欄</a></li>
+				<li class="breadcrumb-item active" aria-current="page">哲學</li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+
+			<div class="col-12">
+
+				<p class="mb-0">
+					<span class="column-name text-primary">哲學</span>
+				</p>
+
+				<h2 class="mt-2">一朵經歷漫長旅程的神秘黃金之花，由漢文而德文而英文而日文，意義仍不斷變化</h2>
+				
+				<img src="assets/images/column/0K0311-0.jpg" class="w-100 img-fluid">
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+		<p>一朵經歷漫長旅程的神秘黃金之花，由漢文而德文而英文而日文，意義仍不斷變化。</p>
+
+		<figure>
+			<blockquote class="blockquote">
+			
+				<p>金華即光也，光是何色？取象於金華，亦秘一光字在內，是先天太乙之真炁。「水鄉鉛，只一味」者，此也。</p>
+			
+				<p>黃金之花就是光，此光到底具備何種顏色呢？我認為它只是用黃金之花來象徵，但「金華」意象中也隱藏了一個光字在內，這指的是一種先天的太乙真炁，所謂「水鄉鉛，只一味」，指的即是此事。</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				<cite title="Source Title">《太乙金華宗旨》第一章　天心</cite>
+			</figcaption>
+		</figure>
+
+
+		<p>本書為二十世紀最重要的漢學著作之一。</p>
+
+		<p>書名<span class="link-primary cursor-pointer" routerLink="/book/0K0311">《黃金之花的秘密》</span>乃《太乙金華宗旨》之譯語。原書為清初道士所著，二十世紀初，德國最重要的漢學家尉禮賢將之譯為德文，榮格為其寫上更加詳細的《導讀》。1980年此書日文版上市，由日本當代最具代表性的哲學家之一湯淺泰雄，重新詮釋《太乙金華宗旨》的意義。</p>
+		
+		<p>此次推介給讀者的這本中文版譯書，不僅集合了尉禮賢、榮格、湯淺泰雄三人的詮釋，並附上相關資料，其完整性超越德文版與英文版，是研究煉丹術、分析心理學及比較宗教學不可或缺的典籍。</p>
+
+
+		<h3>《太乙金華宗旨》之源流</h3>
+
+		<p>《太乙金華宗旨》源出於中國的密教圈子。長久以來，它一直口耳相傳，最後才筆之於書。乾隆時期（十八世紀），此書首度付印。</p>
+
+		<img src="assets/images/column/0K0311-1.jpg" class="img-fluid mt-4">
+		<p class="img-info">圖片：《黃金之花的秘密─道教內丹學引論》商鼎數位出版，榮格著，楊儒賓譯。</p>
+
+		<p>對金丹教教義的解說，本書最為可靠。讀者閱讀此書時如無成見作祟的話，不難發現道教與佛教這兩股泉源還不能充分說明本書的思想內容，以《易經》為基礎的儒教思想，也當包含在內。</p>
+
+		<h3>九轉丹成的故事</h3>
+
+		<p>按傳統術語來說，這是本內丹學的著作。這個觀念出現最早的記載，大概是起於六朝末年的慧思與隋朝的蘇元朗。乍讀《太乙金華宗旨》一書，如果對它的理論預設太過陌生，自然會覺得此書有看沒有懂。但若對這套學問的文獻稍有接觸，不難發現前人大概皆已說過。但它的方法相當具體，照顧面也廣，作為介紹外人進入道教內丹學之典籍，它的資格是綽綽有餘的。它是冥想法之書，重視內丹，而無視外丹的存在。外丹的用語全部被轉譯成內在冥想體驗樣相的象徵，就此點而言，與深層心理學重視象徵表現有近似之處。</p>
+
+		<img src="assets/images/column/0K0311-2.jpg" class="img-fluid mt-4">
+		<p class="img-info">圖片：《黃金之花的秘密─道教內丹學引論》商鼎數位出版，榮格著，楊儒賓譯。</p>
+
+
+		<h3>現代的心理學可以理解此書</h3>
+
+		<p>正如人不管在種族上有多大的差異，人的身體都具有共通的解剖學構造。同樣的情況也見之於人的心靈，超越了所有文化與意識的差別，而擁有一共通的底層。心靈發展的各個支脈，都可以追朔到一共通的根底，立足於極遙遠的遂古洪荒。</p>
+
+		<h3>心理學與宇宙論上的前提</h3>
+
+		<p>在某個限度內，本書方法的世界觀是所有中國哲學流派的公產。它的前提主張宇宙與人都服從相同的法則。人為小宇宙，與大宇宙間毫無任何牢不可破的阻礙。心靈之於宇宙，就如內在世界之於外在世界，人就其本性而言，原本就參與了宇宙的事物。</p>
+
+		<h3 class="link-primary cursor-pointer" routerLink="/book/0K0311">《黃金之花的秘密─道教內丹學引論》</h3>
+
+		<ul>
+			<li>臺灣高雄師範大學教授道教研究推薦書目</li>
+			<li>輔仁大學宗教學系博士班授課範圍</li>
+		</ul>
+
+		<p>本書根據 C.F. Baynes 的英譯本以及湯淺泰雄、定方昭夫的日譯本翻譯而成，大體而言，譯解及湯淺泰雄的解說依據日譯本，其餘則譯自英文版本。</p>
+		<p>《太乙金華宗旨》一書由漢文出發，最後又回歸於漢文，但百戰歸來的英雄已非吳下阿蒙，讀者由原典出發，再依次看尉禮賢、榮格、湯淺泰雄的解說，應該別有會心，這不啻是趟風光絕倫的文化之旅。</p>
+
+		<img src="assets/images/column/0K0311-3.jpg" class="img-fluid mt-4">
+		<p class="img-info">圖片：《黃金之花的秘密─道教內丹學引論》商鼎數位出版，榮格著，楊儒賓譯。</p>
+
+		<h4 class="text-secondary">尉禮賢</h4>
+
+		<p>著名漢學家，曾將多本中國經典著作翻譯成德文、英文，介紹給西方世界，其中的《易經》，被認為是世界上最好的版本之一。</p>
+		<p>於 1929 年翻譯了《太乙金華宗旨》及《慧命經》譯為德文《金花的秘密》:〈道教內丹學引論〉，更啟發了榮格集體潛意識的理論，榮格還為金花的秘密作序。</p>
+
+
+		<h4 class="text-secondary">卡爾·古斯塔夫·榮格</h4>
+		<p>瑞士心理學家、精神科醫師，分析心理學的創始者。學問光譜甚廣，如「煉丹術」，晚年的著作核心之一即是煉丹術。榮格對《太乙金華宗旨》下了極大的工夫，及評註之繁富，即使放在中文著作中，也難以找到足堪比擬之作品。</p>
+
+
+		<h4 class="text-secondary">湯淺泰雄</h4>
+		<p>日本宗教哲學家，以其在西方和亞洲哲學中的理論著作以及他的教學而聞名。被稱為日本當代哲學家中「最具煽動性和影響力的人之一」。</p>
+
+
+		<h4 class="text-secondary">楊儒賓</h4>
+		<p>中文版譯者，學術研究以中國思想為主，台灣台中人，台大中文博士，清華大學中語系及文學所教授，著有《儒家的身體觀》、《莊周貌》。譯著有<span  class="link-primary cursor-pointer" routerLink="/book/0K0311">《黃金之花的秘密─道教內丹學引論》</span> 、<span  class="link-primary cursor-pointer" routerLink="/book/0K0201">《東洋冥想心理學－從易經到禪》</span> 、《宇宙與歷史》、《冥契主義與哲學》等書。</p>
+
+
+		
+
+
+		<!-- 連結 -->
+		<a routerLink="/book/0K0311" class="btn btn-primary text-light px-5 mt-4">前往《黃金之花的秘密》</a>
+
+
+
+	</div>
+</div>

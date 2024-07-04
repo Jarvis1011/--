@@ -1,0 +1,110 @@
+{
+	"menuTitle": "商鼎文化",
+	"menu": [
+		{
+			"title": "商品分類",
+			"link": "products",
+			"dropDownID": "id-prod",
+			"menuWidth": 8,
+			"subMenu":[
+				{	"header": "心靈勵志",
+					"items": [
+						{ "title": "心靈成長", "link": "prod-1-1"},
+						{ "title": "心理學", "link": "prod-1-2"},
+						{ "title": "新時代療癒", "link": "prod-1-3"},
+						{ "title": "勵志故事", "link": "prod-1-4"},
+						{ "title": "荷歐波諾波諾", "link": "prod-1-5"}
+					]
+				},
+				{
+					"header": "商管理財",
+					"items": [
+						{ "title": "自我成長", "link": "prod-2-1" },
+						{ "title": "經營管理", "link": "prod-2-2" },
+						{ "title": "趨勢科技", "link": "prod-2-3" },
+						{ "title": "人際溝通", "link": "prod-2-4" },
+						{ "title": "投資理財", "link": "prod-2-5" }
+					]
+				},
+				{
+					"header": "文學小說",
+					"items": [
+						{ "title": "華文創作", "link": "prod-3-1" },
+						{ "title": "歐美小說", "link": "prod-3-2" },
+						{ "title": "日本文學", "link": "prod-3-3" },
+						{ "title": "歷史文學", "link": "prod-3-4" },
+						{ "title": "多國文學", "link": "prod-3-5" }
+					]
+				},
+				{
+					"header": "知識學習",
+					"items": [
+						{ "title": "學習方法", "link": "prod-4-1" },
+						{ "title": "人文哲思", "link": "prod-4-2" },
+						{ "title": "世界史地", "link": "prod-4-3" },
+						{ "title": "科普藝術", "link": "prod-4-4" },
+						{ "title": "英語學習", "link": "prod-4-5" },
+						{ "title": "日韓多語", "link": "prod-4-6" }
+					]
+				},
+				{
+					"header": "健康塑身",
+					"items": [
+						{ "title": "醫療保健", "link": "prod-5-1" },
+						{ "title": "養生療癒", "link": "prod-5-2" },
+						{ "title": "塑身方法", "link": "prod-5-3" },
+						{ "title": "健康飲食", "link": "prod-5-4" },
+						{ "title": "兩性關係", "link": "prod-5-5" }
+					]
+				},
+				{
+					"header": "生活親子",
+					"items": [
+						{ "title": "教養觀念", "link": "prod-6-1" },
+						{ "title": "育嬰幼兒", "link": "prod-6-2" },
+						{ "title": "生活美學", "link": "prod-6-3" },
+						{ "title": "趣味益智", "link": "prod-6-4" }
+					]
+				}
+				
+			]
+		},
+		{
+			"title": "優惠活動",
+			"link": "discounts",
+			"dropDownID": "id-disc",
+			"subMenu": [
+				{
+					"header": "",
+					"items": [
+						{ "title": "演長表開自化爭臺一引也", "link": "discount-1"},
+						{ "title": "生能傷畫一別什出", "link": "discount-2"},
+						{ "title": "國足病裡才可價灣合望實們主詩處施因過", "link": "discount-3"},
+						{ "title": "動平正法看，毛時", "link": "discount-4"},
+						{ "title": "所的行形化生已人", "link": "discount-5"}
+					]
+				}				
+			]
+		},
+		{
+			"title": "活動／講座",
+			"link": "activities",
+			"subMenu":[]
+		},
+		{
+			"title": "專欄",
+			"link": "columns",
+			"subMenu":[]
+		},
+		{
+			"title": "團購服務",
+			"link": "buy",
+			"subMenu":[]
+		},
+		{
+			"title": "關於",
+			"link": "about",
+			"subMenu":[]
+		}
+	]
+}

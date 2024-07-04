@@ -1,0 +1,102 @@
+﻿
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<style>
+	
+
+</style>
+
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/discounts">優惠活動</a></li>
+				<li class="breadcrumb-item active" aria-current="page">感謝師恩</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<!-- 主圖 -->
+		<img src="/assets/images/22_TeachersDay/22_TD_01.jpg" alt="商鼎_教師節活動" class="img-fluid">
+        <!-- 響應式影像地圖 -->
+        <div class="position-relative">
+            <img src="/assets/images/22_TeachersDay/22_TD_02.jpg" alt="活動書目" class="img-fluid">
+            <a href="http://www.scbooks.com.tw/#/book/0B511081"  target="_blank"  class="img-map-ele" title="神話故事之戲曲臉譜" style="position: absolute; left: 7%; top: 11%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/0D611081"  target="_blank"  class="img-map-ele" title="你也能華麗轉身" style="position: absolute; left: 36%; top: 11%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/1H921101"  target="_blank"  class="img-map-ele" title="基礎服裝製作" style="position: absolute; left: 65%; top: 11%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/0B4451"  target="_blank"  class="img-map-ele" title="刺客繡-台灣客家傳統刺繡展專刊" style="position: absolute; left: 7%; top: 40.5%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/0B321091"  target="_blank"  class="img-map-ele" title="印染設計與創意" style="position: absolute; left: 36%; top: 40.5%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/0D991071"  target="_blank"  class="img-map-ele" title="挑房" style="position: absolute; left: 65%; top: 40.5%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/0N711111"  target="_blank"  class="img-map-ele" title="啟蒙時代" style="position: absolute; left: 7%; top: 70%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/0E2411"  target="_blank"  class="img-map-ele" title="般若心經的真義" style="position: absolute; left: 36%; top: 70%; width: 28%; height: 28%;"></a>
+            <a href="http://www.scbooks.com.tw/#/book/XX371001"  target="_blank"  class="img-map-ele" title="鐘聲21響" style="position: absolute; left: 65%; top: 70%; width: 28%; height: 28%;"></a>
+
+        </div>
+
+		
+
+
+	</div>
+
+
+
+	<!-- 額外空間 -->
+	<div style="height: 80px;"></div>
+
+
+</div>
+
+
+<!-- 範本 -->
+
+<!--
+<div class="row gx-3 gy-3">
+
+	內容項目
+	<div class="col-12 col-md-4 col-lg-3">
+		<div class="accordion-content">
+			<h5 class="card-title">TITLE</h5>
+			<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">number</span><span class="flex-grow-0 price">特價：0000</span></p>
+			<p class="mb-0 mt-3">
+				<a href="xxxx" target="_blank"
+				class="btn btn-primary px-4 text-light"
+			>購買課程</a></p>
+		</div>
+	</div>
+
+
+</div>
+-->
+

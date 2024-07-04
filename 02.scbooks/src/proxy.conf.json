@@ -1,0 +1,7 @@
+{
+	"/api": {
+		"target": "http://www.scbooks.com.tw",
+		"secure": false,
+		"changeOrigin": true
+	}
+}

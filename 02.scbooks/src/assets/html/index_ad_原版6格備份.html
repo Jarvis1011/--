@@ -1,0 +1,149 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+-->
+
+<div class="row gx-3 gy-3">
+	<div class="col-12 col-md-4">
+
+			<div class="row gy-3 h-100">
+				<div class="col-12">
+
+					<!-- 廣告 1 -->
+					<img class="cursor-pointer w-100 img-fluid hover-img-small"
+						src="assets/images/index_ad/ad_img_1.jpg" 
+						routerLink="/page/under_construction">
+
+				</div>
+				<div class="col-12">
+					
+					<!-- 廣告 2 -->
+
+					<!-- 此區塊在平板以上顯示 -->
+					<!-- 為修正因版面縮放造成底部不平，此處廣告圖片的下方靠邊緣區域必須為純色，並在此元素的背景色指定同一純色 -->
+					<div class="d-none d-md-block hover-img-small" 
+						style="background-color: #83CCC9;
+						height: calc(100% + var(--bs-gutter-y));">
+
+						<img class="cursor-pointer w-100 img-fluid" 
+							src="assets/images/index_ad/ad_img_2_small.jpg" 
+							routerLink="/page/under_construction"
+							>
+					</div>
+
+					<!-- 此區塊在手機版面才會顯示 -->
+					<img class="cursor-pointer w-100 img-fluid hover-img-small d-md-none" 
+							src="assets/images/index_ad/ad_img_2_small.jpg" 
+							routerLink="/page/under_construction"
+							>
+				
+
+				</div>
+			</div>
+
+
+	</div>
+	<div class="col-12 col-md-8">
+		<div class="row gx-3 gy-3">
+			<div class="col-12">
+
+				<!-- 廣告 3 -->
+				<img class="cursor-pointer w-100 img-fluid hover-img-small"
+					src="assets/images/index_ad/ad_img_3.jpg" 
+					routerLink="/page/under_construction">
+
+			</div>
+			<div class="col-12">
+				<div class="row gx-3 gy-3">
+					<div class="col-12 col-md-6">
+
+						<!-- 廣告 4 -->
+						<img class="cursor-pointer w-100 img-fluid hover-img-small"
+							src="assets/images/index_ad/ad_img_4.jpg" 
+							routerLink="/page/under_construction">
+
+					</div>
+					<div class="col-12 col-md-6">
+
+						<!-- 廣告 5 -->
+						<img class="cursor-pointer w-100 img-fluid hover-img-small"
+							src="assets/images/index_ad/ad_img_5.jpg" 
+							routerLink="/page/under_construction">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-12">
+
+		<!-- 廣告 6 -->
+		<img class="cursor-pointer w-100 img-fluid hover-img-small"
+			src="assets/images/index_ad/ad_img_6.jpg" 
+			routerLink="/page/under_construction">
+
+	</div>
+</div>
+
+
+
+<!-- 以下為無邊框備份 -->
+<!-- <div class="row gx-0 gy-0">
+	<div class="col-12 col-md-4">
+		<div class="row gx-0 gy-0">
+			<div class="col-12">
+				<img class="cursor-pointer w-100 img-fluid hover-img-small"
+					src="assets/images/index_ad/ad_img_1.jpg" 
+					routerLink="/page/under_construction">
+			</div>
+			<div class="col-12">
+
+				<img class="cursor-pointer w-100 img-fluid hover-img-small"
+					src="assets/images/index_ad/ad_img_2.jpg" 
+					routerLink="/page/under_construction">
+
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-md-8">
+		<div class="row gx-0 gy-0">
+			<div class="col-12">
+				<img class="cursor-pointer w-100 img-fluid hover-img-small"
+					src="assets/images/index_ad/ad_img_3.jpg" 
+					routerLink="/page/under_construction">
+			</div>
+			<div class="col-12">
+				<div class="row gx-0 gy-0">
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer w-100 img-fluid hover-img-small"
+							src="assets/images/index_ad/ad_img_4.jpg" 
+							routerLink="/page/under_construction">
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="cursor-pointer w-100 img-fluid hover-img-small"
+							src="assets/images/index_ad/ad_img_5.jpg" 
+							routerLink="/page/under_construction">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> 
+
+<div class="row">
+	<div class="col-12">
+		<img class="cursor-pointer w-100 img-fluid hover-img-small"
+			src="assets/images/index_ad/ad_img_6.jpg" 
+			routerLink="/page/under_construction">
+	</div>
+</div>
+
+-->

@@ -1,0 +1,23 @@
+[
+	{	"name": "博客來",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_01.png",
+		"link": "https://www.books.com.tw/web/sys_puballb/books/?cat_id=E05&pubid=bstripod"
+	},
+	{	"name": "Google Play 圖書",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/ebook6.png",
+		"link": "https://play.google.com/store/books/author?id=%E5%95%86%E9%BC%8E%E6%95%B8%E4%BD%8D%E5%87%BA%E7%89%88"
+	},
+	{	"name": "udn 讀書吧",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/ebook1.png",
+		"link": "http://reading.udn.com/v2/search.do?k=%E5%95%86%E9%BC%8E&pt=B#1,p,shelf"
+	},
+	{	"name": "Pubu 電子書城",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/ebook4.png",
+		"link": "https://www.pubu.com.tw/search?q=%E5%95%86%E9%BC%8E%E6%95%B8%E4%BD%8D%E5%87%BA%E7%89%88&rows=36&orderBy=pubd&sort=0"
+	},	
+	{	"name": "TAAZE 讀冊生活",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/ebook9.png",
+		"link": "https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=3&keyword%5B%5D=%E5%95%86%E9%BC%8E%E6%95%B8%E4%BD%8D%E5%87%BA%E7%89%88&prodKind=4&prodCatId=141&catId=0&saleDiscStart=0&saleDiscEnd=0&salePriceStart=&salePriceEnd=&publishDateStart=&publishDateEnd=&prodRank=0&addMarkFlg=0&force=0&catFocus=&orgFocus=&mainCatFocus=&catNmFocus=&catIdFocus=&layout=A&nowPage=1&sort=publishdate"
+	}
+	
+]

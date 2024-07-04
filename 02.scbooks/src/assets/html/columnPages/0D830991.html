@@ -1,0 +1,120 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="column-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/columns">專欄</a></li>
+				<li class="breadcrumb-item active" aria-current="page">旅遊文學</li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+
+			<div class="col-12">
+
+				<p class="mb-0">
+					<span class="column-name text-primary">旅遊文學</span>
+				</p>
+
+				<h2 class="mt-2">隱藏的造紙氣息，我們從她的家鄉「紙寮窩」說起。</h2>
+				<p class="text-end" style="color: #333;">by A.L</p>
+				
+				<img src="assets/images/column/0D830991_1.jpg" class="w-100 img-fluid">
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>「紙寮窩」這個地名很特別，既說「紙寮」，可解為「造紙的寮」，但為何叫「窩」呢？既像鳥窩那樣，與外隔絕，則窩裡情形，外人只能想像。</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title"><a routerLink="/book/0D830991" target="_blank" style="text-decoration:underline; cursor: pointer;">《紙寮窩紀事》</a>劉琦香著，商鼎數位出版</cite>
+			</figcaption>
+		</figure>
+
+		<p>過去，外人僅從紙信上看過紙寮窩這個地名，頂多知道這是一個造紙之地，鮮少有人真的去過。這裡就像是神秘仙境般，在口中與紙上相傳。</p>
+
+		<p>這裡，是劉琦香女士的家鄉，是一個單一姓氏的聚落，這裡世世代代都是造紙產業。但隨著造紙技術的進步，這裡的文化也漸漸沒落，後代子孫們一個個出走打拚，越來越少人知道紙寮窩這個地方的存在，到底該怎麼做，才能將古老的經典留下？</p>
+
+		<img src="assets/images/column/0D830991_2.jpg" class="w-100 img-fluid mt-4">
+
+
+		<h3>用一本書，留下。</h3>
+
+		<p><a routerLink="/book/0D830991" target="_blank" style="text-decoration:underline; cursor: pointer;">《紙寮窩紀事》</a>記錄了劉女士從小到大的點點滴滴，身為「紙寮窩的孩子」，她的成長故事正代表著紙寮窩文化的一部分。</p>
+
+		<p>窩，即是指三面環山。在這個小聚落裡，我們可以跟著劉女士欣賞紙寮窩的絕美風景，體驗當年造紙藝術的風光，更透過劉女士與家人的互動，感受昔日。</p>
+
+		<img src="assets/images/column/0D830991_3.jpg" class="w-100 img-fluid mt-4">
+
+		
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>民國 83 年，新竹縣文化局斥資一千多萬，與在地的長輩們一同創立了「紙寮窩造紙工坊」，致力於復甦從前的光景，或許傳統造紙已經不在，但紙寮窩曾經的文化不能消逝。因此，直到現在我們都還能夠看到劉女士在書中寫道，紙寮窩的樣子。</p>
+			
+			</blockquote>
+		</figure>
+
+		<p>在紙寮窩造紙工坊裡，可以體驗當時的造紙技術，並由當地的居民化身導覽員進行解說。秉持著重現造紙文化的使命，工坊甚至引用數位技術，將古老的文史保存下來，希望大家來到了紙寮窩，彷彿都能看見當年的盛況。</p>
+		
+		<img src="assets/images/column/0D830991_4.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">&ensp;</p>
+		
+		<p>如果說紙寮窩是傳統造紙的代表地，那<a routerLink="/book/0D830991" target="_blank" style="text-decoration:underline; cursor: pointer;">《紙寮窩紀事》</a>便是這一切的見證。我們藉著一個人的一生，去經歷一個地方的興衰起落；藉著一本書，了解文化的永恆。</p>
+
+
+		<!-- 連結 -->
+		<a routerLink="/book/0D830991" class="btn btn-primary text-light px-5 mt-4">前往《紙寮窩紀事》</a>
+
+
+
+
+
+
+
+	</div>
+</div>

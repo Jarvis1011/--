@@ -1,0 +1,969 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<style>
+	.bg-theme{
+		background-color: #E9D1C5;
+	}
+
+	.yt-title{
+		/* border-bottom: 2px sold #A40000; */
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	.yt-title span{
+		display: inline-block;
+		background-color: #A40000;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 20px;
+		padding: 0.3rem 2rem;
+
+	}
+	.yt-price{
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 0.25rem;
+	}
+	.yt-price .num{
+		color: #A40000;
+	}
+
+
+
+	.accordion-content{
+		background-color: #E9ECEF;
+		padding: 1rem;
+		border-radius: 0.4rem;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.card-title{
+		font-weight: bold;
+	}
+	.p-id{
+		/* font-weight: bold; */
+		color: rgb(52, 167, 68);
+	}
+	.price{
+		font-weight: bold;
+		color: rgb(255, 0, 0);
+		font-size: 18px;
+	}
+
+
+	/* old */
+	/* .big-btn-area{
+		padding: 0 2rem 2rem 2rem;
+	}
+	.h_icon{
+		width: 120px;
+	}
+
+	.num-item{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 5rem;
+		line-height: 4rem;
+		width: 3.6rem;
+		color: #0DCAF0;
+		margin-top: 0px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	
+	.medium-height{
+		line-height: 1.4em;
+	} */
+	
+
+
+
+</style>
+
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/discounts">優惠活動</a></li>
+				<li class="breadcrumb-item active" aria-current="page">台電招考</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+
+		<h3 class="text-center text-light bg-black mb-0 py-2">台電表示：未來三年將陸續有近 3000 名員工退休</h3>
+		<!-- 主圖 -->
+		<a href="http://www.chienhua.com.tw/JobDetail.aspx?Num=81" target="_blank">
+			<img src="assets/images/discount/chienhua_20211125_1.jpg" class="w-100 img-fluid">
+		</a>
+
+		<div class="bg-theme pt-4 pb-3 px-3">
+			<h2 class="text-center fw-bold">影音專區</h2>
+			<p class="fs-5 text-center">老師引導學習，快速奠定基礎 ，掌握考科重點關鍵</p>
+		</div>
+
+		<!-- 影片 -->
+		<div class="bg-theme px-3 pb-3">
+
+			<div class="row gx-4 gy-4">
+
+				<!-- YT 1 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>綜合行政人員－全套</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/AAD52MRPsys"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">15,750</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 2 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>【國文】 0 元體驗課程</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/rXqWCcnDrrs"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價：<span class="num">0</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 3 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>會計學</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/JGgOVkNRJeg"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">3,000</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 4 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>法學緒論（含大意）</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/tYkJYbg6Z7Q"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">2,500</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 5 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>企業管理</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/UkdWJ8u7zpk"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">3,250</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 6 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>基本電學</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/LFxQvyHu1Mk"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">3,250</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 7 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>英文</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/-ryZbygOE68"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">1,575</span> 元</p>
+
+					</div>
+				</div>
+
+				<!-- YT 8 -->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4">
+					<div>
+						<h4 class="yt-title"><span>國文</span></h4>
+						<div class="ratio ratio-16x9">
+							<iframe 
+							src="https://www.youtube.com/embed/rXqWCcnDrrs"
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<p class="yt-price">特價 5 折：<span class="num">3,250</span> 元</p>
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+		<div class="bg-theme pt-3 pb-3 px-3">
+			<h2 class="text-center fw-bold">組合專區（影音＋書籍）</h2>
+			<p class="fs-5 text-center">獨家組合！配合個人化學習教材＋搭配優惠折扣</p>
+		</div>
+
+		<div class="bg-theme px-4 pb-4">
+			<div class="row gx-4 gy-4">
+
+				<!-- book 1 -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19449" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_2.jpg" 
+							class="w-100 img-fluid hover-img-small rounded rounded-3 hover-shadow">
+					</a>
+				</div>
+
+				<!-- book 2 -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19450" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_3.jpg" 
+							class="w-100 img-fluid hover-img-small rounded rounded-3 hover-shadow">
+					</a>
+				</div>
+
+				<!-- book 3 -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19451" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_4.jpg" 
+							class="w-100 img-fluid hover-img-small rounded rounded-3 hover-shadow">
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+
+		<div class="bg-theme pt-4 pb-3 px-3">
+			<h2 class="text-center fw-bold">書籍專區</h2>
+			<p class="fs-5 text-center">高分秘笈全攻略，由淺入深實力養成，強化應試能力！</p>
+		</div>
+
+
+		<div class="bg-theme px-4 pb-5">
+			<div class="row gx-5 gy-4">
+
+				<!-- book 1 -->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17283" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_5.png" 
+							class="w-100 img-fluid hover-img-small hover-drop-shadow px-md-3 py-md-2">
+					</a>
+					<h4 class="fw-bold text-center">機械運轉維護／機械修護</h4>
+				</div>
+
+				<!-- book 2 -->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17285" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_6.png" 
+							class="w-100 img-fluid hover-img-small hover-drop-shadow px-md-3 py-md-2">
+					</a>
+					<h4 class="fw-bold text-center">綜合行政人員</h4>
+				</div>
+
+				<!-- book 3 -->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18578" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_7.png" 
+							class="w-100 img-fluid hover-img-small hover-drop-shadow px-md-3 py-md-2">
+					</a>
+					<h4 class="fw-bold text-center">儀電運轉維護</h4>
+				</div>
+
+				<!-- book 4 -->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17278" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_8.png" 
+							class="w-100 img-fluid hover-img-small hover-drop-shadow px-md-3 py-md-2">
+					</a>
+					<h4 class="fw-bold text-center">綜合行政人員</h4>
+				</div>
+
+				<!-- book 5 -->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17277" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_9.png" 
+							class="w-100 img-fluid hover-img-small hover-drop-shadow px-md-3 py-md-2">
+					</a>
+					<h4 class="fw-bold text-center">配電線路維護</h4>
+				</div>
+
+				<!-- book 6 -->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=16365" target="_blank">
+						<img src="assets/images/discount/chienhua_20211125_10.png" 
+							class="w-100 img-fluid hover-img-small hover-drop-shadow px-md-3 py-md-2">
+					</a>
+					<h4 class="fw-bold text-center">電機運轉維護／電機修護</h4>
+				</div>				
+
+
+			</div>
+		</div>
+
+
+
+		<!-- 手風琴 -->
+		<div class="bg-theme px-3 pb-4">
+
+			<div class="accordion" id="DM_accordion">
+
+				<!-- 手風琴 1 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading_1">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							影音課程　<span class="text-danger fw-bold">特價 5 折</span>
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="heading_1" data-bs-parent="#DM_accordion">
+						<div class="accordion-body">
+
+							<div class="row gx-3 gy-3">
+							
+								<!-- 內容項目 1-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">綜合行政人員_全套</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE041081</span><span class="flex-grow-0 price">售價：15,750</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e7%b6%9c%e5%90%88%e8%a1%8c%e6%94%bf%e4%ba%ba%e5%93%a1_%e5%85%a8%e5%a5%97%e3%80%91%e5%8f%b0%e9%9b%bb%e6%8b%9b%e8%80%83/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 2-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">企業管理</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE331061</span><span class="flex-grow-0 price">售價：3,250</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e4%bc%81%e6%a5%ad%e7%ae%a1%e7%90%86%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e4%ba%8b%e6%a5%ad/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 3-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">法學緒論（含大意）</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE541101</span><span class="flex-grow-0 price">售價：2,500</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e6%b3%95%e5%ad%b8%e7%b7%92%e8%ab%96%e5%90%ab%e5%a4%a7%e6%84%8f%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e8%80%83%e8%a9%a6-2/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 4-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">基本電學</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE481061</span><span class="flex-grow-0 price">售價：3,250</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e5%9f%ba%e6%9c%ac%e9%9b%bb%e5%ad%b8%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e8%80%83%e8%a9%a6/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 5-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">行政學（含概要）</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE411061</span><span class="flex-grow-0 price">售價：3,750</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%E3%80%90%E8%A1%8C%E6%94%BF%E5%AD%B8%E5%90%AB%E6%A6%82%E8%A6%81%E3%80%91%E5%9C%8B%E6%B0%91%E7%87%9F%E4%BA%8B%E6%A5%AD/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 6-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">物理</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE471061</span><span class="flex-grow-0 price">售價：3,250</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e7%89%a9%e7%90%86%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e8%80%83%e8%a9%a6/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 7-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">會計學</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE511091</span><span class="flex-grow-0 price">售價：3,000</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e6%9c%83%e8%a8%88%e5%ad%b8%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e8%80%83%e8%a9%a6/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 8-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">國文</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE361081</span><span class="flex-grow-0 price">售價：3,250</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e5%9c%8b%e6%96%87%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e4%ba%8b%e6%a5%ad/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 9-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">完勝英文</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">CBE321091</span><span class="flex-grow-0 price">售價：1,575</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e5%ae%8c%e5%8b%9d%e8%8b%b1%e6%96%87%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e6%8b%9b%e8%80%83/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 10-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">【國文】 0 元體驗課程</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id"></span><span class="flex-grow-0 price">售價：0</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://chbonding.com.tw/course/%e3%80%90%e5%9c%8b%e6%96%87%e3%80%91%e5%9c%8b%e6%b0%91%e7%87%9f%e4%ba%8b%e6%a5%ad_0%e5%85%83%e9%ab%94%e9%a9%97%e8%aa%b2%e7%a8%8b/" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+							
+							
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- 手風琴 2 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading_2">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							套書　<span class="text-danger fw-bold">特價 77 折</span>
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#DM_accordion">
+						<div class="accordion-body">
+							
+							<div class="row gx-3 gy-3">
+							
+								<!-- 內容項目 1-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">配電線路維護_課文版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22901111</span><span class="flex-grow-0 price">售價：1,810</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17277" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 2-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">配電線路維護_題庫版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22961111</span><span class="flex-grow-0 price">售價：1,594</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17284" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 3-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">電機運轉維護／電機修護_課文版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22911111</span><span class="flex-grow-0 price">售價：1,810</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=16365" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 4-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">電機運轉維護／電機修護_題庫版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22971111</span><span class="flex-grow-0 price">售價：1,555</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=16714" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 5-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">機械運轉維護／機械修護_課文版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22921111</span><span class="flex-grow-0 price">售價：1,763</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17283" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 6-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">機械運轉維護／機械修護_題庫版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22981111</span><span class="flex-grow-0 price">售價：1,563</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=16823" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 7-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">綜合行政人員_課文版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22931111</span><span class="flex-grow-0 price">售價：2,364</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17278" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 8-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">綜合行政人員_題庫版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22991111</span><span class="flex-grow-0 price">售價：1,786</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17285" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 9-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">儀電運轉維護_課文版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">22941111</span><span class="flex-grow-0 price">售價：1,779</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18578" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 10-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">儀電運轉維護_題庫版</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">23001111</span><span class="flex-grow-0 price">售價：1,540</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=16510" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+							
+							
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- 手風琴 3 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading_3">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							單書－課文版　<span class="text-danger fw-bold">特價 79 折</span>
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#DM_accordion">
+						<div class="accordion-body">
+
+							<div class="row gx-3 gy-3">
+							
+								<!-- 內容項目 1-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">國文</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B811111</span><span class="flex-grow-0 price">售價：442</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17967" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 2-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">英文</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B821111</span><span class="flex-grow-0 price">售價：466</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18214" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 3-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">物理</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B911101</span><span class="flex-grow-0 price">售價：450</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19953" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 4-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">基本電學</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B491101</span><span class="flex-grow-0 price">售價：498</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19620" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 5-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">電工機械</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B691111</span><span class="flex-grow-0 price">售價：450</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18986" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目6 -->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">電子學</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B191101</span><span class="flex-grow-0 price">售價：419</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19988" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 7-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">機械原理</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B661101</span><span class="flex-grow-0 price">售價：450</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18763" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 8-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">行政學概要</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">1F141101</span><span class="flex-grow-0 price">售價：490</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18699" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 9-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">法律常識</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B881101</span><span class="flex-grow-0 price">售價：450</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18833" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 10-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">企業管理概論</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B081111</span><span class="flex-grow-0 price">售價：514</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19775" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 11-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">會計學概要</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B751111</span><span class="flex-grow-0 price">售價：434</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18961" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+							
+							
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- 手風琴 4 -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="heading_4">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							單書－題庫版　<span class="text-danger fw-bold">特價 79 折</span>
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading_4" data-bs-parent="#DM_accordion">
+						<div class="accordion-body">						
+							
+							<div class="row gx-3 gy-3">
+							
+								<!-- 內容項目 1-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">國文</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B261101</span><span class="flex-grow-0 price">售價：371</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18113" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 2-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">英文</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B271101</span><span class="flex-grow-0 price">售價：419</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17393" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 3-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">物理</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B291091</span><span class="flex-grow-0 price">售價：395</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=16485" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 4-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">基本電學</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B391111</span><span class="flex-grow-0 price">售價：450</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18074" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 5-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">電工機械</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B341091</span><span class="flex-grow-0 price">售價：356</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19815" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 6-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">電子學</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B511101</span><span class="flex-grow-0 price">售價：340</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18457" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 7-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">機械原理</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B591111</span><span class="flex-grow-0 price">售價：419</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18690" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 8-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">行政學概要</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">1E201091</span><span class="flex-grow-0 price">售價：292</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18637" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 9-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">法律常識</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B891111</span><span class="flex-grow-0 price">售價：427</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18892" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 10-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">企業管理概論</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B901101</span><span class="flex-grow-0 price">售價：324</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19951" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+
+								<!-- 內容項目 11-->
+								<div class="col-12 col-md-4 col-lg-3">
+									<div class="accordion-content">
+										<h5 class="card-title">會計學概要</h5>
+										<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">2B371101</span><span class="flex-grow-0 price">售價：308</span></p>
+										<p class="mb-0 mt-3">
+											<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17157" target="_blank" class="btn btn-primary px-4 text-light">購買課程</a>
+										</p>
+									</div>
+								</div>
+							
+							
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+
+	<!-- 額外空間 -->
+	<div style="height: 80px;"></div>
+
+
+</div>
+
+
+
+
+<!-- 範本 -->
+
+<!--
+<div class="row gx-3 gy-3">
+
+	內容項目
+	<div class="col-12 col-md-4 col-lg-3">
+		<div class="accordion-content">
+			<h5 class="card-title">TITLE</h5>
+			<p class="mb-0 d-flex flex-grow-1"><span class="flex-grow-1 p-id">number</span><span class="flex-grow-0 price">特價：0000</span></p>
+			<p class="mb-0 mt-3">
+				<a href="xxxx" target="_blank"
+				class="btn btn-primary px-4 text-light"
+			>購買課程</a></p>
+		</div>
+	</div>
+
+
+</div>
+-->
+
+
+

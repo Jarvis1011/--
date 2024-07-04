@@ -1,0 +1,61 @@
+
+<!-- 超連結使用 routerLink -->
+<nav>
+	<ul class="pagination"
+		[ngClass]="{
+			'justify-content-center' : justify == 'center', 'justify-content-end' : justify == 'right',
+			'pagination-sm' : isSmall
+			}">
+
+		<!-- 第一頁 -->
+		<li class="page-item"
+			[ngClass]="{'disabled' : currentPageIndex == 0}">
+			<a class="page-link" 
+			(click)="first()"
+			*ngIf="showEndPoint()">
+				<!-- <i class="bi bi-chevron-bar-left"></i> -->
+				1
+			</a>
+		</li>
+
+		<!-- 上一頁 -->
+		<li class="page-item"
+			[ngClass]="{'disabled' : currentPageIndex == 0}">
+			<a class="page-link text-light arrow" 
+			(click)="pre()">
+				<i class="bi bi-caret-left-fill"></i>
+			</a>
+		</li>
+
+		<!-- 一般頁面 -->
+		<li class="page-item" 
+			[ngClass]="{'active' : item == currentPageIndex}"
+			*ngFor="let item of numLinkArr; let i = index">
+			<a class="page-link"				
+				(click)="setNewPage(item)"
+				>{{item + 1}}</a>
+		</li>
+		
+
+		<!-- 下一頁 -->
+		<li class="page-item"
+			[ngClass]="{'disabled' : currentPageIndex == pageCount - 1}">
+			<a class="page-link text-light arrow" 
+			(click)="next()">
+				<i class="bi bi-caret-right-fill"></i>
+			</a>
+		</li>
+		<!-- 最後一頁 -->
+		<li class="page-item"
+			[ngClass]="{'disabled' : currentPageIndex == pageCount - 1}">
+			<a class="page-link" 
+			(click)="last()"
+			*ngIf="showEndPoint()">
+				<!-- <i class="bi bi-chevron-bar-right"></i> -->
+				{{pageCount}}
+			</a>
+		</li>
+
+
+	</ul>
+</nav>

@@ -1,0 +1,100 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="media-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/media">獲獎／媒體報導</a></li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+			<div class="col-12">
+				<h2 class="mt-2">《2022高雄城市書展》左圖右書</h2>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+
+		<h3>《 2022 高雄城市書展》左圖右書，為高雄今年最盛大書展活動！</h3>
+
+		<p>共有六大主題書展，邀請舊雨新知一同更襄盛舉！<br>
+		<br>
+		#港灣書展 #總館1樓廣場 (我們在這！)<br>
+		港灣書展以出版社為軸、輔以獨立書店、獨立出版，在總圖 1 樓開放。<br>
+		<br>
+		#設計主題書展 #總館3樓天井<br>
+		設計主題書展從文博會、台設展出發，規劃三大主題展區－博覽會、文化策展、設計與品牌。<br>
+		<br>
+		#青鳥嚮往高雄想望書展 #總館4樓潮間帶<br>
+		位於總館四樓潮間帶空間的三間主題書屋，選書包括三大主題： 2022 年亮點新書、高雄主題書籍、高雄城市書展講者著作。<br>
+		<br>
+		#我家旁邊的書店 #總館4樓文化積澱<br>
+		高市圖與 9 間高雄在地獨立書店合作，以「來去踅(迺)高雄」、「欸！我想欲看這本」兩大主軸，帶領讀者走進高雄的在地生活。<br>
+		<br>
+		#乘風書展 #承風青鳥<br>
+		選書主軸港口與海洋<br>
+		港口：聚焦人文歷史文化厚度；<br>
+		海洋：代表閱讀無限延伸，回看這座城市的音樂、電影、藝術、建築、表演、攝影。<br>
+		<br>
+		#漫潮聚落 #總館4樓潮間帶<br>
+		「漫畫家的漫畫屋」以小屋展示3位不同型態漫畫家的畫作、漫畫作品與靈感選書。</p>
+
+		<img src="assets/images/media/media_220925_01.jpg" class="w-100 img-fluid mt-4">
+		<!-- <p class="img-info">▲ XXXXXXX</p> -->
+		<img src="assets/images/media/media_220925_02.jpg" class="w-100 img-fluid mt-4">
+		<!-- <p class="img-info">▲ XXXXXXX</p> -->
+
+
+
+
+		<!-- ********* -->
+		<!-- 發布時間 -->
+		<p class="media-date">發布時間：2022 年 10 月 26 日</p>
+
+
+
+
+
+
+
+	</div>
+</div>

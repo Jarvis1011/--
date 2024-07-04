@@ -1,0 +1,246 @@
+.global-map
+  iframe, .tgmap
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .2)
+    height: calc(100vh - 200px)
+    #pLevelBarBar
+      margin-top: -150px
+  .wrapper
+    background: #ffffff
+    padding: 10px
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .2)
+    border-radius: 4px
+    margin-top: 80px
+    margin-bottom: 110px
+    transition: opacity .4s
+    cursor: pointer
+    &.hidden
+      opacity: 0
+    .main
+      width: 100%
+      margin-top: -80px
+      height: 150px
+      background-size: cover !important
+      position: relative
+      border-radius: 5px
+      .stars
+        position: absolute
+        bottom: 18px
+        right: 18px
+        img
+          margin: 0 2px
+    .title
+      font-size: 0.95rem
+      font-weight: 800
+    .marker
+      margin-right: 5px
+      margin-top: -3px
+    .location
+      width: 100%
+      margin-top: -50px
+      margin-left: 10px
+    .desc
+      font-size: 0.8rem
+      span
+        color: #35a48c
+        font-weight: 900
+
+.detail-map
+  width: 50%
+  margin-left: -50%
+  transition: 0.5s
+  opacity: 0
+  position: relative
+  .detail-wrapper
+    background-image: linear-gradient(194deg, #37a68b, #0275b8)
+    border-radius: 5px
+    width: 80%
+    padding: 10px
+    .main-img
+      margin-bottom: 7px
+    .thumbnail
+      display: flex
+      margin-bottom: 15px
+      img
+        object-fit: cover
+        width: 30%
+        margin-right: 3%
+    .detail-title
+      color: #fffe00
+    .detail-desc
+      color: #ffffff
+      padding: 10px
+      font-size: 0.9rem
+      background: rgba(255,255,255,0.15)
+      border-radius: 5px
+      line-height: 20px
+      margin-bottom: 10px
+      display: block
+      border: none
+      width: 100%
+      text-align: left
+    hr
+      border: none
+      border: 1px dashed rgba(0, 0, 0, 0.15)
+    .title
+      color: #ffffff
+      font-weight: 800
+      letter-spacing: 1px
+      .icon-loc
+        width: 12px
+        margin-right: 2px
+      small
+        margin-left: 5px
+        font-weight: 400
+      span
+        color: #00ffae
+  &.active
+    opacity: 1
+    margin-left: 0
+    transition: 0.5s
+
+.tab-wrapper
+  width: 25%
+  text-align: center
+  color: #eeeeee
+  font-size: 0.65rem
+  background-color: rgba(0, 0, 0, 0)
+  border: none
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  height: 100%
+  padding: 0
+  &:hover
+    .tab
+      background: #ffffff
+      transition: 0.5s
+      > img
+        filter: invert(100%)
+  span
+    color: #000000
+    font-size: 0.85rem
+    flex-shrink: 0
+  a:hover
+    color: white
+  .tab
+    border-radius: 50%
+    height: 35px
+    width: 35px
+    background: #000000
+    position: relative
+    margin: auto
+    cursor: pointer
+    transition: 0.5s
+    margin-bottom: 6px
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .25)
+    &.active
+      background: #ffffff
+      transition: 0.5s
+      &:hover > img, &.active > img
+        filter: invert(100%)
+    img
+      transition: 0.5s
+      position: absolute
+      top: 51%
+      left: 51.5%
+      transform: translateX(-50%) translateY(-50%)
+      width: 25px
+
+.lists-map
+  width: 50%
+  transition: 0.5s
+  padding-left: 0
+  &.active
+    margin-left: 0
+    transition: 0.5s
+
+.close-map
+  position: absolute
+  top: 155px
+  right: 28px
+  width: 55px
+  height: 55px
+  z-index: 2
+  img
+    transform: translate(-8px, -2px)
+
+.map-submenu
+  position: absolute
+  right: 10px
+  top: 0
+  a
+    position: relative
+    width: 20px
+    border: 1px dashed #000000
+    display: block
+    font-size: 0.8rem
+    text-align: center
+    margin-bottom: 10px
+    border-radius: 5px
+    &:hover, &.active
+      background-image: linear-gradient(194deg, #37a68b, #0275b8)
+      color: #ffffff !important
+      border: 1px solid #ffffff
+      transition: 0.5s
+      box-shadow: 2px 2px 7px rgba(0, 0, 0, .2)
+    .arrow
+      position: absolute
+      left: -35px
+      top: 50%
+      transform: translateY(-50%)
+      width: 35px
+
+.scroller-menu
+  display: none
+
+.map-pos
+  height: calc(100vh - 300px)
+
+@media (max-width: 978px)
+  .tgmap
+    min-height: 92.5vh !important
+    height: 92.5vh !important
+  .map-pos
+    position: relative
+    .scroller-menu
+      display: block
+      position: absolute
+      padding-top: 20px
+      padding-bottom: 40px
+      background: rgba(255, 255, 255, .7)
+      bottom: 0
+      width: 100%
+      -webkit-backdrop-filter: blur(10px)
+      backdrop-filter: blur(10px)
+      z-index: 999999999
+      text-align: center
+      transition: 0.5s
+      min-height: 20vh
+      &.active
+        min-height: 75vh
+        transition: 0.5s
+      .title
+        font-weight: 800
+        font-size: 1.4rem
+        margin-bottom: 6px
+      .subtitle
+        font-size: 0.9rem
+        span
+          color: #00a974
+      .close-btn
+        top: -25px
+        right: 20px
+        position: absolute
+      .loc-wrapper
+        width: 100%
+        padding: 10px
+        font-size: 0.8rem
+      img
+        display: inline-block
+      .location
+        height: 50px
+        width: 50px
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+        margin: auto
+        margin-bottom: 4px
+        background-size: cover !important

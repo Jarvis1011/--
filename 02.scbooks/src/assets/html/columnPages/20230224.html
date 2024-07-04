@@ -1,0 +1,232 @@
+﻿
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+<style>
+	th {
+		background-color: #ccc !important; 
+	}
+</style>
+ 
+<div class="column-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/columns">專欄</a></li>
+				<li class="breadcrumb-item active" aria-current="page">獨立出版</li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+
+			<div class="col-12">
+
+				<p class="mb-0">
+					<span class="column-name text-primary">獨立出版</span>
+				</p>
+
+				<h2 class="mt-2">再平凡的地方也不容忽視，你一定得知道的開本知識。</h2>
+				<p class="text-end" style="color: #333;">by A.L</p>
+				
+				<img src="assets/images/column/20230224_1.jpg" class="w-100 img-fluid">
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>從一大張紙裁切細分成許多小張的紙，每一小張紙的大小皆相同。而規格越大的紙，裁切後的紙也就越大。</p>
+			
+			</blockquote>
+		</figure>	
+		
+		
+		<p>僅僅是書本的大小，也影響甚大，因此我們必須了解開本到底是什麼。</p>
+
+		<p>在了解開本之前，我們得先知道國內常用印刷紙的三種規格大小（單位：英吋）：四六版（31"x43"）、菊版（25"x35"）、特規版（28"x38"）。上到印刷機印製前，會先將印刷紙從一大張裁切成相同大小的小張紙，也就是我們的書籍內頁。依據成書的開本，選用對應比例的印刷紙，才能保證裁切完，不會有過多的紙張被裁掉，造成成本浪費。</p>
+
+		<p>我們很常聽到的菊 16 開，其實指的就是菊版規格紙張的一種裁切方式，後面的數字代表著將印刷紙裁切成原本的 1/16。對應到書籍上面，一張菊版紙可以切成 16 份（小張），一份是正反 2 頁， 16 份就是 32 頁。</p>
+
+		
+		<!-- 圖片 -->
+		<div class="text-center">
+			<img src="assets/images/column/20230224_2.jpg" class="w-75 img-fluid mt-4">
+			<p class="img-info"></p>
+		</div>
+		
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>所謂開本，就是書本有多大。</p>
+			
+			</blockquote>
+		</figure>
+
+		
+		<p>認識了不同規格的印刷紙後，我們來看看幾種不同的開本大小：</p>
+
+		<div class="py-2 px-0 px-md-3 px-xl-5 text-center table-responsive">
+			<table class="table table-bordered table align-middle">
+				<thead>
+					<tr>
+						<th scope="col">開本</th>
+						<th scope="col">8 開</th>
+						<th scope="col">16 開</th>
+						<th scope="col">18 開</th>
+						<th scope="col">25 開</th>
+						<th scope="col">32 開</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">尺寸</th>
+						<td>26x38 cm</td>
+						<td>19x26 cm</td>
+						<td>17x23 cm</td>
+						<td>14.8x21 cm</td>
+						<td>10.5x14.8 cm</td>
+					</tr>
+					<tr>
+						<th scope="row">裁切規格</th>
+						<td>四六版</td>
+						<td>四六版</td>
+						<td>特規版</td>
+						<td>菊版</td>
+						<td>菊版</td>
+					</tr>
+					<tr>
+						<th scope="row">常用書籍種類</th>
+						<td>圖鑑、史料、畫冊</td>
+						<td>圖鑑等圖像書</td>
+						<td>旅遊、大眾文學、生活風格等</td>
+						<td>文學書、小說等</td>
+						<td>隨身書</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+
+		<p>8 開：使用四六版裁切印刷，約等於 B4 大小。由於尺寸較大，通常用來印製成圖鑑、史料、畫冊等書籍。</p>
+		
+		<p>16 開：一樣使用四六版裁切印刷，大小等同於 8 開的一半。同屬較大的開本，一般用來展示圖片，如圖鑑等。</p>
+
+		<p>18 開：使用特規版裁切印刷，屬於常見的開本大小之一。如旅遊、大眾文學、生活風格等多種類型都會使用。</p>
+
+		<p>25 開：使用菊版裁切印刷，同時也稱菊 16 開，與 18 開同為常見的開本大小。一般文學書、小說等較常使用。</p>
+
+		<p>菊 32 開：使用菊版裁切印刷，也稱文庫本。在日本流行使用的一種開本，尺寸小方便攜帶拿取。</p>
+
+		<p>若是選擇非常規的開本大小，由於沒有對應的印刷紙，為了達到指定規格必須裁切掉多餘部分，相對耗材，成本也較高。</p>
+
+
+		<!-- 圖片 -->
+		<img src="assets/images/column/20230224_3.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info"></p>
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>不同開本大小，與書本身的意義相關。</p>
+			
+			</blockquote>
+		</figure>	
+
+		<p>選擇開本之前，建議先思考書的定位。若主要用來展示圖片精美程度，或許可以選擇大開本；但使用小開本可以凸顯氛圍、質感。且根據書店、讀者的習慣也要有不同的考量，能不能擺上書架，方不方便拿取等等。</p>
+
+		<p>僅僅是開本大小的選擇，我們也會因此而感受到書所要傳達的意味。每個細節，都是價值的體現。</p>
+
+
+		<!-- 連結 -->
+		<a routerLink="/pub" class="btn btn-primary text-light px-5 mt-4">前往了解 獨立出版服務</a>
+		<a href="https://www.facebook.com/profile.php?id=100089641163338" class="btn btn-primary text-light px-5 mt-4" target="_blank">來出書吧！商鼎粉專</a>
+
+
+
+		<!-- 置中圖片 -->
+		<!-- <p class="text-center mb-0">
+			<img src="assets/images/column/0I491001-1.jpg" class="w-100 img-fluid mt-4" style="max-width: 300px;">
+		</p>
+		<p class="img-info text-center">xxxxxx</p> -->
+
+
+		<!-- 並排圖片，並排欄寬依不同圖片自行調整 -->
+		<!-- <div class="row g-3 mt-4">
+			<div class="col-12 col-md-5">
+				<img src="assets/images/column/0B321091-2.jpg" class="w-100 img-fluid">
+			</div>
+			<div class="col-12 col-md-7">
+				<img src="assets/images/column/0B321091-3.jpg" class="w-100 img-fluid">
+			</div>
+		</div>
+		<p class="img-info">XXXXXXXX</p> -->
+
+
+
+		<!-- 引用 -->
+		<!-- <figure>		
+			<blockquote class="blockquote">
+			
+				<p>XXXXX</p>
+			
+				<p>XXXXX</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title">YYYYYYY</cite>
+			</figcaption>
+		</figure>	 -->
+
+		
+
+		<!-- youtube -->
+		<!-- <div class="ratio ratio-16x9">
+			<iframe src="https://www.youtube.com/embed/XXXXXX" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		</div> -->
+
+
+
+
+
+	</div>
+</div>

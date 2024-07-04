@@ -1,0 +1,169 @@
+﻿
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="column-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/columns">專欄</a></li>
+				<li class="breadcrumb-item active" aria-current="page">獨立出版</li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+
+			<div class="col-12">
+
+				<p class="mb-0">
+					<span class="column-name text-primary">獨立出版</span>
+				</p>
+
+				<h2 class="mt-2">登上書架，是一段旅程。</h2>
+				<p class="text-end" style="color: #333;">by A.L</p>
+				
+				<img src="assets/images/column/20230207_1.jpg" class="w-100 img-fluid">
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>我希望我的書能被擺在書店最顯眼的地方，最好是一進門就看得到。</p>
+			
+			</blockquote>
+		</figure>	
+		
+		
+		<p>走進書店，那些陳列在你面前的是什麼樣的書？有句話說：實體書店是網路書店的選樣間。現在許多人會因為種種原因選擇網路買書，但在那之前，他們仍會走往實體書店，因為只有現場體會過，才知道哪本書是自己想要的。</p>
+
+		<p>每年都有幾萬本的紙本書出版，要想在某一領域脫穎而出，得先做足功課。以誠品與金石堂這兩大實體連鎖書店來看，兩者在書的陳列上可是一點也不馬虎，這其實與編輯的能力是相仿的，編輯思考著如何把一本書最大價值呈現出來，而書店陳列則是為每一本書找到最合適的位置去擺放。</p>
+
+		
+		<!-- 圖片 -->
+		<img src="assets/images/column/20230207_2.jpg" class="w-100 img-fluid mt-4">
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>誠品的資深工作者羅玫玲曾說過：「當讀者一從書店走進來，賣場要有一股流動的音樂。」</p>
+			
+			</blockquote>
+		</figure>
+
+		
+		<p>我們從小就在寫作，在學校交出一篇篇的作文，學會用文字去分享自己的生活。不僅僅是描繪美麗的風景，更是練習說出自己內心的感觸。這樣的事來到現在的自媒體時代隨處可見，只要一張圖片與一段文字，任何時刻都能記錄生活。</p>
+		
+		<p>在書店中，最顯眼的就是平面書架，在那裡的書，可以清楚地看到書的封面，每一個主題區也就僅一、二十本，因此登上平面書架的作品絕對是有一定的特點，能夠說服書店用大一點的面寬來擺設。而根據店裡的動線，書架擺放的位置也是精心設計。以誠品來說，離門口最近的是新書，再往裡面走則會有主題選書，最後是各領域的陳列。透過陳列，可以與每個進來逛書店的客人對話，是書店陳列工作的技能，也是行銷關鍵。</p>
+
+		<p>由此可知，將目標放遠到平面書架上是很重要的，但對於書店而言，一本書的特點不僅只是來源於內容有趣或符合當時話題，外觀設計更具關鍵影響，開本是否擺得下，美術設計吸不吸睛等等。</p>
+
+		<!-- 圖片 -->
+		<img src="assets/images/column/20230207_3.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info"></p>
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>要凸顯一本書的價值，需要三方合作。</p>
+			
+			</blockquote>
+		</figure>	
+
+		<p>藉由作者的創作、編輯的藍圖與書店工作者的推薦，我們等於是將書主動送到需要的人眼前，登上書架這件事或許可以是一個目標，但更重要的是，要怎麼樣凸顯出一本書百分之百的價值，且讓它被看到。</p>
+
+		
+		
+
+		<!-- 置中圖片 -->
+		<!-- <p class="text-center mb-0">
+			<img src="assets/images/column/0I491001-1.jpg" class="w-100 img-fluid mt-4" style="max-width: 300px;">
+		</p>
+		<p class="img-info text-center">xxxxxx</p> -->
+
+		<!-- 連結 -->
+		<a routerLink="/pub" class="btn btn-primary text-light px-5 mt-4">前往了解 獨立出版服務</a>
+		<a href="https://www.facebook.com/profile.php?id=100089641163338" class="btn btn-primary text-light px-5 mt-4" target="_blank">來出書吧！商鼎粉專</a>
+
+
+		<!-- 並排圖片，並排欄寬依不同圖片自行調整 -->
+		<!-- <div class="row g-3 mt-4">
+			<div class="col-12 col-md-5">
+				<img src="assets/images/column/0B321091-2.jpg" class="w-100 img-fluid">
+			</div>
+			<div class="col-12 col-md-7">
+				<img src="assets/images/column/0B321091-3.jpg" class="w-100 img-fluid">
+			</div>
+		</div>
+		<p class="img-info">XXXXXXXX</p> -->
+
+
+
+		<!-- 引用 -->
+		<!-- <figure>		
+			<blockquote class="blockquote">
+			
+				<p>XXXXX</p>
+			
+				<p>XXXXX</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title">YYYYYYY</cite>
+			</figcaption>
+		</figure>	 -->
+
+		
+
+		<!-- youtube -->
+		<!-- <div class="ratio ratio-16x9">
+			<iframe src="https://www.youtube.com/embed/XXXXXX" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		</div> -->
+
+
+
+
+
+	</div>
+</div>

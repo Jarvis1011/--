@@ -1,0 +1,432 @@
+﻿{
+	"mainCarousel": [
+		{
+			"title": "首頁主要輪播 1",
+			"img": "assets/images/index_carousel/SC_BN_221114.jpg",
+			"link": "/books"
+		},
+		{
+			"title": "首頁主要輪播 2",
+			"img": "assets/images/index_carousel/carousel-img-2.jpg",
+			"link": "/book/0D071101"
+		},
+		{
+			"title": "首頁主要輪播 3",
+			"img": "assets/images/index_carousel/carousel-img-3.jpg",
+			"link": "/search/keyword/顧蕙倩/1"
+		},
+		{
+			"title": "首頁主要輪播 4",
+			"img": "assets/images/index_carousel/carousel-img-4.jpg",
+			"link": "/book/0D081101"
+		}
+	],
+	"section2": {
+		"註解": "主輪播畫面下方第二區塊",
+		"bg_color": "#F8F9FA",
+		"part1": {
+			"title": "主題推薦",
+			"s2_carousel": [
+				{
+					"title": "黃金之花的秘密--道教內丹學引論",
+					"img": "assets/images/index_topics/0K0311_index_bn.jpg",
+					"link": "/book/0K0311",
+					"contents": [
+						"《太乙金華宗旨》乃清初扶乩之書，原屬民間教派作品，長久以來，秘密口耳相傳，其內容論述道士修煉之功夫與過程，以道教傳統觀點，歸屬於內丹學之作，且不同於傳統典籍的玄理論述，而是具體的闡述丹道修證的思路和技術，且書中專意「性功」，有別於傳統道家重視「性命雙修」之論點。此外......"
+					],
+					"btnLabel": "黃金之花的秘密"
+				}
+			]
+		},
+		"part2": {
+			"title": "獲獎／媒體報導",
+			"html": "assets/html/index_s2p2.html"
+		},
+		"part3": {
+			"title": "專欄",
+			"html": "assets/html/index_s2p3.html"
+		}
+	},
+	"section_newBook": {
+		"註解": "新書區塊，每本書的簡介只有一段",
+		"title": "強檔新書",
+		"bg_color": "#ffffff",
+		"items": [
+			{
+				"title": "【個人形象管理】打造專業職場人",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/27001121.jpg",
+				"intro": "一年有12個月，一個月有4週，一週有7天，一天有24小時，你仔細觀察過自己每天的穿衣模式嗎？一天工作8小時，在工作或社交場合與他人互動，要如何在確保溝通效率的同時，又能適時、適地、適人地調整與人相處的份際？",
+				"link": "/book/27001121",
+				"author": "陳麗卿",
+				"price": "1150",
+				"specialPrice": "1035"
+			},
+			{
+				"title": "成功禮儀，你的品牌符號學［四版］",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B451121.jpg",
+				"intro": "30秒內建立好印象的關鍵是什麼？如何在異性中取得好人緣？在公開場合遭受到批評時，要如何應對才好呢？開會的時候，座位要怎麼安排？",
+				"link": "/book/0B451121",
+				"author": "陳麗卿",
+				"price": "490",
+				"specialPrice": "441"
+			},
+			{
+				"title": "心靈覺醒之龍影見聞錄",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0D651121.jpg",
+				"intro": "與時俱進，驀然回首，我在一步一腳印！ 這本《心靈覺醒之龍影見聞錄》是筆者邁入七十後的第二本回憶錄，全書共彙集了一百篇小文，花費了一年半時日完稿。",
+				"link": "/book/0D651121",
+				"author": "龍影",
+				"price": "500",
+				"specialPrice": "450"
+			},
+			{
+				"title": "現代話書法",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/20334.jpg",
+				"intro": "現代話：統計常用且實用的現代話詞語，大約 150 個，共 300 字左右，供大家書寫時做參考。親書：本書每個字皆由作者融合各書法名家筆意親自書寫，以自己的筆意書之，發展自己的字體，自成一格。....",
+				"link": "/book/0C011121",
+				"author": "粘瑋純",
+				"price": "160",
+				"specialPrice": "144"
+			},
+			{
+				"title": "與你相鬱的日子－－給患者與陪伴者的憂鬱症基礎指南",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0W021121.jpg",
+				"intro": "從今天起，我開始學會與憂鬱症相處──寫給憂鬱症患者與陪伴者之書",
+				"link": "/book/0W021121",
+				"author": "點點心理學 Winnie",
+				"price": "410",
+				"specialPrice": "369"
+			},
+			{
+				"title": "讀經之要【上/下篇】",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/XX891121.jpg",
+				"intro": "《讀經之要》整理自許仁圖老師於奉元書院的講稿內容，本書體例夾敘夾議，分十六章，每章首引錄一段劉毓鋆老師之言。",
+				"link": "/book/XX891121",
+				"author": "許仁圖",
+				"price": "500",
+				"specialPrice": "450"
+			},
+			{
+				"title": "愛情·婚姻·家庭",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/20285.jpg",
+				"intro": "當你在閱讀《愛情‧婚姻‧家庭》這本書時，請先閱讀作者對愛情與婚姻的基本想法以及對家庭原理的詮釋。然後，再閱讀有關愛情、婚姻與家庭的各篇文章。每一個章節都有個別的主題，你可以依照自己的喜好挑選閱讀，不必按順序閱讀。你可以一次讀一篇文章或數篇文章，也可以一口氣閱讀一個章節。",
+				"link": "/book/0N741121",
+				"author": "蔡宏昭",
+				"price": "380",
+				"specialPrice": "342"
+			},
+			{
+				"title": "社會正義與社會評論",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/20284.jpg",
+				"intro": "當你在閱讀《社會正義與社會評論》這本書時，請先閱讀我對思索與思 想的詮釋以及個人道德與社會正義的思想原理與核心價值，然後，再去閱讀社群評論、經濟評論與政治評論的各篇文章。",
+				"link": "/book/0N731121",
+				"author": "蔡宏昭",
+				"price": "430",
+				"specialPrice": "387"
+			}
+		]
+	},
+	"section_ser_1": {
+		"註解": "系列 1，每本書的簡介只有一段，本區段可由組態檔設定顯示與否，不可刪除",
+		"title": "編輯推薦",
+		"bg_color": "#ffffff",
+		"items": [
+			{
+				"title": "時尚模特兒",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B531091.jpg",
+				"intro": "筆者在1992年英國留學時，已經強烈感受到，當時歐洲對 'model'（模特兒）重視程度提升，讓筆者預知深受西方文化影響下的臺灣，有朝一日，必定會走向這個趨勢。",
+				"link": "/book/0B531091",
+				"author": "葉立誠",
+				"price": "630",
+				"specialPrice": "567"
+			},
+			{
+				"title": "中華傳統拼布經典",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B521101-s.jpg",
+				"intro": "鄒正中老師，累積30年的中華拼布收藏品已超過500件， 藏品豐富、極具各地代表性，媲美博物館等級。特別挑選208件精品，收錄於書中並說明各設計元素之文化意涵。 此書堪稱「中華拼布行動博物館」每一件藏品躍然紙面，值得細細觀賞、永久典藏。",
+				"link": "/book/0B521101",
+				"author": "鄒正中、莊玥",
+				"price": "1490",
+				"specialPrice": "1341"
+			},
+			{
+				"title": "現代國際禮儀",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0I241031_s.jpg",
+				"intro": "本書現代國際禮儀，包含基本禮儀（食衣住行育樂）與應用禮儀（社交生活、工商業、服務與接待、公務、外交、國際活動禮儀）共12 章，涵蓋現代國際禮儀的原理與實務。本書除了提供大專校院必修、選修相關課程參考外，亦適合各機關團體及社會人士閱讀研習之用。",
+				"link": "/book/0I241031",
+				"author": "許南雄",
+				"price": "500",
+				"specialPrice": "450"
+			},
+			{
+				"title": "黃金之花的秘密--道教內丹學引論",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0K0311_s.jpg",
+				"intro": "本書為二十世紀最重要的漢學著作之一。原書為清初道士所著，二十世紀初，德國最重要的漢學家尉禮賢將之譯為德文，並詳加評釋。後因此書對榮格思想啟發甚大，榮格因而為其寫上更詳細的《導論》。1980年此書日文版上市，由日本當代最具代表性的哲學家之一湯淺泰雄，重新詮釋《太乙金華學旨》的意義。",
+				"link": "/book/0K0311",
+				"author": "楊儒賓譯",
+				"price": "360",
+				"specialPrice": "324"
+			},
+			{
+				"title": "生死的覺醒 (上)",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0E211021_s.jpg",
+				"intro": "--這是一本創新的書，而本書的最大宗旨，便是在說明宗教不應造成隔閡，因為宗教本同源。本書的創舉，在於揭示了許多新觀念，打破佛教思想上固有的框子，作者用極淺顯易懂的筆調帶領讀者接近真理。",
+				"link": "/book/0E211021",
+				"author": "高橋信次",
+				"price": "320",
+				"specialPrice": "288"
+			},
+			{
+				"title": "生死的覺醒 (下)",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0E221021_s.jpg",
+				"intro": "--這是一本創新的書，而本書的最大宗旨，便是在說明宗教不應造成隔閡，因為宗教本同源。本書的創舉，在於揭示了許多新觀念，打破佛教思想上固有的框子，作者用極淺顯易懂的筆調帶領讀者接近真理。",
+				"link": "/book/0E221021",
+				"author": "高橋信次",
+				"price": "320",
+				"specialPrice": "288"
+			},
+			{
+				"title": "神話故事之戲曲臉譜",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0B511081_s.jpg",
+				"intro": "前程臺程此人朋問靈城當會資山你孩；曾體易聲總走量除注，為生美觀引媽年大覺；愛少量假那調放情。知間門已增加非走，實李復個，研明海注健血入說放算山，量效稱答教；子商現實可地又化時於，味三兒發，易住平用度市問古一學己費又落一父文料朋施票傳千。",
+				"link": "/book/0B511081",
+				"author": "偶樹瓊、曾憲壽",
+				"price": "350",
+				"specialPrice": "315"
+			},
+			{
+				"title": "暖化戰爭首部曲－全球暖化與氣候變遷",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0S011001_s.jpg",
+				"intro": "近年來全球暖化的問題日益嚴重，對生態環境和人類安居都造成了巨大威脅。本書第一部分首先進入地球的歷史，了解自遠古以來地球所曾經歷過的氣候變化，探究在正常狀態下，大自然的力量如何造成地球氣候的冷暖變遷。",
+				"link": "/book/0S011001",
+				"author": "總編輯 / 郭箴誠博士",
+				"price": "680",
+				"specialPrice": "612"
+			}
+		]
+	},
+	"section_ser_2": {
+		"註解": "系列 2，每本書的簡介只有一段，本區段可由組態檔設定顯示與否，不可刪除",
+		"title": "生活風格",
+		"bg_color": "#ffffff",
+		"items": [
+			{
+				"title": "印染設計與創意-動手玩印染",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0B321091_s.jpg",
+				"intro": "不需要在專業教室，只要有簡便的印染工具，跟著書中詳細步驟引導，就能輕鬆的實踐自己的巧思創作，為布料美感大加分！",
+				"link": "/book/0B321091",
+				"author": "陳亮運",
+				"price": "530",
+				"specialPrice": "477"
+			},
+			{
+				"title": "衣Q寶典：女人，妳的名字叫美麗",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B461021.jpg",
+				"intro": "一異的出系讀高或離前成地的樹東必時個果各不在圖反當道緊加，無場建現古球施大院遊利健在在足，關眼雄後氣一獲之初呢看形德子有我區內越資配在取晚到天，中竟望；倒大完，說是了功！",
+				"link": "/book/0B461021",
+				"author": "陳麗卿",
+				"price": "360",
+				"specialPrice": "324"
+			},
+			{
+				"title": "衣表人才：男人，展現你的成功有型",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B471021.jpg",
+				"intro": "喚起你天生的魅力！找到自己的魅力特色。聰明挑選最好的行頭。買對西裝成功一半。如何穿出風格穿出帥。變身型男的完美搭配法。一定要知道的職場專業穿著。",
+				"link": "/book/0B471021",
+				"author": "陳麗卿",
+				"price": "360",
+				"specialPrice": "324"
+			},
+			{
+				"title": "立體簡易裁剪",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B491061.jpg",
+				"intro": "二次大戰至今，在全球人類的努力與創造下，現今全球的經濟與二次大戰後已非同日而語。吃飽與穿暖已非重點，國內外皆興起一股養生風，來照顧自己的身心，而養生不單是飲食的衛生與健康，並包括服裝---布料健康性能、結構機能性與無拘束的穿著，住---建材、通風與綠建築，行---不只求快，還要求有健康的穿鞋、快速與舒適的行工具與健身的自行車……等等，這些皆是對身體的重視，表現於外的展現。",
+				"link": "/book/0B491061",
+				"author": "施素筠",
+				"price": "400",
+				"specialPrice": "360"
+			},
+			{
+				"title": "形體輪廓與束腹的前世今生",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B501071.jpg",
+				"intro": "在西方世界中，「束腹」與「形體輪廓」一向都是人類所重視的美感主題，而這兩個主題相輔相成，缺一不可，因此在討論西方審美觀時，也必須將這兩個主題合併並加以探討。因為藉由「服裝」與「身體」，所匯聚的論述與觀點，讓我們更加清楚的了解並掌握西方服裝歷史以及審美價值的關鍵所在。",
+				"link": "/book/0B501071",
+				"author": "葉立誠",
+				"price": "590",
+				"specialPrice": "531"
+			},
+			{
+				"title": "解開內在美的神祕面紗",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B481041.jpg",
+				"intro": "本書的建構希望在時間長度與空間的寬度都能涵蓋，並且渴望能以更多角度的思維來豐富本書的內容。所以規劃了西方、中國、臺灣三個區塊，並搭配了肚兜傳統文物、內衣專有名詞、臺灣內衣海報等單元。",
+				"link": "/book/0B481041",
+				"author": "葉立誠",
+				"price": "520",
+				"specialPrice": "468"
+			},
+			{
+				"title": "服飾事業經營",
+				"img": "http://www.chienhua.com.tw/BookStore/BookFolder/0B2092.jpg",
+				"intro": "前程臺程此人朋問靈城當會資山你孩；曾體易聲總走量除注，為生美觀引媽年大覺；愛少量假那調放情。知間門已增加非走，實李復個，研明海注健血入說放算山，量效稱答教；子商現實可地又化時於，味三兒發，易住平用度市問古一學己費又落一父文料朋施票傳千。",
+				"link": "/book/0B2092",
+				"author": "洪瑞璘",
+				"price": "500",
+				"specialPrice": "450"
+			},
+			{
+				"title": "刺客繡-台灣客家傳統刺繡展專刊",
+				"img": "https://www.chienhua.com.tw/BookStore/BookFolder/0B4451.jpg",
+				"intro": "本書是2006年1至3月於台北縣客家文化園區推出的「刺客繡－台灣客家傳統刺繡展」之特展專刊。主要內容有三大單元，分別為「台灣客家傳統服飾刺繡之概述」、「主要展品的呈現及各類目介紹」，以及「時尚VS.傳統的創意搭配」。",
+				"link": "/book/0B4451",
+				"author": "葉立誠",
+				"price": "400",
+				"specialPrice": "360"
+			}
+		]
+	},
+	"section_video": {
+		"註解": "影音專區，每本書的簡介只有一段，本區段可由組態檔設定顯示與否，不可刪除",
+		"title": "看書聽書",
+		"bg_color": "#FFF3DD",
+		"video_bg_color": "#FFFFFF",
+		"title_light": false,
+		"text_light": false,
+		"items": [
+			{
+				"title": "中華傳統拼布經典",
+				"video": "https://youtu.be/Pb4HedVkUpg",
+				"intro": "中華拼布為先人歷經數百年甚至千年的智慧結晶，是集體意識的傳統文化，中華傳統拼布的技法不但精彩多變，還有一些獨步全球的特殊性，令人激賞，是世界拼布之最。鄒老師與莊老師透過多年揣摩實驗，成功重現拼布的創新與傳承，為復興優秀的文化寶藏而努力。",
+				"link": "/book/0B521101"
+			},
+			{
+				"title": "探險時代.臺灣山城海",
+				"video": "https://youtu.be/PC_Usszunro",
+				"intro": "臺灣許多地景背後都有豐富的背景故事，顧顧老師帶你一一走訪，當你在旅遊時，你可以帶著此書，循著顧顧老師的路線，讓你不再只是走馬看花，而更深入體會所經之處的歷史，而你或許會發現在旅途中獲得的感受，竟與古人、與顧顧老師不謀而合。",
+				"link": "/book/0N681101"
+			},
+			{
+				"title": "好宅聖經",
+				"video": "https://youtu.be/8va6DZguCXY",
+				"intro": "未來的好宅是什麼？你對於未來所生活的「好宅」又有什麼需求？對於未來的定義不難理解，然而「好宅」的定義卻包羅萬象，希望能透過出版「好宅聖經」一書，喚起大家對於未來居住生存的「家」有著正面積極的思考方向。",
+				"link": "/book/0D071101"
+			},
+			{
+				"title": "實踐六十年叢書",
+				"video": "https://youtu.be/Yofm50VbD-g",
+				"intro": "一九五八年實踐大學以家政立校，創辦人謝東閔先生以弘揚家政教育作為「修齊治平」的基石，以民生科學專業教育培養「力行實踐」的精神。謝孟雄董事長貫徹創辦人的辦學理念，期能培育出生命有品德、專業有品質、生活有品味的現代公民，以傳承家政治校的核心價值。",
+				"link": "/book/37011071"
+			},
+			{
+				"title": "基礎服裝製作",
+				"video": "https://youtu.be/sCfjyuMiYuo",
+				"intro": "用上百張照片將基本的五款服裝（裙子、襯衫、褲子、連身裙、背心），予以圖文逐步解說，把製作這五款服裝的SOP一步一步解說給你聽，就像在你身邊手把手教學，而這五款服裝同時是女裝丙級證照術科所規定的考試項目。",
+				"link": "/book/1H921101"
+			},
+			{
+				"title": "黃石城語集",
+				"video": "https://youtu.be/9Z5YU1l9RcU",
+				"intro": "黃石城先生曾擔任兩屆的彰化縣長、行政院政務委員、總統府國策顧問、中央選舉委員會主委，使他擁有非凡的政治經歷與生活體驗。本書將其六十年來，迄今累積超過100 本之手札，集結成冊。",
+				"link": "/book/0D041101"
+			},
+			{
+				"title": "隨緣隨筆",
+				"video": "https://youtu.be/uJQxCAHP1Ys",
+				"intro": "這本《心靈覺醒之隨緣隨筆》，文中可以窺見作者龍影一生的心路歷程。內文貼近台灣的政治、經濟、社會、文化及庶民生活，描繪細膩、生動、感人肺腑。文筆洗鍊，既有詩情，更富哲理、耐人尋味。以及年歲漸長後的修身養性與頓悟。",
+				"link": "/book/0D621101"
+			},
+			{
+				"title": "黑白與彩色--阿邦的故事人生",
+				"video": "https://youtu.be/HPf0o0-43kI",
+				"intro": "員林奇人阿邦（鄭邦雄老師 1939-2016），生於日本神戶，二戰期間全家往來台日之間。戰後隨父母暫居永靖、再遷移員林；此時家產事業形同歸零，賃屋而居，近70年間搬家11次。下有四弟七妹，家計重擔落於父母，亦落於長子阿邦。",
+				"link": "/book/0D981071"
+			}
+			
+		]
+	},
+	"section_ad": {
+		"註解": "廣告區（由於放官網無法顯示，改由下方 json 區塊代替）",
+		"bg_color": "#fff",
+		"html": "assets/html/index_ad.html"
+	},
+
+	"section_ad_json": [
+		{
+			"image": "assets/images/index_ad/advertise_1.jpg",
+			"link": "/newaccount"
+		},
+		{
+			"image": "assets/images/index_ad/advertise_2.jpg",
+			"link": "/pub"
+		},
+		{
+			"image": "assets/images/index_ad/advertise_3_230321.jpg",
+			"link": "/book/0B521101"
+		}
+	],
+
+
+
+	"section_column": {
+		"註解": "首頁下方專欄區塊",
+		"title": "專欄",
+		"bg_color": "#d2ebe9",
+		"title_light": false,
+		"text_light": false,
+		"items": [
+			{
+				"title": "鬆綁過後，讓旅讀文學陪你一起忘記擔憂，重新踏入下一段旅程。",
+				"class": "旅遊文學",
+				"img": "assets/images/index_columns/0N711111_0.jpg",
+				"link": "/column/0N711111",
+				"contents": [
+					"回顧上一次，《探險時代•臺灣山城海》陪我們一起度過了漫長的疫情，如今疫情已漸漸鬆綁，顧顧老師將會再次帶著我們進入臺灣的啟蒙時代，重回旅行的懷抱。"
+				]
+			},
+			{
+				"title": "再平凡的地方也不容忽視，你一定得知道的開本知識。",
+				"class": "獨立出版",
+				"img": "assets/images/index_columns/20230224_0.jpg",
+				"link": "/column/20230224",
+				"contents": [
+					"在訂定出版企劃的時候，一定會思考到開本，也就是書本尺寸大小的問題。僅僅是書本的大小，也影響甚大，因此我們必須了解開本到底是什麼，以及認識常見的幾種開本。"
+				]
+			},
+			{
+				"title": "有人問我，為什麼要如此勤奮地書寫文章？因為我要記錄我自己的人生。",
+				"class": "人物／傳記",
+				"img": "assets/images/index_columns/0N721121_0.jpg",
+				"link": "/column/0N721121",
+				"contents": [
+					"「活到一個歲數，必定是經歷了風風雨雨，而在人生的種種階段下，每一刻其實都值得留念。蔡宏昭教授深刻體會到了這點，他不希望就這樣過完了一生，連自己都渾然不覺。因此在歲月的洪流當中，他抓住一塊浮木，開始書寫。」"
+				]
+			},
+			{
+				"title": "書的紙質大不同，簡單了解三種常見選紙",
+				"class": "獨立出版",
+				"img": "assets/images/index_columns/20230210_0.jpg",
+				"link": "/column/20230210",
+				"contents": [
+					"「紙是書的主要構成元素，而內頁作為所佔比例最大的部分，要選擇什麼紙張對於一本書的最終呈現至關重要，選擇合適的紙，不僅讓人閱讀舒適，也兼具藝術性。」"
+				]
+			},
+			{
+				"title": "隱藏的造紙氣息，我們從她的家鄉「紙寮窩」說起。",
+				"class": "旅遊文學",
+				"img": "assets/images/index_columns/0D830991_0.jpg",
+				"link": "/column/0D830991",
+				"contents": [
+					"「過去，外人僅從紙信上看過紙寮窩這個地名，頂多知道這是一個造紙之地，鮮少有人真的去過。這裡就像是神秘仙境般，在口中與紙上相傳。」"
+				]
+			},
+			{
+				"title": "致那些無可問世的文字——出版的另一種可能",
+				"class": "獨立出版",
+				"img": "assets/images/index_columns/20230206_0.jpg",
+				"link": "/column/20230206",
+				"contents": [
+					"「這些書籍都是為大學生和專業人士所寫，一般人不會有興趣閱讀，即便有興趣閱讀，也不會有所感動或是留下記憶。」"
+				]
+			}
+		]
+	}
+}

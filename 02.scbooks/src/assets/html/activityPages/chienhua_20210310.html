@@ -1,0 +1,563 @@
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<style>
+
+	.bg-theme{
+		background-color: #ebf5ec;
+	}
+	.bg-theme2{
+		background-color: #F8931F;
+	}
+	.bg-theme3{
+		background-color: #1E9859;
+	}
+
+
+	/* 帶符號標題 */
+	h5.list{
+		font-weight: bold;
+		padding-left: 1em;
+	}
+	h5.list::before{
+		content: "";
+		position: absolute;
+		width: 0.6em;
+		height: 0.6em;
+		margin-top: 0.3em;
+		margin-left: -1em;
+		background-color: #222;
+	}
+
+	.my-badge{
+		position: absolute;
+		font-size: 0.5em;
+		margin-left: 0.25em;
+	}
+	
+
+
+</style>
+
+
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/activities">活動／講座</a></li>
+				<li class="breadcrumb-item active" aria-current="page">郵政內外勤考前衝刺班</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<!-- 主圖 -->
+		<a href="http://www.chienhua.com.tw/JobDetail.aspx?Num=87" target="_blank">
+			<img src="assets/images/activity/chienhua_20210310_1.jpg" class="w-100 img-fluid">
+		</a>
+
+		<div class="bg-theme pt-4 pb-5 d-flex justify-content-center" >
+			<!-- 雙項目 -->
+			<div class="row gx-3 gy-3" 
+				style="max-width: 900px;"
+			>
+				<div class="col-12 col-sm-6 d-flex justify-content-center">
+					<img src="assets/images/activity/chienhua_20210310_2.jpg" class="img-fluid">
+				</div>
+				<div class="col-12 col-sm-6 d-flex justify-content-center">
+					<img src="assets/images/activity/chienhua_20210310_3.jpg" class="img-fluid">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="bg-theme">
+
+			<div class="row">
+				<div class="col-12 col-sm-4 col-md-5 col-xl-5
+					d-flex justify-content-center align-items-end">
+					<img src="assets/images/activity/chienhua_20210310_4.jpg" class="img-fluid">
+				</div>
+				<div class="col-12 col-sm-8 col-md-7 col-xl-7">
+					
+					<div class="p-3">
+
+						<h5 class="fw-bold list mb-0 text-danger">洗錢防制法大意
+							<span class="badge bg-danger rounded-pill my-badge">NEW</span>
+						</h5>
+						<p class="mb-2">快速建立清晰的觀念，簡潔易懂的法條釋義。</p>
+
+						<h5 class="fw-bold list mb-0 text-danger">金融科技知識
+							<span class="badge bg-danger rounded-pill my-badge">NEW</span>
+						</h5>
+						<p class="mb-2">提綱挈領切入主題，緊扣命題趨勢攻取高分。</p>
+
+						<h5 class="fw-bold list mb-0">國文</h5>
+						<p class="mb-2">彙整獨家講義，傳授高分技巧。</p>
+
+						<h5 class="fw-bold list mb-0">英文</h5>
+						<p class="mb-2">剖析郵政英文，高效整合考點。</p>
+
+						<h5 class="fw-bold list mb-0">企業管理大意</h5>
+						<p class="mb-2">獨家揭露 100% 穩拿高分關鍵字。</p>
+
+						<h5 class="fw-bold list mb-0">郵政三法大意、郵政法規大意及交通安全常識</h5>
+						<p class="mb-2">精選試題解析，含郵件處理規則。</p>
+
+						<h5 class="fw-bold list mb-0">臺灣自然與人文地理</h5>
+						<p class="mb-2">主題式講解，化繁為簡，帶你快速通關。</p>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 名師團隊 -->
+			<div class="d-flex justify-content-center mt-3 mt-md-5">
+				<img src="assets/images/activity/chienhua_20210310_5.jpg" class="img-fluid">
+			</div>
+
+
+		</div>
+
+
+		<div class="bg-theme2 px-3 py-4 text-white">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3 col-xl-3 text-center">
+					<h5>郵局前訓練所所長</h5>
+					<h3 class="fw-bold mb-4 mb-md-0">陳金城老師</h3>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-xl-3 text-center">
+					<h5>地理補教名師</h5>
+					<h3 class="fw-bold mb-4 mb-md-0">陳源老師</h3>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-xl-3 text-center">
+					<h5>英文補教名師</h5>
+					<h3 class="fw-bold mb-4 mb-sm-0 mb-md-0">許真如老師</h3>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 col-xl-3 text-center">
+					<h5>洗錢防制大意</h5>
+					<h3 class="fw-bold">艾辰老師</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-theme3 px-3 py-4 text-white">
+			<h2 class="fw-bold text-center">千華 2019 年<span class="fs-1 text-nowrap" style="color: rgb(255, 255, 115)">郵政英雄榜</span>，見證品質</h2>
+
+			<h3 class="text-center mb-5">筆試通過率 5 成，口試通過率 6 成，正取率 94%</h3>
+
+
+			<!-- 表格 1-->
+			<div class="row g-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 info">
+
+				<!-- 表頭 -->
+				<div class="col">
+					<div class="table-data head">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－外勤</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-sm-block">
+					<div class="table-data head">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－外勤</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-md-block">
+					<div class="table-data head">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－外勤</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-xl-block">
+					<div class="table-data head">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－外勤</div>
+						</div>
+					</div>
+				</div>
+				
+				
+
+				<!-- 科目 1 -->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">蔡*翰</div><div class="col-8">板橋正取第 1 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目 2 -->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">陳*傑</div><div class="col-8">板橋正取第 7 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  3-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">林*翔</div><div class="col-8">屏東正取第 9 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  4-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">黃*翰</div><div class="col-8">板橋正取第 9 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  5-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">劉*家</div><div class="col-8">臺中正取第 10 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  6-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">江*勳</div><div class="col-8">三重正取第 12 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  7-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">王*為</div><div class="col-8">三重正取第 15 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  8-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">杜*翰</div><div class="col-8">三重正取第 34 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  9-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">李*賢</div><div class="col-8">基隆正取第 21 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目 10 -->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">丁*正</div><div class="col-8">高雄正取第 70 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  11-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">胡*安</div><div class="col-8">臺北正取第 76 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  12-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">林*佑</div><div class="col-8">臺北正取第 96 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目 13 -->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">林*州</div><div class="col-8">三重備取第 5 名</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<!-- 表格 2-->
+			<div class="row g-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 info mt-4">
+
+				<!-- 表頭 -->
+				<div class="col">
+					<div class="table-data head t2">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－內勤</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-sm-block">
+					<div class="table-data head t2">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－內勤</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-md-block">
+					<div class="table-data head t2">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－內勤</div>
+						</div>
+					</div>
+				</div>
+				<div class="col d-none d-xl-block">
+					<div class="table-data head t2">
+						<div class="row">
+							<div class="col-4">姓名</div><div class="col-8">類別－內勤</div>
+						</div>
+					</div>
+				</div>
+				
+				
+
+				<!-- 科目  1-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">林*蓮</div><div class="col-8">苗栗正取第 2 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  2-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">林*緹</div><div class="col-8">桃園正取第 9 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  3-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">廖*琪</div><div class="col-8">南投正取第 10 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目  4-->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">彭*叡</div><div class="col-8">新竹正取第 13 名</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 科目 5 -->
+				<div class="col">
+					<div class="table-data text-dark">
+						<div class="row">
+							<div class="col-4">簡*儀</div><div class="col-8">臺北正取第 81 名</div>
+						</div>
+					</div>
+				</div>
+
+				
+				
+			</div>
+
+
+			<h3 class="text-center fw-bold mt-5">2021 郵政考前衝刺班課程安排</h3>
+			<h5 class="text-center mb-5">開課前一週，通知上課地點</h5>
+
+
+			<!-- 課程 -->
+			<div class="d-flex justify-content-center">
+				<div class="row gx-5 gy-4 text-white">
+					<div class="col-12 col-sm-6">
+						<h3 class="fw-bold border-bottom border-white mb-3">內勤班</h3>
+						<h5 class="fw-bold mb-2">上課日期</h5>
+						<p>台北班：5/22 (六)～5/23 (日)</p>
+						<h5 class="fw-bold mb-2">課程內容</h5>
+						<ul class="fixed-left">
+							<li>洗錢防制法大意：2 小時</li>
+							<li>金融科技知識：2 小時</li>
+							<li>英文：1.5 小時</li>
+							<li>國文：1 小時</li>
+							<li>郵政三法：2.5 小時</li>
+							<li>企業管理大意：1.5 小時</li>
+						</ul>
+					</div>
+
+					<div class="col-12 col-sm-6">
+						<h3 class="fw-bold border-bottom border-white mb-3">外勤班</h3>
+						<h5 class="fw-bold mb-2">上課日期</h5>
+						<p>台北班：5/22 (六)</p>
+						<h5 class="fw-bold mb-2">課程內容</h5>
+						<ul class="fixed-left">
+							<li>英文：1.5 小時</li>
+							<li>國文：1 小時</li>
+							<li>臺灣自然與人文地理：1.5 小時</li>
+							<li>郵政法規大意及交通安全常識：1 小時</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- 訂購 -->
+		<div class="position-relative">
+
+			<img src="assets/images/activity/chienhua_20210310_6.jpg" class="w-100 img-fluid">
+
+			<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=20001" class="img-map-ele" target="_blank"
+				title="" style="left: 4.8%; top: 24.74%; width: 90.6%; height: 20.72%;"></a>
+			<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=20003" class="img-map-ele" target="_blank"
+				title="" style="left: 5%; top: 50.32%; width: 90.4%; height: 20.93%;"></a>
+			<a href="https://www.facebook.com/pg/chienhuafan/posts/" class="img-map-ele" target="_blank"
+				title="" style="left: 5%; top: 74.84%; width: 90.5%; height: 20.93%;"></a>
+
+		</div>
+
+
+		<div class="bg-theme pt-2 pb-4 px-3">
+			<p class="text-center">* 千華棒學校郵政影音課程學員即享有此報名優惠（不含 0 元體驗課程） <img src="assets/images/activity/chienhua_20210310_7.jpg"></p>
+		</div>
+
+
+		<!-- 購買連結 -->
+		<div class="d-flex justify-content-center bg-theme">
+			<img src="assets/images/activity/chienhua_20210310_8.jpg" class="img-fluid">
+		</div>
+
+		<div class="bg-theme pb-5">
+			<div class="row gy-5">
+				<div class="col-12 col-sm-4 col-md-4">
+					<div class="d-flex flex-column align-items-center">
+						<img src="assets/images/activity/chienhua_20210310_9.jpg" class="img-fluid">
+						<a href="http://www.chienhua.com.tw/BookStore/BookDetail.aspx?BookID=17675" 
+							target="_blank" class="btn btn-primary px-4 text-light mt-2">我要購買</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4">
+					<div class="d-flex flex-column align-items-center">
+						<img src="assets/images/activity/chienhua_20210310_10.jpg" class="img-fluid">
+						<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=17287" 
+							target="_blank" class="btn btn-primary px-4 text-light mt-2">我要購買</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4">
+					<div class="d-flex flex-column align-items-center">
+						<img src="assets/images/activity/chienhua_20210310_11.jpg" class="img-fluid">
+						<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18765" 
+							target="_blank" class="btn btn-primary px-4 text-light mt-2">我要購買</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4">
+					<div class="d-flex flex-column align-items-center">
+						<img src="assets/images/activity/chienhua_20210310_12.jpg" class="img-fluid">
+						<a href="http://www.chienhua.com.tw/chienhua_EDM/20210310/20210310.html#" 
+							target="_blank" class="btn btn-primary px-4 text-light mt-2">我要購買</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4">
+					<div class="d-flex flex-column align-items-center">
+						<img src="assets/images/activity/chienhua_20210310_13.jpg" class="img-fluid">
+						<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=18026" 
+							target="_blank" class="btn btn-primary px-4 text-light mt-2">我要購買</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4">
+					<div class="d-flex flex-column align-items-center">
+						<img src="assets/images/activity/chienhua_20210310_14.jpg" class="img-fluid">
+						<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=19971" 
+							target="_blank" class="btn btn-primary px-4 text-light mt-2">我要購買</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="p-3 text-white bg-theme3">
+			<h5 class="fw-bold">退費機制</h5>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<ul class="mb-0">
+						<li class="mb-2">若未達開班人數 15 人，將會退款面授班的課程費用。</li>
+						<li class="mb-2">開課前七日至第一日上課前，提出退費申請者，將退還已繳面授班課程費用之七成。</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6">
+					<ul class="mb-0">
+						<li class="mb-2">上課後未逾全期三分之一間提出退費申請者，退還已繳面授班課程費用之五成。</li>
+						<li class="mb-2">上課後逾全期三分之一間提出退費申請者，課程費用不予退還。</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+		
+
+
+	<!-- 額外空間 -->
+	<div style="height: 80px;"></div>
+
+
+</div>

@@ -1,0 +1,108 @@
+.wrapper
+	display: flex
+	position: relative
+	padding-bottom: 10px
+	border-bottom: 1px solid #35a48c
+	.title
+		font-size: 2.8rem
+		font-weight: 800
+		margin-right: 8px
+	.subtitle
+		font-size: 0.9rem
+		color: #272727
+		margin-top: 35px
+	.sub
+		font-size: 0.9rem
+		color: #272727
+		span
+			color: #35a48c
+			font-weight: 800
+	.main-img
+		height: 25px
+		margin-top: 13px
+		margin-bottom: -1px
+	.to-main
+		z-index: 1
+		margin-top: -10px
+		position: absolute
+	.deco-img
+		position: absolute
+		bottom: 0
+		right: 0
+		max-width: 90px
+	.btn-main
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 0
+		background: rgb(2,117,184)
+		background: linear-gradient(100deg, rgba(2,117,184,1) 0%, rgba(55,166,139,1) 100%)
+		padding: 13px 40px
+		color: #ffffff
+		font-weight: 800
+		border-radius: 5px
+		border: none
+	.btn-purple
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 0
+		background: rgb(184,50,2)
+		background: linear-gradient(270deg, rgba(184,50,2,1) 0%, rgba(129,55,166,1) 100%)
+		padding: 13px 40px
+		color: #ffffff
+		font-weight: 800
+		border-radius: 5px
+		border: none
+
+.breadcrumbs
+	margin-top: 8px
+	.divider
+		margin: 0 3px
+	a
+		color: #272727
+		font-size: 0.8rem
+		padding-bottom: 2px
+		border-bottom: 1px solid #272727
+	span
+		font-size: 0.8rem
+
+@media (max-width: 992px)
+	.wrapper
+		margin-top: 80px
+		padding-bottom: 2px
+		.btn-purple
+			position: fixed
+			z-index: 10
+			border: 2px solid #ffffff
+			padding: 5px
+			max-width: 50px
+			border-radius: 15px
+			right: 10px
+		.title
+			font-size: 1.6rem
+		.sub
+			margin-top: 14px
+			font-size: 0.8rem
+		.subtitle
+			margin-top: 13px
+		.main-img
+			display: none
+		.btn-main
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 0
+			background: rgb(2,117,184)
+			background: linear-gradient(100deg, rgba(2,117,184,1) 0%, rgba(55,166,139,1) 100%)
+			padding: 5px 10px
+			color: #ffffff
+			font-weight: 800
+			border-radius: 5px
+			border: none
+
+@media (max-width: 540px)
+	.wrapper
+		.btn-main
+			top: 0
+			margin-top: 65px

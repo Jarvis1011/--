@@ -1,0 +1,48 @@
+<p class="fw-bold text-danger mt-4">上傳的訂單資料（樹狀結構）：</p>
+
+<div class="text-start" style="word-break: break-all;">
+
+	<div *ngFor="let item of order | keyvalue">
+		<div><span class="text-secondary">{{item.key}}</span>: <span class="fw-bold">{{item.value}}</span></div>
+
+		<div class="ms-4" *ngIf="item.key == 'cart'">
+			<div class="fw-bold mt-3">購物車資料（陣列）</div>
+			<hr>
+
+			<div *ngFor="let cartItem of cart; let bookIndex = index;">
+
+				<h5>{{bookIndex}}</h5>
+				<!-- <div>{{cartItem | json}}</div> -->
+				<div *ngFor="let bi of cart[bookIndex] | keyvalue">
+					<div><span class="text-secondary">{{bi.key}}</span>: <span class="fw-bold">{{bi.value}}</span></div>
+
+					<div class="ms-4" *ngIf="bi.key == 'book'">
+						<div *ngFor="let info of cart[bookIndex].book | keyvalue">
+							<div><span class="text-secondary">{{info.key}}</span>: <span class="fw-bold">{{info.value}}</span></div>
+						</div>
+					</div>
+				</div>
+
+				<hr>
+			</div>
+		</div>
+
+		<div class="ms-4" *ngIf="item.key == 'receiver'">
+			<div class="fw-bold mt-3">收件人</div>
+
+			<div *ngFor="let receiver of getReceiver() | keyvalue">
+				<div><span class="text-secondary">{{receiver.key}}</span>: <span class="fw-bold">{{receiver.value}}</span></div>
+			</div>
+
+			
+		</div>
+
+
+	</div>
+
+</div>
+
+<p class="mt-5 fw-bold text-danger">上傳的訂單資料（json 字串）：</p>
+<p class="text-start" style="word-break: break-all;">{{ order | json }}</p>
+
+<p class="text-danger"><span class="fw-bold">注意：</span>如果是未登入購買，訂單中的 userid 是空字串；若是會員登入購買，此值為會員 id。</p>

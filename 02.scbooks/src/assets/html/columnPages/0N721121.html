@@ -1,0 +1,144 @@
+﻿
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<div class="column-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/columns">專欄</a></li>
+				<li class="breadcrumb-item active" aria-current="page">人物／傳記</li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+
+			<div class="col-12">
+
+				<p class="mb-0">
+					<span class="column-name text-primary">人物／傳記</span>
+				</p>
+
+				<h2 class="mt-2">有人問我，為什麼要如此勤奮地書寫文章？因為我要記錄我自己的人生。</h2>
+				<p class="text-end" style="color: #333;">by A.L</p>
+				
+				<!-- <img src="assets/images/column/20230210_1.jpg" class="w-100 img-fluid"> -->
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>每一個人活著的時候，總會追求某些理想。有人在追求金錢；有人在追求權力；有人在追求知識；有人在追求名譽；有人在追求感情；有人在追求創造。</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title"><a routerLink="/book/0N721121" target="_blank" style="text-decoration:underline; cursor: pointer;">《幸福人生》</a>蔡宏昭著，商鼎數位出版</cite>
+			</figcaption>
+		</figure>
+
+		
+
+		<p>活到一個歲數，必定是經歷了風風雨雨，而在人生的種種階段下，每一刻其實都值得留念。蔡宏昭教授深刻體會到了這點，他不希望就這樣過完了一生，連自己都渾然不覺。因此在歲月的洪流當中，他抓住一塊浮木，開始書寫。</p>
+
+		<img src="assets/images/column/0N721121_1.jpg" class="w-100 img-fluid">
+
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>每天早上，我都會從報紙的報導和副刊的文章中找主題。譬如說，看到疫苗的報導，我就想寫一篇以疫苗為主題的文章；看到關於愛情或婚姻的文章，我就想寫一篇以愛情或婚姻為主題的文章。</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title"><a routerLink="/book/0N721121" target="_blank" style="text-decoration:underline; cursor: pointer;">《幸福人生》</a>蔡宏昭著，商鼎數位出版</cite>
+			</figcaption>
+		</figure>
+
+		<p>對蔡教授來說，寫作是非常自由的，但他有著自己的一套準則。寫作最重要的就是要有核心，他時常在走路間、搭車間、泡湯間、睡前醒後時分，自核心主題向外搭建他的寫作框架。</p>
+
+		<p>寫作的樂趣在於表達自己的想法。每一個人都依據著自己的思想原理或核心價值去看待各種人事物，符合自己的價值觀判斷，就會給予認同，反之則會抗拒，也因此這個世界是豐富的。而蔡教授透過書寫表達自己的想法，讓這個世界以最簡單的方式更加精彩交織。</p>
+
+		<img src="assets/images/column/0N721121_2.jpg" class="w-100 img-fluid mt-4">
+		
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>其實，除了這個理由，我還有一個不為人知的原因，就是想留下一些東西給別人</p>
+			
+			</blockquote>
+		
+			<figcaption class="blockquote-footer">
+				節錄<cite title="Source Title"><a routerLink="/book/0N721121" target="_blank" style="text-decoration:underline; cursor: pointer;">《幸福人生》</a>蔡宏昭著，商鼎數位出版</cite>
+			</figcaption>
+		</figure>	
+
+		<p>有些人在離開前留下了豐功偉業；有些人在離開前留下了無人不曉。他思考著自己平凡的一生，又能夠留下什麼給別人，如果就這樣悄悄地走了，不就白來了此世嗎？在蔡教授過去的人生中，多的是經歷，如果能夠將這些經歷統整，並透過文字書寫出來，大概就是能夠留下的最有價值的東西吧！</p>
+
+		<img src="assets/images/column/0N721121_3.jpg" class="w-100 img-fluid mt-4">
+		
+		<figure>		
+			<blockquote class="blockquote">
+			
+				<p>第一階段的寫作人生才剛結束，就要邁入第二階段了。</p>
+			
+			</blockquote>		
+		</figure>
+
+
+		<p><a routerLink="/book/0N721121" target="_blank" style="text-decoration:underline; cursor: pointer;">《幸福人生》</a>記錄了蔡教授對生命、人性、生活與人生的基本想法以及他對幸福原理的詮釋，也能在書中讀到關於健康、文化、信仰等各種人生觀點。作為他第一本非學術書，<a routerLink="/book/0N721121" target="_blank" style="text-decoration:underline; cursor: pointer;">《幸福人生》</a>無疑是蔡教授人生當中的里程碑，而在這之後，他也在寫作這條路上不斷邁進。</p>
+
+		<p>對蔡教授來說，作者是屬於自己的世界；作家是屬於別人的世界。他希望能成為一個不斷追求理想的作者，而不是一個追求名聲的作家。往後的日子，只要自己的手指還能書寫，他就要做一個有理想的作者。出書是一種喜悅，無論是否獲得讀者的認同，都是令人開心的。</p>
+
+
+		<!-- 連結 -->
+		<div>
+			<p class="fs-5 mt-4">蔡宏昭著作：</p>
+			<a routerLink="/book/0N721121" class="btn btn-primary text-light px-2 mt-0">《幸福人生》</a>&emsp;<a routerLink="/book/0N731121" class="btn btn-primary text-light px-2 mt-0">《社會正義與社會評論》</a>&emsp;<a routerLink="/book/0N741121" class="btn btn-primary text-light px-2 mt-0">《愛情．婚姻．家庭》</a>
+		</div>
+		
+
+
+
+
+	</div>
+</div>

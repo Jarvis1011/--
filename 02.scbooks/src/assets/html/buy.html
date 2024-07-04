@@ -1,0 +1,368 @@
+<style>
+.messenger{
+	color: #007df2 !important;
+	border-color: #007df2 !important;
+}
+.line{
+	color: #00b100 !important;
+	border-color: #00b100 !important;
+}
+
+.bg-buy{
+	background-color: #546E7A;
+}
+
+/* 不同付款方式顏色 */
+.atm {
+    color: #4CAF50;
+}
+.bg-atm {
+    background-color: #4CAF50;
+}
+.border-atm{
+	border-color: #4CAF50 !important;
+}
+
+
+.postoffice {
+    color: #7E57C2;
+}
+.bg-postoffice {
+    background-color: #7E57C2;
+}
+.border-postoffice{
+	border-color: #7E57C2 !important;
+}
+
+/* 圖示尺寸 */
+.icon-size{
+	font-size: 3em;
+}
+
+/* 付款寬度 */
+.pay-box{
+	max-width: 500px;
+}
+
+ul.pay{
+	margin-top: 0 !important;
+	margin-left: 0px;
+	margin-block-start: 0.75em;
+    /* margin-block-end: 1em; */
+    padding-inline-start: 24px;
+}
+
+</style>
+<!--
+注意事項：
+
+外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+ -->
+
+
+<div class="position-relative">
+	<img src="assets/images/header_buy_2.jpg" class="img-fluid fit page-photo">
+	<div class="container-xxl">
+
+		<div class="page-photo-title">
+			<h1>團購服務</h1>
+		</div>
+	</div>
+</div>
+
+
+<!-- 團購優惠 -->
+<div style="background-color: #FFFDE7;">
+	<div class="container-xxl py-2 py-md-4 py-lg-4">
+
+		<div class="mt-5 mb-4">
+
+			<div class="d-flex mt-3 mb-4 justify-content-center">
+				<h2 class="border icon-color px-2 py-1">團購優惠</h2>
+			</div>
+
+
+			<div class="row row-cols-1 row-cols-md-3">
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1">
+
+						<h2 class="text-center icon-header border-bottom icon-color2 pb-2">
+							<span>1</span>
+						</h2>
+						<!-- <p class="fs-5 my-lh text-center mt-4">購買相同書籍</p> -->
+
+						<p class="text-center fs-3 mt-4">
+							<span class="text-danger">5～29 本</span>定價 <span class="icon-color">8 折</span>
+						</p>
+
+					</div>
+
+				</div>
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1">
+
+						<h2 class="text-center icon-header border-bottom icon-color2 pb-2">
+							<span>2</span>
+						</h2>
+						<p class="text-center fs-3 mt-4">
+							<span class="text-danger">30～59 本</span>定價 <span class="icon-color">77 折</span>
+						</p>
+					</div>
+
+				</div>
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1">
+
+						<h2 class="text-center icon-header border-bottom icon-color2 pb-2">
+							<span>3</span>
+						</h2>
+						<p class="fs-3 text-center mt-4">訂購 <span class="text-danger d-inline-block">60 本</span>以上</p>
+
+						<p class="fs-5 my-lh text-center mt-4">
+							可取得其他優惠。
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- 團購優惠 -->
+<div>
+	<div class="container-xxl py-2 py-md-4 py-lg-4">
+
+		<div class="mt-5 mb-4">
+
+			<div class="d-flex mt-3 mb-4 justify-content-center">
+				<h2 class="border icon-color px-2 py-1">團購方式</h2>
+			</div>
+
+			<h3 class="bg-buy text-light text-center p-2 mb-5">1. 填寫訂購單（擇一）</h3>
+
+			<div class="row row-cols-1 row-cols-sm-2">
+				<div class="col">
+
+					<p class="text-center mb-4">
+						<a class="btn btn-danger btn-lg text-light" target="_blank"
+							style="padding-left: 2em; padding-right: 2em;"
+							href="assets/downloads/sc20220414.pdf">
+							<i class="bi bi-download me-2"></i>下載團購訂購單
+						</a>
+					</p>
+				</div>
+				<div class="col">
+					<p class="text-center">
+						<a class="btn btn-danger btn-lg text-light" target="_blank"
+							style="padding-left: 1em; padding-right: 1em;"
+							href="https://forms.gle/j2G3D1VzadxdhjSr5">
+							<i class="bi bi-cloud-check me-2"></i>線上填寫團購訂購單
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<!-- 間距 -->
+			<div style="height: 3rem;"></div>
+			<h3 class="bg-buy text-light text-center p-2 mt-5">2. 填寫後聯絡我們</h3>
+
+			<div class=" mt-4 row row-cols-1 row-cols-md-2 row-cols-lg-4">
+
+				<!-- 1 -->
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1 mb-4">
+
+						<h2 class="text-center icon-header border-bottom icon-color2 pb-2">
+							<i class="bi bi-envelope"></i>
+						</h2>
+						<p class="text-center icon-color2 fs-3 mx-4 mx-xl-5">電子郵件</p>
+
+						<p class="fs-5 my-lh text-center mt-3 mb-0">將訂購單寄到</p>
+
+						<p class="text-center fs-5 fw-light">
+							<a href="mailto:scbkservice@gmail.com" target="_blank">scbkservice@gmail.com</a>
+						</p>
+					</div>
+
+				</div>
+
+				<!-- 2 -->
+				<!-- <div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1 mb-4">
+
+						<h2 class="text-center icon-header border-bottom icon-color line pb-2">
+							<i class="bi bi-line"></i>
+						</h2>
+						<p class="text-center icon-color line fs-3 mx-4 mx-xl-5">Line@</p>
+
+						<p class="fs-5 my-lh text-center mt-3 mb-2">加入千華 Line 官方帳號</p>
+
+						<p class="text-center fs-4">
+							點擊<a href="https://lin.ee/5vpgMor" target="_blank">加入好友</a>或掃描 QR code
+						</p>
+						<p class="text-center"><img src="assets/images/buy/QRcode.png" class="img-fluid"></p>
+					</div>
+
+				</div> -->
+
+				<!-- 3 -->
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1 mb-4">
+
+						<h2 class="text-center icon-header border-bottom icon-color messenger pb-2">
+							<i class="bi bi-messenger"></i>
+						</h2>
+						<p class="text-center icon-color messenger fs-3 mx-4 mx-xl-5">Messenger</p>
+
+						<p class="fs-5 my-lh text-center mt-3 mb-2">到 Facebook 粉絲團發訊聯繫</p>
+
+						<p class="text-center fs-3 mt-4">
+							<a href="https://www.facebook.com/scbkservice" target="_blank" class="btn btn-danger text-light"><i class="bi bi-facebook me-2"></i>商鼎數位出版粉絲團</a>
+						</p>
+					</div>
+
+				</div>
+
+				<!-- 4 -->
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1 mb-4">
+
+						<h2 class="text-center icon-header border-bottom icon-color3 pb-2">
+							<i class="bi bi-printer"></i>
+						</h2>
+						<p class="text-center icon-color3 fs-3 mx-4 mx-xl-5">傳真</p>
+
+						<p class="fs-5 my-lh text-center mt-3 mb-2">將訂購單傳真到</p>
+
+						<p class="text-center fs-5">
+							+886-2-2228-9076
+						</p>
+					</div>
+
+				</div>
+
+				<!-- 5 -->
+				<div class="col">
+					<div class="p-3 pt-0 p-md-0 p-lg-3 p-xl-3 pt-lg-1 mb-4">
+
+						<h2 class="text-center icon-header border-bottom icon-color4 pb-2">
+							<i class="bi bi-telephone"></i>
+						</h2>
+						<p class="text-center icon-color4 fs-3 mx-4 mx-xl-5">電話</p>
+
+						<p class="fs-5 my-lh text-center mt-3 mb-2">電洽客服專員</p>
+
+						<p class="text-center fs-5">
+							+886-2-2228-9070 <span class="icon-color d-inline-block">分機 211、221</span>
+						</p>
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- 出貨時間 -->
+<div style="background-color: #00897B;">
+	<div class="container-xxl py-2 py-md-4 py-lg-5">
+
+		<div class="mt-5 mb-5">
+
+			<div class="d-flex mt-3 mb-4 justify-content-center">
+				<h2 class="border text-light border-light px-2 py-1">出貨時間</h2>
+			</div>
+			<p class="fs-5 my-lh text-light text-center">待確認收到您的款項後，約二～三個工作天完成出貨。</p>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- 付款方式 -->
+<div style="background-color: #effdff;">
+	<div class="container-xxl py-2 py-md-4 py-lg-5">
+
+		<div class="mt-5 mb-5">
+
+			<div class="d-flex mt-3 mb-4 justify-content-center">
+				<h2 class="border messenger px-2 py-1">付款方式</h2>
+			</div>
+
+			<div class="row row-cols-1 row-cols-md-2 gap-4 gap-md-0">
+				<div class="col">
+					<div class="border border-2 border-postoffice position-relative h-100 d-flex flex-column mx-auto pay-box">
+						<div class="bg-postoffice text-center text-light pt-3 pb-2 flex-grow-0">
+
+							<span class="fs-3 d-block lh-1 mb-1">郵局劃撥</span>
+							<i class="bi bi-postcard icon-size"></i>
+
+						</div>
+						<div class="p-3 bg-white flex-grow-1 fs-5 text-left">
+							<ul class="pay">
+								<li>戶名：<span class="fw-bold text-danger">商鼎數位出版有限公司</span></li>
+								<li>劃撥帳號：<span class="fw-bold text-danger">5014-0536</span></li>
+							</ul>
+							<p class="">劃撥完成後請將劃撥單傳真至 +886-2-2228-9076，劃撥單正面請註明：(1)姓名、(2)電話、(3)寄送地址、(4)產品名稱或書號、(5)數量。</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col">
+					<div class="border border-2 border-atm position-relative h-100 d-flex flex-column mx-auto pay-box">
+						<div class="bg-atm text-center text-light pt-3 pb-2 flex-grow-0">
+
+							<span class="fs-3 d-block lh-1 mb-1">銀行轉帳</span>
+							<i class="bi bi-bank icon-size"></i>
+
+						</div>
+						<div class="p-3 bg-white flex-grow-1 fs-5 text-left">
+							<ul class="pay">
+								<li>戶名：<span class="fw-bold text-danger">商鼎數位出版有限公司</span></li>
+								<li>轉入銀行：<span class="text-danger fw-bold">第一銀行</span> 信義分行</li>
+								<li>銀行代碼：<span class="text-danger fw-bold">007</span></li>
+								<li>帳號：<span class="text-danger fw-bold">162-1005-8148</span></li>
+							</ul>
+							<p class="">轉帳完成後，請來電 +886-2-2228-9070 轉分機 211、221，告知您的轉出帳號末五碼及轉帳時間。</p>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+<!-- 防詐騙提醒 -->
+<div>
+	<div class="container-xxl py-2 py-md-4 py-lg-5">
+
+		<div class="mt-5 mb-5">
+
+			<div class="d-flex mt-3 mb-4 justify-content-center">
+				<h2 class="border icon-color px-2 py-1">防詐騙提醒</h2>
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<ol>
+					<li><span class="text-danger">商鼎數位出版不會以任何名義通知更改付款方式或要求您到ATM進行任何操作！</span>若您接獲類似電話，請勿提供任何個人金融資料，並請撥165反詐騙專線查詢或與我們客服中心聯繫。</li>
+					<li>詐騙電話通常在客服下班後於晚上或假日聯繫，商鼎數位出版客服時間為：週一至週五 09:00-18:00，客服人員不會於下班時間與您聯繫。</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 間距 -->
+<div style="height: 100px;"></div>
+

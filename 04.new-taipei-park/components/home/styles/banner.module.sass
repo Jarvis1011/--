@@ -1,0 +1,50 @@
+.banner-wrapper
+  position: relative
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.2)
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  .banner-image
+    height: 550px
+    background-size: cover !important
+  img
+    width: 100%
+
+.marquee-wrapper
+  background: rgb(2, 117, 184)
+  background: linear-gradient(100deg, rgba(2, 117, 184, 1) 0%, rgba(55, 166, 139, 1) 100%)
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  margin-top: -6px
+  position: relative
+  height: 40px
+  display: flex
+  align-items: center
+  span
+    color: #ffffff
+    font-size: 1rem
+    padding-left: 30px
+
+.control_box
+  position: absolute
+  top: 6px
+  right: 12px
+  &.z5
+    z-index: 5
+  button
+    margin: 0 4px
+    border: none
+    background-color: rgba(0, 0, 0, 0)
+    padding: 0
+    display: inline-block
+    &:active
+      transform: scale(0.9)
+    img
+      width: 24px
+      height: 24px
+
+@media (max-width: 992px)
+  .banner-wrapper
+    margin-top: 80px
+    .banner-image
+      height: 250px
+      background-size: cover !important

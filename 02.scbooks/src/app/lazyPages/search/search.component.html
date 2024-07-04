@@ -1,0 +1,129 @@
+
+<div class="position-relative">
+	<!-- 搜尋用 -->
+	<img *ngIf="type == 'keyword'" src="assets/images/header_search.jpg" class="img-fluid fit page-photo">
+
+	<!-- 分類用 -->
+	<img *ngIf="type == 'series'" src="assets/images/header_catalog.jpg" class="img-fluid fit page-photo">
+
+	<div class="container-xxl">
+
+		<div class="page-photo-title">
+			<h1 *ngIf="type == 'series'">商品分類</h1>
+			<h1 *ngIf="type == 'keyword'">商品搜尋</h1>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-xxl">
+
+	<!-- 有搜尋結果 -->
+	<div *ngIf="!hasError">
+
+		<!-- 類別用標題 -->
+		<div *ngIf="type == 'series'">
+			<h3 class="mt-5">{{mainseries}}<i class="bi bi-chevron-right mx-1 icon-color" *ngIf="mainseries && series"></i>{{series}}</h3>
+			<p><a routerLink="/books" class="btn btn-primary text-light px-4 mt-2">所有商品分類</a></p>
+		</div>
+
+		<!-- 作者書名標題 -->
+		<div *ngIf="type == 'keyword'">
+			<h3 class="mt-5">搜尋書名、作者、書號：<span class="fw-bold text-danger">{{params.id}}</span></h3>
+		</div>
+
+		<!-- 搜尋結果 -->
+		
+		<div class="d-flex justify-content-center align-items-center" *ngIf="searching"
+			style="height: 400px;">
+			<div class="d-flex flex-column align-items-center">
+				<div class="spinner-border text-secondary" role="status"></div>
+				<p class="mt-2">搜尋中...</p>
+			</div>
+		</div>
+		<p class="mt-5" *ngIf="books.length == 0 && !searching">搜尋不到指定的書籍。</p>
+
+
+		<!-- 分頁 -->
+		<div class="mt-4" *ngIf="showPagination(searching) && pageCount > 1">
+			<app-pagination
+				
+				[pageCount]="pageCount"
+				[currentPageIndex]="currentPageIndex"
+				[justify]="'center'"
+
+				(pageChanged)="onPageChanged($event)"
+			></app-pagination>
+		</div>
+
+		<div class="row mt-3 gy-4">
+			<div *ngFor="let book of books; let i = index;" 
+				class="col-12 col-sm-6 col-md-6 col-lg-4">
+
+				<div class="card h-100 book-info-back">
+					
+					<div class="card-body text-start">
+
+						<div class="row h-100">
+							<div class="col-5 col-sm-5 col-md-5 col-xl-4">
+								<img src="{{book.bookimg}}" class="book-img" (error)="onBookImgErr(i)">								
+							</div>
+							<div class="col-7 col-sm-7 col-md-7 col-xl-8 d-flex flex-column justify-content-between align-items-start">
+								<div>
+									<p class="mb-2"><span class="book-no small">{{book.bookno}}</span></p>
+									<h5 class="card-title fw-bold">{{book.bookname}}</h5>
+
+									<p class="mb-0"><span class="book-info">作者：</span>{{book.bookauthor}}</p>
+									<p class="mb-0"><span class="book-info">出版日期：</span>{{book.bookpubyear}}</p>
+									<p class="mb-0">
+										<span class="d-inline-block me-3">
+											<span class="book-info">定價：</span>
+											<span class="price-font">{{book.bookprice | currency:'TWD':'symbol-narrow':'1.0-0'}}</span>
+										</span>
+										<span class="d-inline-block">
+											<span class="book-info">特價：</span>
+											<span class="price-font text-danger">{{book.bookresult | currency:'TWD':'symbol-narrow':'1.0-0'}}</span>
+										</span>
+									</p>
+								</div>
+								
+								<a class="btn btn-secondary text-light p-0 stretched-link opacity-0"
+									routerLink="/book/{{book.bookno}}"
+									style="height: 1px;"></a>
+							</div>
+						</div>
+						
+					</div>
+
+					<!-- icon -->
+					<div class="search-bookmark">
+						<i class="bi bi-bookmark-fill"></i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 分頁 -->
+		<div style="height: 32px;"></div>
+		<app-pagination
+			*ngIf="showPagination(searching)"
+			[pageCount]="pageCount"
+			[currentPageIndex]="currentPageIndex"
+			[justify]="'center'"
+
+			(pageChanged)="onPageChanged($event)"
+		></app-pagination>
+
+	</div>
+
+
+	<!-- 搜尋錯誤 -->
+	<app-error-msg [message]="'抱歉，產生資料庫錯誤！'" *ngIf="hasError"></app-error-msg>
+</div>
+
+
+
+
+<!-- 間距 -->
+<div style="height: 150px;"></div>

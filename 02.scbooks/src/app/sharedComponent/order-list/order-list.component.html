@@ -1,0 +1,238 @@
+
+<div *ngIf="list ? list.length==0 : false">
+	<div class="alert alert-info text-center mt-5" role="alert">
+	您目前沒有訂單記錄。
+	</div>
+</div>
+
+
+<div *ngIf="list ? list.length > 0 : false">
+	<!-- 分頁 -->
+	<div class="mt-5" *ngIf="showPagination() && pageCount > 1">
+		<app-pagination
+			
+			[pageCount]="pageCount"
+			[currentPageIndex]="currentPageIndex"
+			[justify]="'center'"
+
+			(pageChanged)="onPageChanged($event)"
+		></app-pagination>
+
+		<!-- 微調間距用 -->
+		<div style="margin-bottom: 2rem;"></div>
+	</div>
+
+
+	<!-- 微調間距用 -->
+	<div style="height: 1rem;"
+		*ngIf="(pageCount == 1)"></div>
+
+	<!-- 展開折疊鈕 -->
+	<div class="mb-3">
+	<button class="btn btn-secondary text-light" (click)="showAll()"><i class="bi bi-arrow-bar-down me-2"></i>展開全部</button>
+	<button class="ms-2 btn btn-secondary text-light" (click)="hideAll()"><i class="bi bi-arrow-bar-up me-2"></i>折疊全部</button>
+	</div>
+
+
+	<!-- 訂單資料 -->
+	<div class="card text-start mb-4 shadow-sm" *ngFor="let order of list; let i = index;">
+
+		<div class="card-body pt-2">
+
+			<!-- 會員id，只有管理員看 -->
+			<div class="" *ngIf="showUserID">
+				<div class="flex-shrink-1 me-3"><span class="opacity-50">會員帳號：</span>{{order.userid ? order.userid : '非會員'}}</div>
+				<hr class="my-1 over">
+			</div>
+
+			<!-- 訂單 -->
+			<div class="d-flex align-items-center flex-wrap">
+				<div class="flex-shrink-1"><span class="opacity-50">訂單編號：</span><span class="text-primary">{{order.orderid}}</span></div>
+				
+				<div class="vr mx-2"></div>
+
+				<div class="flex-shrink-1"><span class="opacity-50">訂單日期：</span>{{order.orderdate}}</div>
+
+				<div class="vr mx-2"></div>
+
+				<div class="flex-shrink-1" *ngIf="isNumber(order.amount)">
+					<span class="opacity-50">總金額：</span><span class="fw-bold">{{order.amount | currency:'TWD':'symbol-narrow':'1.0-0'}}</span>
+				</div>
+				<!-- 早期舊版金額非數字時，使用文字顯示 -->
+				<div class="flex-shrink-1" *ngIf="!isNumber(order.amount)">
+					<span class="opacity-50">總金額：</span><span class="fw-bold">{{order.amount}}</span>
+				</div>
+
+
+				<div class="vr mx-2"></div>
+
+				<div class="flex-shrink-1"><span class="opacity-50">付款方式：</span>{{order.paytype}}</div>
+
+				<div class="vr mx-2"></div>
+				
+
+				<!-- edit: 進度 -->
+				<div class="flex-shrink-1">
+					<span class="opacity-50" [ngClass]="{ 'bg-editing': isEditing && order.orderid == editingOrderid }">訂單進度：</span>
+					<span *ngIf="!isEditing || order.orderid != editingOrderid">{{order.bookbinding}}</span>
+
+					<select class="form-select state-select d-inline-block"
+						*ngIf="isEditing && order.orderid == editingOrderid"
+						[(ngModel)]="edit_bookbinding"
+						[disabled]="uploading"
+						>
+						<option *ngFor="let state of orderStatusArr; let j = index;"
+							value="{{state}}">{{state}}</option>
+					</select>
+				</div>
+
+				<div class="vr mx-2"></div>
+
+
+				<!-- edit: 收費 -->
+				<div class="flex-shrink-1">
+					<span class="opacity-50" [ngClass]="{ 'bg-editing': isEditing && order.orderid == editingOrderid }">收費：</span>
+					<span *ngIf="!isEditing || order.orderid != editingOrderid">{{order.orderok == 'True' ? '完成':'未完成'}}</span>
+
+					<div class="form-check d-inline-block"
+						 *ngIf="isEditing && order.orderid == editingOrderid">
+						<input class="form-check-input" type="checkbox" id="payed"
+							[(ngModel)]="edit_orderok"
+							[disabled]="uploading" 
+							>
+						<label class="form-check-label" for="payed">
+							付款完成
+						</label>
+					</div>
+				</div>			
+
+			</div>
+			
+			<hr class="my-1 over">
+
+			<!-- 收件人 -->
+			<div class="d-flex flex-wrap">
+				<div class="flex-shrink-1"><span class="opacity-50">收件人：</span>{{order.username}}</div>
+				
+				<div class="vr mx-2"></div>
+
+				<div class="flex-shrink-1"><span class="opacity-50">地址：</span>{{order.useraddr}}</div>
+				
+				<div class="vr mx-2"></div>
+
+				<div class="flex-shrink-1"><span class="opacity-50">電話：</span>{{order.usertel}}</div>
+
+				<div class="vr mx-2"></div>
+				
+				<div class="flex-shrink-1"><span class="opacity-50" *ngIf="order.usermail">電子郵件：</span>
+					<a href="mailto:{{order.usermail}}" target="_blank">{{order.usermail}}</a>
+				</div>
+
+			</div>
+
+			<hr class="my-1 over">
+
+			<!-- 按鈕區 -->
+			<!-- 訂單詳細內容 -->
+			<div class="d-flex justify-content-between">
+				<button class="btn btn-primary btn-sm text-light mt-2" type="button" data-bs-toggle="collapse" 
+						[attr.data-bs-target]="'#orderDetail' + i" aria-expanded="false" [attr.aria-controls]="'orderDetail' + i">
+					<i class="bi bi-arrows-collapse me-2"></i>訂單明細
+				</button>
+
+				<!-- 編輯鈕 -->
+				<div *ngIf="isManager" class="d-flex align-items-center">
+					<button class="btn btn-danger btn-sm text-light mt-2" type="button" 
+						*ngIf="!isEditing || order.orderid != editingOrderid"
+						(click)="clickEdit(order.orderid)">
+						<i class="bi bi-pencil-fill me-2"></i>編輯訂單狀態
+					</button>
+
+					<div class="text-danger me-3" *ngIf="hasError">訂單更新失敗，請稍後重試。</div>
+
+					<button class="btn btn-success btn-sm text-light mt-2 me-1" type="button" 
+						*ngIf="isEditing && order.orderid == editingOrderid"
+						(click)="clickOK(order.orderid)"
+						[disabled]="uploading">
+						<i class="bi bi-check-lg me-2"></i>完成
+					</button>
+
+					<button class="btn btn-light btn-sm border border-1 mt-2" type="button" 
+						*ngIf="isEditing && order.orderid == editingOrderid"
+						(click)="clickCancel()"
+						[disabled]="uploading">
+						<i class="bi bi-x-lg me-2"></i>取消
+					</button>
+				</div>
+			</div>
+
+
+			<!-- 訂單詳細內容 -->
+			<div class="order-detail collapse" [id]="'orderDetail' + i">
+				<div class="card card-body detail mt-2 p-2">
+					<!-- test -->
+					<!-- <div>類型：{{typeof(order.content)}}</div> -->
+
+					<!-- 訂單明細為物件 -->
+					<div *ngIf="typeof(order.content) == 'object'">
+						<div *ngFor="let book of order.content; let j = index;">
+						
+							<div class="d-flex flex-wrap">
+
+								<div class="flex-shrink-1 text-muted me-2">
+									{{book.book.id}}
+								</div>
+						
+								<div class="flex-shrink-1 fw-bold">
+									{{book.book.name}}
+								</div>
+								<div class="flex-shrink-1 ms-3 bookdata">
+									{{book.book.author}}
+								</div>
+
+								<div class="vr mx-3"></div>
+
+								<div class="flex-shrink-1 bookdata">
+									×{{book.count}}
+								</div>
+
+								<div class="vr mx-3"></div>
+						
+								<div class="flex-shrink-1 bookdata">
+									<span class="fw-bold">{{book.subTotal | currency:'TWD':'symbol-narrow':'1.0-0'}}</span>
+								</div>
+						
+							</div>
+
+							<hr *ngIf="j < (order.content.length - 1)" class="my-2 over2">
+						</div>
+					</div>
+
+
+					<!-- 訂單明細為字串 -->
+					<div [innerHtml]="order.content | safeHtml" *ngIf="typeof(order.content) == 'string'"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- 分頁 -->
+	<div style="height: 20px;"></div>
+	<app-pagination
+		*ngIf="showPagination()"
+		[pageCount]="pageCount"
+		[currentPageIndex]="currentPageIndex"
+		[justify]="'center'"
+
+		(pageChanged)="onPageChanged($event)"
+	></app-pagination>
+
+
+
+</div>

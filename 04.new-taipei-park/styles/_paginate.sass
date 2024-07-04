@@ -1,0 +1,87 @@
+.react-pagination
+  padding: 0
+  display: inline-block
+  list-style-type: none
+  background: #fff
+  border: #007ad0 1px solid
+  border-radius: 30px
+  li
+    cursor: pointer
+    display: inline-block
+    transform: skewX(-15deg)
+    border-left: #007ad0 1px solid
+    &:hover, &:focus-within
+      background: linear-gradient(228deg, #28a6ff, #007ad0)
+    a
+      padding: 8px 20px
+      line-height: 2.25rem
+      display: block
+      text-align: center
+      font-size: 0.8rem
+      font-weight: bold
+      color: #444444
+      font-size: 1rem
+      background: none
+      border: none
+      &.page-link
+        font-weight: 800
+        transform: skewX(15deg)
+        &:hover
+          background: none
+          color: #ffffff
+    &:nth-last-child(2)
+      border-right: #007ad0 1px solid
+    &:hover, &:focus-within
+      transition: all .2s
+    &.active
+      background-image: linear-gradient(228deg, #28a6ff, #007ad0)
+      a
+        color: #fff
+    &.btn-pre, &.btn-next
+      position: relative
+      transform: skewX(0deg)
+      border: none
+    &.btn-pre
+      &.disabled
+        a, span::before
+          color: #cccccc
+          border-color: #cccccc transparent transparent#cccccc
+      &:hover, &:focus-within
+        background: none
+      a
+        padding-right: 40px
+        padding-left: 25px
+      span
+        padding-left: 15px
+        &::before
+          content: ''
+          margin-left: -8px
+          position: absolute
+          top: 50%
+          width: 12px
+          height: 12px
+          transform: rotate(-45deg) translateY(-50%)
+          border: 1px solid
+          border-color: #007ad0 transparent transparent #007ad0
+
+    &.btn-next
+      &.disabled
+        a, span::after
+          color: #cccccc
+          border-color: #cccccc transparent transparent#cccccc
+      &:hover, &:focus-within
+        background: none
+      a
+        padding-left: 40px
+        padding-right: 25px
+      span
+        padding-right: 15px
+        &::after
+          content: ''
+          position: absolute
+          top: calc( 50% - 12px )
+          width: 12px
+          height: 12px
+          transform: rotate(135deg) translateY(-50%)
+          border: 1px solid
+          border-color: #007ad0 transparent transparent #007ad0

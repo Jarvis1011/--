@@ -1,0 +1,26 @@
+#banner-slick
+  position: relative
+  .slick-slider
+    ul
+      li
+        margin: 0 15px
+        width: 15px
+        height: 15px
+        button
+          width: 15px
+          height: 15px
+          &::before
+            content: ""
+            border-radius: 50px
+            border: 3px solid #00ff8d
+            background: transparent
+            opacity: 1
+
+        &.slick-active
+          button
+            &::before
+              background: #00ff8d
+
+@media ( max-width: 980px)
+  #banner-slick
+    margin-top: -26px

@@ -1,0 +1,88 @@
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+ 
+<div class="media-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/media">獲獎／媒體報導</a></li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+			<div class="col-12">
+				<h2 class="mt-2">臺藝大 數位出版專班 參訪活動報導</h2>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+	<div class="container-xxl max-w-article">
+
+
+		<p>臺灣藝術大學廈門理工數位出版專班，由賀秋白教授帶隊，與 22 位來自廈門的專班學生，蒞臨千華參訪，藉由千華多年來領先業界的數位內容實務經驗，讓學生們了解現在出版業界最新的數位內容開發與商業模式。</p>
+
+		<p>當天，千華數位文化公司－王銘瑜總經理，針對相關議題分享了千華數十年的實際經驗，並與師生討論、交換意見；最後特別安排，讓師生參觀千華的專業攝影棚，也讓學生親自感受拍攝數位產品的過程。</p>
+
+		<p>透過 2019 年 4 月 10 日的參訪活動，進行了難能可貴的產學交流，學生們熱切地交流詢問，讓雙方激盪出更多未來的可能。</p>
+
+		<img src="assets/images/media/media_3-1.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ 王銘瑜總經理、賀秋白教授與數位出版專班學生一行人合影。</p>
+
+
+		<img src="assets/images/media/media_3-2.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ 王銘瑜總經理與臺藝大師生相談甚歡。</p>
+
+		<img src="assets/images/media/media_3-3.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ 王銘瑜總經理分享公司經驗，台下師生專心聽講、振筆疾書、上網搜尋資訊，無一不希望能汲取寶貴經驗！</p>
+
+		<img src="assets/images/media/media_3-4.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ 數位部主任說明攝影棚的設備與操作流程。</p>
+
+		<img src="assets/images/media/media_3-5.jpg" class="w-100 img-fluid mt-4">
+		<p class="img-info">▲ 學生坐在鏡頭前，實際感受拍攝過程。</p>
+
+
+
+		<!-- ********* -->
+		<!-- 發布時間 -->
+		<p class="media-date">發布時間：2019 年 04 月 11 日</p>
+
+
+
+	</div>
+</div>

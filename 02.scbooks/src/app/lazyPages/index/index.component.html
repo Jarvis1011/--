@@ -1,0 +1,432 @@
+
+<!-- 第一區 -->
+<!-- 首頁主要輪播 -->
+<!-- 是否自動輪播、輪播時間可透過 config 設定 -->
+<div id="CarouselBox" class="carousel slide" data-bs-ride="carousel" 
+		[attr.data-bs-interval]="config.mainCarousel_autoPlay"
+	>
+
+	<!-- 指示器 -->
+	<div class="carousel-indicators">
+		<button *ngFor="let item of mainCarousel; let j = index"
+				type="button" 
+				data-bs-target="#CarouselBox" 
+				[attr.data-bs-slide-to]="j" 
+				[ngClass]="(j==0) ? 'active' : ''" 
+				[attr.aria-current]="(j==0) ? 'true' : ''"
+			>
+		</button>
+
+	</div>
+
+	<!-- 內容 -->
+	<div class="carousel-inner">
+		<div *ngFor="let item of mainCarousel; let i = index"
+				class="carousel-item"
+				[ngClass]="(i==0) ? 'active' : ''"
+				[attr.data-bs-interval]="config.mainCarousel_time"
+			>
+			<!-- 主圖片 -->
+			<a routerLink="{{item.link}}">			
+				<img src="{{item.img}}" class="d-block w-100">
+			</a>
+			<!-- 標題，可透過 config 設定是否顯示 -->
+			<div *ngIf="config.mainCarousel_showCaption"
+				class="carousel-caption d-none d-md-block">
+				<h5>{{item.title}}</h5>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- 控制 -->
+	<button class="carousel-control-prev" type="button" data-bs-target="#CarouselBox" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">上一個</span>
+	</button>
+
+	<button class="carousel-control-next" type="button" data-bs-target="#CarouselBox" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">下一個</span>
+	</button>
+</div>
+
+
+
+
+<!-- 第二區 -->
+<div class="pt-5 pb-5" 
+	[style.background-color]="s2_bgColor">
+	<div class="container-xxl">	
+		<div class="row gy-4">
+			<div class="col-12 col-md-12 col-lg-4">
+				<div class="card h-100">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title fw-bold">{{s2p1.title}}</h5>
+						
+<!-- part 1 輪播 -->
+<!-- 是否自動輪播、輪播時間可透過 config 設定 -->
+<div id="section2CarouselBox" class="carousel slide flex-grow-1" data-bs-ride="carousel" 
+		[attr.data-bs-interval]="config.s2Carousel_autoPlay"
+	>
+
+	<!-- 內容 -->
+	<div class="carousel-inner h-100">
+		<div *ngFor="let item of s2_carousel; let i = index"
+				class="carousel-item h-100"
+				[ngClass]="(i==0) ? 'active' : ''"
+				[attr.data-bs-interval]="config.s2Carousel_time"
+			>
+
+			<div class="row h-100 flex-lg-column">
+				<div class="col-12 col-sm-6 col-md-5 col-lg-12 flex-lg-grow-0">
+					<!-- 主圖片 -->
+					<img src="{{item.img}}" class="d-block w-100 hover-img" routerLink="{{item.link}}">
+				</div>
+				<div class="col-12 col-sm-6 col-md-7 col-lg-12 mt-3 mt-sm-0 mt-lg-3 
+					flex-lg-grow-1 d-flex flex-column align-items-start">
+
+					<!-- 整合性內容 -->
+					<div class="flex-grow-1">
+
+						<h5 class="mb-3 text-secondary fw-bold">{{item.title}}</h5>
+						<p *ngFor="let p of item.contents" >{{p}}</p>
+					
+					</div>
+					
+						
+					<a class="mt-3 btn btn-primary text-light px-5" 
+						routerLink="{{item.link}}"
+					>{{item.btnLabel}}</a>
+
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- 控制，改寫使其高度縮減，以防擋到下方畫面其他按鈕，有使用 css 穿透屬性 -->
+	<div class="small-carousel-btn-box" *ngIf="s2_carousel.length > 1">
+		<button class="carousel-control-prev small-carousel-btn" type="button" data-bs-target="#section2CarouselBox" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">上一個</span>
+		</button>
+		
+		<button class="carousel-control-next small-carousel-btn" type="button" data-bs-target="#section2CarouselBox" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">下一個</span>
+		</button>
+	</div>
+	
+</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- part 2 -->
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card h-100 position-relative">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title fw-bold">{{s2p2.title}}</h5>
+						<!-- 要讓外部檔案 routerLink 管用要額外處理 -->
+						<div [innerHtml]="s2p2_html | safeHtml" (click)="onDataClick($event)"
+							class="flex-grow-1 d-flex flex-column"></div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- part 3 -->
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card h-100">
+					<div class="card-body d-flex flex-column">
+						<h5 class="card-title fw-bold">{{s2p3.title}}</h5>
+						<!-- 要讓外部檔案 routerLink 管用要額外處理 -->
+						<div [innerHtml]="s2p3_html | safeHtml" (click)="onDataClick($event)"
+							class="flex-grow-1 d-flex flex-column"></div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+<!-- 新書區 -->
+<div class="pt-5 pb-5" 
+	[style.background-color]="s_newBook.bg_color">
+
+	<div class="container-xxl">
+
+		 <h3 class="fw-bold mb-0">{{s_newBook.title}}</h3>
+
+
+<!-- 新書區輪播 -->
+
+<!-- 是否自動輪播、輪播時間可透過 config 設定 -->
+<app-group-carousel class="mt-0 d-none d-lg-block"
+	[config]="{ autoPlay: config.newBook_autoPlay, time: config.newBook_time, lineNum: config.newBook_line_num}"
+	[ID]="'new-group-4'"
+	[groups]="newBook_group_4"
+	[columnNum]="4"
+></app-group-carousel>
+
+
+<app-group-carousel class="mt-0 d-none d-sm-block d-lg-none"
+	[config]="{ autoPlay: config.newBook_autoPlay, time: config.newBook_time, lineNum: config.newBook_line_num}"
+	[ID]="'new-group-3'"
+	[groups]="newBook_group_3"
+	[columnNum]="3"
+></app-group-carousel>
+
+<app-group-carousel class="mt-0 d-block d-sm-none"
+	[config]="{ autoPlay: config.newBook_autoPlay, time: config.newBook_time, lineNum: config.newBook_line_num}"
+	[ID]="'new-group-2'"
+	[groups]="newBook_group_2"
+	[columnNum]="2"
+></app-group-carousel>
+
+
+<!-- 輪播 end -->
+
+	</div>
+</div>
+
+
+
+
+<!-- 系列 1 -->
+
+<!-- 可從 config 設定是否顯示 -->
+<div class="pt-5 pb-5" 
+	[style.background-color]="s_book_ser1.bg_color"
+	*ngIf="config.ser_1_show"	
+>
+
+	<div class="container-xxl">
+
+		 <h3 class="fw-bold mb-0">{{s_book_ser1.title}}</h3>
+
+<!-- 書籍－系列 1 輪播 -->
+<!-- 是否自動輪播、輪播時間可透過 config 設定 -->
+<app-group-carousel class="mt-0 d-none d-lg-block"
+	[config]="{ autoPlay: config.ser_1_autoPlay, time: config.ser_1_time, lineNum: config.ser_1_line_num}"
+	[ID]="'ser-1-group-4'"
+	[groups]="ser1_group_4"
+	[columnNum]="4"
+></app-group-carousel>
+
+
+<app-group-carousel class="mt-0 d-none d-sm-block d-lg-none"
+	[config]="{ autoPlay: config.ser_1_autoPlay, time: config.ser_1_time, lineNum: config.ser_1_line_num}"
+	[ID]="'ser-1-group-3'"
+	[groups]="ser1_group_3"
+	[columnNum]="3"
+></app-group-carousel>
+
+<app-group-carousel class="mt-0 d-block d-sm-none"
+	[config]="{ autoPlay: config.ser_1_autoPlay, time: config.ser_1_time, lineNum: config.ser_1_line_num}"
+	[ID]="'ser-1-group-2'"
+	[groups]="ser1_group_2"
+	[columnNum]="2"
+></app-group-carousel>
+
+
+<!-- 輪播 end -->
+
+	</div>
+</div>
+
+
+
+
+
+
+<!-- 系列 2 -->
+
+<!-- 可從 config 設定是否顯示 -->
+
+<div class="pt-5 pb-5" 
+	[style.background-color]="s_book_ser2.bg_color"
+	*ngIf="config.ser_2_show"	
+>
+
+	<div class="container-xxl">
+
+		 <h3 class="fw-bold mb-0">{{s_book_ser2.title}}</h3>
+
+<!-- 書籍－系列 1 輪播 -->
+<!-- 是否自動輪播、輪播時間可透過 config 設定 -->
+<app-group-carousel class="mt-0 d-none d-lg-block"
+	[config]="{ autoPlay: config.ser_2_autoPlay, time: config.ser_2_time, lineNum: config.ser_2_line_num}"
+	[ID]="'ser-2-group-4'"
+	[groups]="ser2_group_4"
+	[columnNum]="4"
+></app-group-carousel>
+
+
+<app-group-carousel class="mt-0 d-none d-sm-block d-lg-none"
+	[config]="{ autoPlay: config.ser_2_autoPlay, time: config.ser_2_time, lineNum: config.ser_2_line_num}"
+	[ID]="'ser-2-group-3'"
+	[groups]="ser2_group_3"
+	[columnNum]="3"
+></app-group-carousel>
+
+<app-group-carousel class="mt-0 d-block d-sm-none"
+	[config]="{ autoPlay: config.ser_2_autoPlay, time: config.ser_2_time, lineNum: config.ser_2_line_num}"
+	[ID]="'ser-2-group-2'"
+	[groups]="ser2_group_2"
+	[columnNum]="2"
+></app-group-carousel>
+
+
+<!-- 輪播 end -->
+
+	</div>
+</div>
+
+
+
+
+
+<!-- 影音區 -->
+
+<div class="pt-5 pb-5" 
+	[style.background-color]="s_video.bg_color"
+	*ngIf="config.video_show">
+
+	<div class="container-xxl">
+
+		 <h3 class="fw-bold mb-4"
+		 	[ngClass]="isTextLight(s_video.title_light)">{{s_video.title}}</h3>
+
+		<!-- <div class="row gx-3 gx-md-3 gx-lg-4 gx-xl-5 gy-5"> -->
+		<div class="px-0 px-sm-2 px-xxl-0">
+		
+			<div class="row gy-4">
+		
+				<div *ngFor="let item of s_video.items; let i = index" class="col-6 col-sm-3 col-lg-3">
+		
+					<div [style.background-color]="s_video.video_bg_color" [ngClass]="isTextLight(s_video.text_light)">
+						<my-youtube-player [videoID]="getVideoID(item.video)">
+						</my-youtube-player>
+		
+						<div class="p-3">
+							<h5 class="text-truncate fw-bold"><a routerLink="{{item.link}}">{{item.title}}</a></h5>
+							<p [ngClass]="'clamp-'+config.video_line_num">{{item.intro}}</p>
+							<!-- <a routerLink="{{item.link}}" class="btn btn-primary text-light px-4">前去買書</a> -->
+						</div>
+		
+		
+					</div>
+		
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 廣告區（載入外部檔案，可後續另外修改） -->
+
+<!-- 由於載入外部檔案無法顯示，改由json代替 -->
+<!-- <div [style.background-color]="s_ad.bg_color" class="py-0 pb-3">
+	<div class="container-xxl">
+		<div [innerHtml]="ad_html | safeHtml" (click)="onDataClick($event)"></div>
+	</div>
+</div> -->
+
+<!-- json 載入 -->
+<div class="py-0 pb-3">
+	<div class="container-xxl">
+		<div class="row gx-3 gy-3 my-4">
+			<div class="col-12 col-md-4" *ngFor="let item of s_ad_json">
+
+				<img class="cursor-pointer w-100 img-fluid hover-img-small" src="{{item.image}}" routerLink="{{item.link}}">
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 專欄區 -->
+
+<div class="pt-5 pb-5" 
+	[style.background-color]="s_column.bg_color">
+
+	<div class="container-xxl">
+
+		 <h3 class="fw-bold mb-4"
+		 	[ngClass]="s_column.title_light ? 'text-light' : ''"
+		 >{{s_column.title}}</h3>
+
+		<div class="row gy-5">
+
+			<div *ngFor="let item of s_column.items"
+				class="col-12 col-sm-6 col-lg-4"
+			>
+				<div class="px-2 px-md-3">
+				
+					<div class="overflow-hidden rounded-5">
+						<a routerLink="{{item.link}}">
+							<img src="{{item.img}}" class="hover-img w-100 img-fluid">
+						</a>
+					</div>
+					<p class="mb-2 mt-3">
+						<span class="column-name text-primary">{{item.class}}</span>
+					</p>
+					<h5 class="mb-3 fw-bold mt-2 mt-lg-0" [ngClass]="s_column.text_light ? 'text-light' : ''">{{item.title}}</h5>
+					<p *ngFor="let p of item.contents" [ngClass]="s_column.text_light ? 'text-light' : ''">{{p}}</p>
+				
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="mt-5 d-flex justify-content-center">
+				<a class="btn btn-primary text-light" routerLink="/columns">所有專欄文章</a>
+			</div>
+
+		</div>
+
+
+	</div>
+</div>
+
+
+
+
+
+<!-- 測試廣告區（載入外部檔案，可後續另外修改） -->
+<!-- 
+<div [style.background-color]="s_ad.bg_color" class="py-5">
+	<div class="container-xxl">
+
+ 		<h3 class="fw-bold mb-4">測試用廣告區</h3>
+
+		<div [innerHtml]="ad_test_html | safeHtml" (click)="onDataClick($event)"></div>
+
+	</div>
+</div> -->
+
+
+
+
+
+

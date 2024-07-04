@@ -1,0 +1,1382 @@
+﻿[
+	{
+		"areaTitle": "北部地區",
+		"storeGroups": [
+			{
+				"groupTitle": "",
+				"stores": [
+					{
+						"name": "自立書局",
+						"phone": "(02)2422-3522",
+						"address": "基隆市中正區義二路46號",
+						"special": false
+					},
+					{
+						"name": "金石堂(台大店)",
+						"phone": "(02)3322-3512",
+						"address": "臺北市中正區中山南路7號B1F(微風台大醫院美食街)",
+						"special": false
+					},
+					{
+						"name": "金石堂(汀州店)",
+						"phone": "(02)2369-1245",
+						"address": "臺北市中正區汀州路三段184號B1",
+						"special": false
+					},
+					{
+						"name": "誠品書店(站前店)",
+						"phone": "(02)6632-8168",
+						"address": "臺北市中正區忠孝西路一段47號B1(靠近K12出口 近館前路)",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(重南店)",
+						"phone": "(02)2370-8836",
+						"address": "臺北市中正區重慶南路一段3號",
+						"special": false
+					},
+					{
+						"name": "黎明文化(重南店)",
+						"phone": "(02)2311-6829",
+						"address": "臺北市中正區重慶南路一段49號",
+						"special": false
+					},
+					{
+						"name": "三民書局(重南店)",
+						"phone": "(02)2361-7511#101",
+						"address": "臺北市中正區重慶南路一段61號",
+						"special": false
+					},
+					{
+						"name": "美林書局(重南店)",
+						"phone": "(02)2331-4516",
+						"address": "臺北市中正區重慶南路一段63號地下室",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(許昌店)",
+						"phone": "(02)2311-0680",
+						"address": "臺北市中正區許昌街20號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(R79)",
+						"phone": "(02)2563-9818",
+						"address": "臺北市大同區南京西路16號B1之中山地下書街",
+						"special": false
+					},
+					{
+						"name": "建宏書局(北安店)",
+						"phone": "(02)2532-3448",
+						"address": "臺北市中山區北安路616號B1",
+						"special": false
+					},
+					{
+						"name": "誠品書店(南西店)",
+						"phone": "(02)2581-3358",
+						"address": "臺北市中山區南京西路14號5樓",
+						"special": false
+					},
+					{
+						"name": "三民書局(復興店)",
+						"phone": "(02)2500-6600",
+						"address": "臺北市中山區復興北路386號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(美麗華店)",
+						"phone": "(02)2175-3616",
+						"address": "臺北市中山區敬業三路20號3F（美麗華百樂園Young館三樓）",
+						"special": false
+					},
+					{
+						"name": "瑞興書局",
+						"phone": "(02)2504-1866",
+						"address": "臺北市中山區龍江路257巷23號1樓",
+						"special": false
+					},
+					{
+						"name": "詹氏書局",
+						"phone": "(02)2391-8058",
+						"address": "臺北市大安區和平東路一段177號9樓之5",
+						"special": false
+					},
+					{
+						"name": "師大書苑",
+						"phone": "(02)8369-5558",
+						"address": "臺北市大安區和平東路一段182-3號2樓",
+						"special": false
+					},
+					{
+						"name": "金石堂(信義店)",
+						"phone": "(02)2322-3361",
+						"address": "臺北市大安區信義路二段196號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(台大店)",
+						"phone": "(02)2362-6132",
+						"address": "臺北市大安區新生南路三段98號3F,2F,1F,B1,B2",
+						"special": false
+					},
+					{
+						"name": "金石堂(和平店)",
+						"phone": "(02)2351-3128",
+						"address": "臺北市大安區羅斯福路二段41-49號B1",
+						"special": false
+					},
+					{
+						"name": "金石堂(內湖大潤發)",
+						"phone": "(02)8791-4445",
+						"address": "臺北市內湖區舊宗路一段188號2樓",
+						"special": false
+					},
+					{
+						"name": "誠品書店(西門店)",
+						"phone": "(02)2388-6588",
+						"address": "臺北市萬華區峨嵋街52號3F",
+						"special": false
+					},
+					{
+						"name": "誠品書店(松菸店)",
+						"phone": "(02)6636-5888",
+						"address": "臺北市松山區菸廠路88號3F111",
+						"special": false
+					},
+					{
+						"name": "誠品書店(信義店)",
+						"phone": "(02)8789-3388",
+						"address": "臺北市信義區松高路11號(2F,3F)",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(士林店)",
+						"phone": "(02)2880-2860",
+						"address": "臺北市士林區中正路325號",
+						"special": false
+					},
+					{
+						"name": "金石堂(天母店)",
+						"phone": "(02)2871-7641",
+						"address": "臺北市士林區天母西路3號之32-52號",
+						"special": false
+					},
+					{
+						"name": "敦煌書局(文化店)",
+						"phone": "(02)2862-0125",
+						"address": "臺北市士林區華岡路55號",
+						"special": false
+					},
+					{
+						"name": "金石堂(國醫加盟店)",
+						"phone": "(02)8791-8106",
+						"address": "臺北市內湖區成功路2段325號B1",
+						"special": false
+					},
+					{
+						"name": "誠品生活時光(內湖瑞光店)",
+						"phone": "(02)27970989",
+						"address": "臺北市內湖區港墘里瑞光路337號C棟１樓",
+						"special": false
+					},
+					{
+						"name": "金石堂(德明加盟店)",
+						"phone": "(02)2797-8776",
+						"address": "臺北市內湖區環山路1段68號1樓",
+						"special": false
+					},
+					{
+						"name": "哈妮圖書中心",
+						"phone": "(02)2653-4127",
+						"address": "臺北市南港區研院路三段232號(中華科大旁)",
+						"special": false
+					},
+					{
+						"name": "高雄復文(巨流政大書城)",
+						"phone": "(02)2938-1106",
+						"address": "臺北市文山區指南路二段64號集英樓2樓",
+						"special": false
+					},
+					{
+						"name": "誠品生活時光(板橋三民店)",
+						"phone": "(02)2959-5589",
+						"address": "新北市板橋區三民路一段129號1F",
+						"special": false
+					},
+					{
+						"name": "誠品書店(板橋店)",
+						"phone": "(02)2959-8899",
+						"address": "新北市板橋區中山路一段46號4F",
+						"special": false
+					},
+					{
+						"name": "文林書局",
+						"phone": "(02)2968-0941",
+						"address": "新北市板橋區中正路33號",
+						"special": false
+					},
+					{
+						"name": "自強書局(總店)",
+						"phone": "(02)2967-4212",
+						"address": "新北市板橋區北門街59號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(亞東店)",
+						"phone": "(02)6637-7768",
+						"address": "新北市板橋區南雅南路二段21號B1 (亞東醫院新院區B1)",
+						"special": false
+					},
+					{
+						"name": "金石堂(文化店)",
+						"phone": "(02)2250-3313",
+						"address": "新北市板橋區莊敬路137號1~B1樓",
+						"special": false
+					},
+					{
+						"name": "金石堂(板橋遠百店)",
+						"phone": "(02)2964-6451",
+						"address": "新北市板橋區新站路28號6F(大遠百)",
+						"special": false
+					},
+					{
+						"name": "金石堂(板橋店)",
+						"phone": "(02)8969-3352",
+						"address": "新北市板橋區縣民大道2段7號2樓",
+						"special": false
+					},
+					{
+						"name": "誠品書店(新板店)",
+						"phone": "(02)6637-5366",
+						"address": "新北市板橋區縣民大道二段66號2F&3F",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(汐科店)",
+						"phone": "(02)2697-4688",
+						"address": "新北市汐止區新台五路一段93號2F (D區)",
+						"special": false
+					},
+					{
+						"name": "金石堂(新店店)",
+						"phone": "(02)2913-8104",
+						"address": "新北市新店區中正路190號B1",
+						"special": false
+					},
+					{
+						"name": "誠品書店(雙和比漾店)",
+						"phone": "(02)8231-5061",
+						"address": "新北市永和區中山路一段238號B1",
+						"special": false
+					},
+					{
+						"name": "春秋書坊有限",
+						"phone": "(02)2943-1799",
+						"address": "新北市永和區民權路45號",
+						"special": false
+					},
+					{
+						"name": "金石堂(環球店)",
+						"phone": "(02)2228-6422",
+						"address": "新北市中和區中山路3段122號3F",
+						"special": false
+					},
+					{
+						"name": "千華總部門市",
+						"phone": "(02)2228-9070",
+						"address": "新北市中和區中山路三段136巷10弄17號",
+						"special": false
+					},
+					{
+						"name": "進源書局",
+						"phone": "(02)8262-0140",
+						"address": "新北市土城區學府路一段143巷5號",
+						"special": false
+					},
+					{
+						"name": "五南文化廣場(北大店)",
+						"phone": "(02)2368-3380",
+						"address": "新北市三峽區大學路151號(行政大樓)",
+						"special": false
+					},
+					{
+						"name": "金石堂(北大加盟店)",
+						"phone": "(02)8671-3831",
+						"address": "新北市三峽區大學路88號1-2樓",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(三峽店)",
+						"phone": "(02)2673-9100",
+						"address": "新北市三峽區民生街119號B1樓",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(樹林店)",
+						"phone": "(02)2686-3646",
+						"address": "新北市樹林區中山路一段116號2、3樓",
+						"special": false
+					},
+					{
+						"name": "金石堂(樹林店)",
+						"phone": "(02)2681-9044",
+						"address": "新北市樹林區樹新路40之6號4樓(秀泰廣場)",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(新莊店)",
+						"phone": "(02)8992-6587",
+						"address": "新北市新莊區新泰路108號",
+						"special": false
+					},
+					{
+						"name": "金石堂(昕境店)",
+						"phone": "(02)2609-5915",
+						"address": "新北市林口區文化三路一段402巷2號2樓",
+						"special": false
+					},
+					{
+						"name": "春大地文具書局",
+						"phone": "(02)2281-9327",
+						"address": "新北市蘆洲區中正路117號",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(蘆洲店)",
+						"phone": "(02)2283-5487",
+						"address": "新北市蘆洲區長榮路22-1號 2、3 樓",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(淡水店)",
+						"phone": "(02)2620-0121",
+						"address": "新北市淡水區英專路72號",
+						"special": false
+					},
+					{
+						"name": "敦煌書局(中央店)",
+						"phone": "(03)420-1339",
+						"address": "桃園市中壢區中大路300號",
+						"special": false
+					},
+					{
+						"name": "金石堂(中壢店)",
+						"phone": "(03)422-8644",
+						"address": "桃園市中壢區中山路132號B1",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(中壢旗艦店)",
+						"phone": "(03)422-8851",
+						"address": "桃園市中壢區中正路89號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(中壢大江店)",
+						"phone": "(03)468-0222",
+						"address": "桃園市中壢區中園路二段501號4F",
+						"special": false
+					},
+					{
+						"name": "503文具批發廣場(內壢店)",
+						"phone": "(03)433-3879",
+						"address": "桃園市中壢區忠孝路86號",
+						"special": false
+					},
+					{
+						"name": "金石堂(桃站店)",
+						"phone": "(03)339-8535",
+						"address": "桃園市桃園區中正路20號6樓(桃園遠百)",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(永源店)",
+						"phone": "(03)337-5082",
+						"address": "桃園市桃園區中正路56號地下樓",
+						"special": false
+					},
+					{
+						"name": "誠品書店(桃園統領店)",
+						"phone": "(03)339-0983",
+						"address": "桃園市桃園區中正路61號4F",
+						"special": false
+					},
+					{
+						"name": "金石堂(中壢外展)",
+						"phone": "(03)352-8473",
+						"address": "桃園市蘆竹區中正路1號5樓(特力屋)",
+						"special": false
+					},
+					{
+						"name": "巧巧屋(南崁店)",
+						"phone": "(03)311-1359",
+						"address": "桃園市蘆竹區南崁路263號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(台茂店)",
+						"phone": "(03)263-9520",
+						"address": "桃園市蘆竹區南崁路一段112號6樓",
+						"special": false
+					},
+					{
+						"name": "金石堂(台積店)",
+						"phone": "(03)579-9223",
+						"address": "新竹市東區力行六路8號(台積工作證才可入內)",
+						"special": false
+					},
+					{
+						"name": "誠品書店(新竹巨城店)",
+						"phone": "(03)610-5700",
+						"address": "新竹市東區中央路229號5F(創藝大樓5F)",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(新竹店)",
+						"phone": "(035)236-984",
+						"address": "新竹市東區中正路38號",
+						"special": false
+					},
+					{
+						"name": "金石堂(新竹店)",
+						"phone": "(03)522-4829",
+						"address": "新竹市東區東門街56號1樓",
+						"special": false
+					},
+					{
+						"name": "大學書局(清大店)",
+						"phone": "(035)735-661",
+						"address": "新竹市東區建功路10號",
+						"special": false
+					},
+					{
+						"name": "全民書報社(竹師書苑)",
+						"phone": "(035)824-720",
+						"address": "新竹市東區食品路478號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(竹北店)",
+						"phone": "(03)658-3510",
+						"address": "新竹縣竹北市莊敬北路18號B2F",
+						"special": false
+					},
+					{
+						"name": "金石堂(竹北店)",
+						"phone": "(03)558-8712",
+						"address": "新竹縣竹北市縣政九路66號1-2樓",
+						"special": false
+					},
+					{
+						"name": "文展書局",
+						"phone": "(035)111-117",
+						"address": "新竹縣竹東鎮興農街56號",
+						"special": false
+					}
+				]
+			},
+			{
+				"groupTitle": "北部地區 高中指考、學測，科大四技用書經銷點",
+				"stores": [
+					{
+						"name": "學文社教材專賣店",
+						"phone": "(02)2420-2195",
+						"address": "基隆市信義區信一路121號",
+						"special": false
+					},
+					{
+						"name": "文林書局",
+						"phone": "(02)2968-0941",
+						"address": "新北市板橋區中正路33號",
+						"special": false
+					},
+					{
+						"name": "自強書局(總店)",
+						"phone": "(02)2967-4212",
+						"address": "新北市板橋區北門街59號",
+						"special": false
+					},
+					{
+						"name": "大漢書局",
+						"phone": "(02)2251-0576",
+						"address": "新北市板橋區松江街72號1號",
+						"special": false
+					},
+					{
+						"name": "進源書局",
+						"phone": "(02)8262-0140",
+						"address": "新北市土城區學府路一段143巷5號",
+						"special": false
+					},
+					{
+						"name": "學生書城",
+						"phone": "(02)2270-5415",
+						"address": "新北市土城區學府路一段49號",
+						"special": false
+					},
+					{
+						"name": "天下書局",
+						"phone": "(02)2982-5556",
+						"address": "新北市三重區中正北路14號",
+						"special": false
+					},
+					{
+						"name": "崇文書局",
+						"phone": "(02)2291-5634",
+						"address": "新北市新莊區中華路一段92號",
+						"special": false
+					},
+					{
+						"name": "清文書局",
+						"phone": "(02)2206-8567",
+						"address": "新北市新莊區龍安路280號",
+						"special": false
+					},
+					{
+						"name": "信望愛教材專賣店",
+						"phone": "(03)422-1921",
+						"address": "桃園市平鎮區延平路1段21號",
+						"special": false
+					},
+					{
+						"name": "學園社",
+						"phone": "(03)335-8525",
+						"address": "桃園市桃園區育樂街7號",
+						"special": false
+					},
+					{
+						"name": "文國書局",
+						"phone": "(03)522-6526",
+						"address": "新竹市東區東門街8號",
+						"special": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"areaTitle": "中部地區",
+		"storeGroups": [
+			{
+				"groupTitle": "",
+				"stores": [
+					{
+						"name": "正一文化有限公司",
+						"phone": "(037)476-299",
+						"address": "苗栗縣竹南鎮民權街49-2號",
+						"special": false
+					},
+					{
+						"name": "經典書局",
+						"phone": "(037)688-557",
+						"address": "苗栗縣頭份鎮信東街136號",
+						"special": false
+					},
+					{
+						"name": "芙華書局",
+						"phone": "(037)320-810",
+						"address": "苗栗縣苗栗市至公路205號",
+						"special": false
+					},
+					{
+						"name": "長毅文化事業",
+						"phone": "(04)2212-6209",
+						"address": "臺中市東區東光園路610號",
+						"special": false
+					},
+					{
+						"name": "金石堂(台中秀泰店)",
+						"phone": "(04)2215-2449",
+						"address": "臺中市東區南京路66號2F",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(旗艦店)",
+						"phone": "(04)2320-4007",
+						"address": "臺中市西區公益路186-2號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(園道店)",
+						"phone": "(04)2326-6085",
+						"address": "臺中市西區公益路68號3F",
+						"special": false
+					},
+					{
+						"name": "五南文化廣場(台中總店)",
+						"phone": "(04)2226-0330",
+						"address": "臺中市西區台灣大道二段85號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(中友店)",
+						"phone": "(04)2221-1287",
+						"address": "臺中市北區三民路三段161號(中友百貨C棟10F)",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(台中旗鑑店)",
+						"phone": "(04)2223-9838",
+						"address": "臺中市北區三民路三段88號",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(文心店)",
+						"phone": "(04)2236-0987",
+						"address": "臺中市北屯區文心路四段700號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(台中大遠百店)",
+						"phone": "(04)2258-9619",
+						"address": "臺中市西屯區台灣大道三段251號9樓南棟(台中大遠百)",
+						"special": false
+					},
+					{
+						"name": "金石堂(福科店)",
+						"phone": "(04)2463-9875",
+						"address": "臺中市西屯區福科路479號1樓",
+						"special": false
+					},
+					{
+						"name": "書立得文化",
+						"phone": "(04)2707-7576",
+						"address": "臺中市西屯區廣福路226巷5之3號",
+						"special": false
+					},
+					{
+						"name": "金石堂(文心店)",
+						"phone": "(04)2473-4950",
+						"address": "臺中市南屯區文心南路289號5樓(秀泰廣場)",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(大里店)",
+						"phone": "(04)2481-8768",
+						"address": "臺中市大里區大明路391之1號",
+						"special": false
+					},
+					{
+						"name": "101文具店(大里店)",
+						"phone": "(04)2485-3320",
+						"address": "臺中市大里區中興路二段322號",
+						"special": false
+					},
+					{
+						"name": "建成書店(豐原店)",
+						"phone": "(04)2526-0926",
+						"address": "臺中市豐原區向陽路293號",
+						"special": false
+					},
+					{
+						"name": "金石堂(麗寶店)",
+						"phone": "(04)2558-4079",
+						"address": "臺中市后里區福容路201之2號二期D區2樓2001b",
+						"special": false
+					},
+					{
+						"name": "101文具店(大雅店)",
+						"phone": "(04)2560-1910",
+						"address": "臺中市大雅區民生路一段209號",
+						"special": false
+					},
+					{
+						"name": "大千書局(沙鹿店)",
+						"phone": "(04)266-29193",
+						"address": "臺中市沙鹿區中棲路311-5號",
+						"special": false
+					},
+					{
+						"name": "東興書局",
+						"phone": "(04)2631-2515#12",
+						"address": "臺中市龍井區新東村新興路五巷2號2F",
+						"special": false
+					},
+					{
+						"name": "金石堂(新童加盟店)",
+						"phone": "(04)2658-4802",
+						"address": "臺中市梧棲區中棲路一段699號B1",
+						"special": false
+					},
+					{
+						"name": "誠品書店(台中三井店)",
+						"phone": "(04)2657-0766",
+						"address": "臺中市梧棲區臺灣大道十段168號",
+						"special": false
+					},
+					{
+						"name": "大千書局(大甲店)",
+						"phone": "(04)2687-6962",
+						"address": "臺中市大甲區中山路一段825之5號(大甲高中正門對面)",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(大甲店)",
+						"phone": "(04)2688-4868",
+						"address": "臺中市大甲區蔣公路108號地下樓",
+						"special": false
+					},
+					{
+						"name": "金玉堂(三民店)",
+						"phone": "(04)728-6689",
+						"address": "彰化縣彰化市三民路404號",
+						"special": false
+					},
+					{
+						"name": "金石堂(光復店)",
+						"phone": "(04)7229-212",
+						"address": "彰化縣彰化市民生路249號1樓",
+						"special": false
+					},
+					{
+						"name": "諾貝爾圖書城(光復店)",
+						"phone": "(04)724-7486~7",
+						"address": "彰化縣彰化市光復路89號",
+						"special": false
+					},
+					{
+						"name": "建成書局(鹿港店)",
+						"phone": "(04)778-3412",
+						"address": "彰化縣鹿港鎮菜園里三民路175號1樓",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(員林店)",
+						"phone": "(04)833-8485",
+						"address": "彰化縣員林鎮中山路二段49號",
+						"special": false
+					},
+					{
+						"name": "大大文化廣場(溪湖店)",
+						"phone": "(04)882-9016",
+						"address": "彰化縣溪湖鎮彰水路三段198號",
+						"special": false
+					},
+					{
+						"name": "智多星文化廣場",
+						"phone": "(04)895-0951",
+						"address": "彰化縣二林鎮中正路15號",
+						"special": false
+					},
+					{
+						"name": "大大書局(南投店)",
+						"phone": "(049)223-9046",
+						"address": "南投縣南投市復興路165號",
+						"special": false
+					},					
+					{
+						"name": "墊腳石文化廣場(南益店)",
+						"phone": "(049)235-6908",
+						"address": "南投縣草屯鎮碧山路150號",
+						"special": false
+					},
+					{
+						"name": "易百分書局",
+						"phone": "(049)290-6567",
+						"address": "南投縣埔里鎮中山路二段276號",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(埔里店)",
+						"phone": "(049)299-7355",
+						"address": "南投縣埔里鎮中正路369號1樓",
+						"special": false
+					},
+					{
+						"name": "晉士書店",
+						"phone": "(049)298-6567",
+						"address": "南投縣埔里鎮西安路一段101號",
+						"special": false
+					}
+				]
+			},
+			{
+				"groupTitle": "中部地區 高中指考、學測，科大四技用書經銷點",
+				"stores": [
+					{
+						"name": "芙華書局",
+						"phone": "(037)320-810",
+						"address": "苗栗縣苗栗市至公路205號",
+						"special": false
+					},
+					{
+						"name": "文淵書局",
+						"phone": "(04)2202-7800",
+						"address": "臺中市北區英士路62號",
+						"special": false
+					},
+					{
+						"name": "大千書局(沙鹿店)",
+						"phone": "(04)2662-9193",
+						"address": "臺中市沙鹿區中棲路311-5號",
+						"special": false
+					},
+					{
+						"name": "大千書局(大甲店)",
+						"phone": "(04)2687-6962",
+						"address": "臺中市沙鹿區台灣大道七段959號",
+						"special": false
+					},
+					{
+						"name": "建大書局",
+						"phone": "(04)725-0232",
+						"address": "彰化縣彰化市中正路一段439號",
+						"special": false
+					},
+					{
+						"name": "大千書局(彰化店)",
+						"phone": "(04)735-4530",
+						"address": "彰化縣彰化市自強路225號",
+						"special": false
+					},
+					{
+						"name": "建成書局(鹿港店)",
+						"phone": "(04)778-3412",
+						"address": "彰化縣鹿港鎮三民路175號",
+						"special": false
+					},
+					{
+						"name": "建成書局(員林店)",
+						"phone": "(04)835-8241",
+						"address": "彰化縣員林鎮大同路二段129巷43號",
+						"special": false
+					},
+					{
+						"name": "學明書局",
+						"phone": "(04)834-0360",
+						"address": "彰化縣員林鎮靜修東路185號",
+						"special": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"areaTitle": "南部地區",
+		"storeGroups": [
+			{
+				"groupTitle": "",
+				"stores": [
+					{
+						"name": "成功書局(斗南店)",
+						"phone": "(05)597-4757",
+						"address": "雲林縣斗南鎮中山路175號",
+						"special": false
+					},
+					{
+						"name": "自由書局",
+						"phone": "(05)632-2409",
+						"address": "雲林縣虎尾鎮和平路106號(家樂福內)",
+						"special": false
+					},
+					{
+						"name": "建中書局(虎尾店)",
+						"phone": "(05)631-3536",
+						"address": "雲林縣虎尾鎮林森路一段350號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(虎尾店)",
+						"phone": "(05)700-3566",
+						"address": "雲林縣虎尾鎮林森路一段491號",
+						"special": false
+					},
+					{
+						"name": "宏光書局",
+						"phone": "(05)662-2676",
+						"address": "雲林縣土庫鎮中正路230號",
+						"special": false
+					},
+					{
+						"name": "雲院有限公司",
+						"phone": "(05)532-4959",
+						"address": "雲林縣斗六市中山路321號",
+						"special": false
+					},
+					{
+						"name": "大山書局",
+						"phone": "(05)532-5932",
+						"address": "雲林縣斗六市太平路161號",
+						"special": false
+					},
+					{
+						"name": "建中書局(斗六店)",
+						"phone": "(05)532-3036",
+						"address": "雲林縣斗六市鎮南路100-1號",
+						"special": false
+					},
+					{
+						"name": "良昌書局(北港店)",
+						"phone": "(05)783-2539",
+						"address": "雲林縣北港鎮義民路51-4號",
+						"special": false
+					},
+					{
+						"name": "鴻圖書局",
+						"phone": "(05)223-2080",
+						"address": "嘉義市西區中山路370號",
+						"special": false
+					},
+					{
+						"name": "墊腳石文化廣場(嘉義店)",
+						"phone": "(05)227-3928",
+						"address": "嘉義市西區中山路583號",
+						"special": false
+					},
+					{
+						"name": "金石堂(嘉義店)",
+						"phone": "(05)227-9061",
+						"address": "嘉義市西區文化路299號2樓(秀泰廣場)",
+						"special": false
+					},
+					{
+						"name": "義豐書局",
+						"phone": "(05)222-1816",
+						"address": "嘉義市西區民族路582號",
+						"special": false
+					},
+					{
+						"name": "良昌書局(嘉義店)",
+						"phone": "(05)216-9901",
+						"address": "嘉義市西區新榮路236號b1",
+						"special": false
+					},
+					{
+						"name": "金石堂(嘉義耐斯店)",
+						"phone": "(05)277-3490",
+						"address": "嘉義市東區忠孝路600號5樓(耐斯百貨)",
+						"special": false
+					},
+					{
+						"name": "高雄復文(中正大學)",
+						"phone": "(05)272-3362",
+						"address": "嘉義縣民雄鄉大學路一段168號(活動中心二樓)",
+						"special": false
+					},
+					{
+						"name": "政大書城(台南店)",
+						"phone": "(06)223-9808",
+						"address": "臺南市中西區西門路二段120號B1",
+						"special": false
+					},
+					{
+						"name": "高雄復文(台南大學)",
+						"phone": "(06)214-4383",
+						"address": "臺南市中區樹林街二段33號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(南紡店)",
+						"phone": "(06)602-5600",
+						"address": "臺南市東區中華東路一段366號2F",
+						"special": false
+					},
+					{
+						"name": "敦煌書局(台南-站前)",
+						"phone": "(06)223-7892",
+						"address": "臺南市東區北門路一段159號",
+						"special": false
+					},
+					{
+						"name": "超越書局",
+						"phone": "(06)223-6878",
+						"address": "臺南市東區北門路一段56號二樓",
+						"special": false
+					},
+					{
+						"name": "巨曉書局",
+						"phone": "(06)262-0158",
+						"address": "臺南市南區中華南路二段211巷7號",
+						"special": false
+					},
+					{
+						"name": "宏寶書局",
+						"phone": "(06)291-2919",
+						"address": "臺南市南區新義南路23號",
+						"special": false
+					},
+					{
+						"name": "金寶書局",
+						"phone": "(06)291-2186",
+						"address": "臺南市南區新義南路23號",
+						"special": false
+					},
+					{
+						"name": "台灣復文(長榮大學書坊)",
+						"phone": "(06)2785-007",
+						"address": "臺南市歸仁區長大路1號(圖資大樓B1)",
+						"special": false
+					},
+					{
+						"name": "金玉堂(麻豆店)",
+						"phone": "(06)572-2704",
+						"address": "臺南市麻豆區新建里博愛路22號",
+						"special": false
+					},
+					{
+						"name": "金石堂(新營店)",
+						"phone": "(06)632-8638",
+						"address": "臺南市新營區三民路53-1號1樓",
+						"special": false
+					},
+					{
+						"name": "金玉堂(新營店)",
+						"phone": "(06)633-6390",
+						"address": "臺南市新營區三民路96號",
+						"special": false
+					},
+					{
+						"name": "金玉堂(善化店)",
+						"phone": "(06)581-4666",
+						"address": "臺南市善化區中正路515號",
+						"special": false
+					},
+					{
+						"name": "五南文化廣場(高雄店)",
+						"phone": "(07)235-1960",
+						"address": "高雄市新興區中山一路262號 (近高雄火車站)",
+						"special": false
+					},
+					{
+						"name": "大學城文化事業",
+						"phone": "(07)287-1011",
+						"address": "高雄市前金區七賢二路204號",
+						"special": false
+					},
+					{
+						"name": "金石堂(大立店)",
+						"phone": "(07)215-6790",
+						"address": "高雄市前金區五福三路59號7樓(大立百貨)",
+						"special": false
+					},
+					{
+						"name": "誠品書店(高雄大遠百店)",
+						"phone": "(07)331-3102",
+						"address": "高雄市苓雅區三多四路21號17 F（大遠百百貨17F）",
+						"special": false
+					},
+					{
+						"name": "高雄復文(高師大店)",
+						"phone": "(07)751-9450",
+						"address": "高雄市苓雅區和平一路116號",
+						"special": false
+					},
+					{
+						"name": "青年書局",
+						"phone": "(07)332-4910",
+						"address": "高雄市苓雅區青年一路141號",
+						"special": false
+					},
+					{
+						"name": "一新書局(高雄店)",
+						"phone": "(07)225-6611",
+						"address": "高雄市苓雅區廣州一街143之6號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(駁二店)",
+						"phone": "(07)963-1200",
+						"address": "高雄市鹽埕區大勇路3號C4倉庫",
+						"special": false
+					},
+					{
+						"name": "誠品書店(高雄SOGO)",
+						"phone": "(07)331-6088",
+						"address": "高雄市前鎮區三多三路217號12樓",
+						"special": false
+					},
+					{
+						"name": "政大書城(夢時代店)",
+						"phone": "(07)822-2365",
+						"address": "高雄市前鎮區中華五路789號2樓(藍鯨館)",
+						"special": false
+					},
+					{
+						"name": "瀚林(天祥店)",
+						"phone": "(07)359-7631",
+						"address": "高雄市三民區天祥一路90號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(高雄悅誠店)",
+						"phone": "(07)382-8889",
+						"address": "高雄市三民區民族一路427號2樓",
+						"special": false
+					},
+					{
+						"name": "明儀圖書股份有限公司",
+						"phone": "(07)343-5387",
+						"address": "高雄市三民區明福街2號",
+						"special": false
+					},
+					{
+						"name": "建工書局",
+						"phone": "(07)383-7708",
+						"address": "高雄市三民區皓東路12號",
+						"special": false
+					},
+					{
+						"name": "大育書局有限公司",
+						"phone": "(07)286-5320",
+						"address": "高雄市三民區建國三路69號",
+						"special": false
+					},
+					{
+						"name": "大盟升學書局",
+						"phone": "(07)384-6676",
+						"address": "高雄市三民區壽昌路201號",
+						"special": false
+					},
+					{
+						"name": "瀚林(自由店)",
+						"phone": "(07)345-7890",
+						"address": "高雄市左營區自由三路296號",
+						"special": false
+					},
+					{
+						"name": "金石堂(左營店)",
+						"phone": "(07)588-4217",
+						"address": "高雄市左營區站前北路1號",
+						"special": false
+					},
+					{
+						"name": "育才文化廣場",
+						"phone": "(07)624-0195",
+						"address": "高雄市岡山區溪東路52號",
+						"special": false
+					},
+					{
+						"name": "高雄復文(義守大學_醫學院)",
+						"phone": "(07)615-5513",
+						"address": "高雄市燕巢區義大路8號C棟",
+						"special": false
+					},
+					{
+						"name": "鳳山大書城",
+						"phone": "(07)743-2143",
+						"address": "高雄市鳳山區中山路138號地下樓",
+						"special": false
+					},
+					{
+						"name": "雄大書局(鳳山店)",
+						"phone": "(07)771-2828",
+						"address": "高雄市鳳山區南榮路161號",
+						"special": false
+					},
+					{
+						"name": "高雄復文(正修店)",
+						"phone": "(07)735-6378",
+						"address": "高雄市鳥松區澄清路840號",
+						"special": false
+					},
+					{
+						"name": "金石堂(義大店)",
+						"phone": "(07)656-9621",
+						"address": "高雄市大樹區學城路一段12號C區B1(義大)",
+						"special": false
+					},
+					{
+						"name": "五南文化廣場(屏東店)",
+						"phone": "(08)732-4020",
+						"address": "屏東縣屏東市中山路46－2號",
+						"special": false
+					},
+					{
+						"name": "金石堂(屏東店)",
+						"phone": "(08)732-5031",
+						"address": "屏東縣屏東市中正路34號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(屏東太平洋店)",
+						"phone": "(08)765-1699",
+						"address": "屏東縣屏東市中正路72號5F(太平洋百貨5F)",
+						"special": false
+					},
+					{
+						"name": "大學書城(屏東店)",
+						"phone": "(08)721-6305",
+						"address": "屏東縣屏東市民族路205號(屏東火車站前)",
+						"special": false
+					},
+					{
+						"name": "金石堂(潮州店)",
+						"phone": "(08)788-9056",
+						"address": "屏東縣潮州鎮中山路132號1-2樓",
+						"special": false
+					},
+					{
+						"name": "大眾書局",
+						"phone": "(06)927-2802",
+						"address": "澎湖縣馬公市仁愛路41號",
+						"special": false
+					},
+					{
+						"name": "一新書局(澎湖店)",
+						"phone": "(06)927-2330",
+						"address": "澎湖縣馬公市光復路89號",
+						"special": false
+					},
+					{
+						"name": "大新書局",
+						"phone": "(06)927-4330",
+						"address": "澎湖縣馬公市建國路17號",
+						"special": false
+					}
+				]
+			},
+			{
+				"groupTitle": "南部地區 高中指考、學測，科大四技用書經銷點",
+				"stores": [
+					{
+						"name": "宏光書局",
+						"phone": "(05)662-2676",
+						"address": "雲林縣土庫鎮中正路230號",
+						"special": false
+					},
+					{
+						"name": "大山書局",
+						"phone": "(05)532-5932",
+						"address": "雲林縣斗六市太平路161號",
+						"special": false
+					},
+					{
+						"name": "三福書城",
+						"phone": "(05)228-0377",
+						"address": "嘉義市東區興美六路37號",
+						"special": false
+					},
+					{
+						"name": "文昭圖書社",
+						"phone": "(06)215-3118",
+						"address": "臺南市中西區建業街39-1號",
+						"special": false
+					},
+					{
+						"name": "效果升學書局",
+						"phone": "(06)200-8800",
+						"address": "臺南市東區府東街197號",
+						"special": false
+					},
+					{
+						"name": "聯合升學書城",
+						"phone": "(06)632-7543",
+						"address": "臺南市新營區民治路四段1之5號",
+						"special": false
+					},
+					{
+						"name": "瀚林(右昌店)",
+						"phone": "(07)364-1699",
+						"address": "高雄市楠梓區右昌街50號",
+						"special": false
+					},
+					{
+						"name": "狀元書局(右昌店)",
+						"phone": "(07)363-5700",
+						"address": "高雄市楠梓區民昌路141號",
+						"special": false
+					},
+					{
+						"name": "慈暉書局(屏東)",
+						"phone": "(08)723-5750",
+						"address": "屏東縣屏東市廣東路187號",
+						"special": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"areaTitle": "東部地區",
+		"storeGroups": [
+			{
+				"groupTitle": "",
+				"stores": [
+					{
+						"name": "新時代書局",
+						"phone": "(03)932-6803",
+						"address": "宜蘭縣宜蘭市三清路40號",
+						"special": false
+					},
+					{
+						"name": "蘭語圖書社",
+						"phone": "(03)935-3008",
+						"address": "宜蘭縣宜蘭市文化路6號",
+						"special": false
+					},
+					{
+						"name": "誠品書店(宜蘭店)",
+						"phone": "(03)936-2770",
+						"address": "宜蘭縣宜蘭市民權路二段38巷6號3F",
+						"special": false
+					},
+					{
+						"name": "金玉堂(宜蘭店)",
+						"phone": "(03)931-5438",
+						"address": "宜蘭縣宜蘭市光復路40號",
+						"special": false
+					},
+					{
+						"name": "金玉堂(羅東店)",
+						"phone": "(03)956-8538",
+						"address": "宜蘭縣羅東鎮民權路165號",
+						"special": false
+					},
+					{
+						"name": "辰星書城",
+						"phone": "(03)956-2704",
+						"address": "宜蘭縣羅東鎮民權路71號",
+						"special": false
+					},
+					{
+						"name": "政大書城(花蓮店)",
+						"phone": "(03)831-6019",
+						"address": "花蓮縣花蓮市中山路547之2號3F",
+						"special": false
+					},
+					{
+						"name": "誠品書店(花蓮遠百店)",
+						"phone": "(03)8315-889",
+						"address": "花蓮縣花蓮市和平路581號2樓",
+						"special": false
+					},
+					{
+						"name": "新生書局",
+						"phone": "(03)832-4533",
+						"address": "花蓮縣花蓮市博愛街168號",
+						"special": false
+					},
+					{
+						"name": "統一文化廣場(台東店)",
+						"phone": "(089)934-5268",
+						"address": "臺東縣臺東市中華路一段420號3F",
+						"special": false
+					},
+					{
+						"name": "慈暉書局(台東店)",
+						"phone": "(089)327-571",
+						"address": "臺東縣臺東市強國街20~26號",
+						"special": false
+					}
+				]
+			},
+			{
+				"groupTitle": "東部地區 高中指考、學測，科大四技用書經銷點",
+				"stores": [
+					{
+						"name": "新生書局",
+						"phone": "(03)832-4533",
+						"address": "花蓮縣花蓮市博愛街168號",
+						"special": false
+					},
+					{
+						"name": "慈暉書局(台東)",
+						"phone": "(089)327-571、323-221",
+						"address": "台東縣台東市強國街20~26號",
+						"special": false
+					}
+				]
+			}
+		]
+	}
+]

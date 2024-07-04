@@ -1,0 +1,327 @@
+{
+	"jsonFiles": [
+		{
+			"title": "首頁內容",
+			"file": "page_index.json",
+			"link": "/index",
+			"note": ""
+		},
+		{
+			"title": "所有優惠活動的目錄頁",
+			"file": "page_discounts.json",
+			"link": "/discounts",
+			"note": ""
+		},
+		{
+			"title": "所有活動講座的目錄頁",
+			"file": "page_activities.json",
+			"link": "/activities",
+			"note": ""
+		},
+		{
+			"title": "所有專欄的目錄頁",
+			"file": "page_columns.json",
+			"link": "/columns",
+			"note": "本頁目錄有分頁導覽列。"
+		},
+		{
+			"title": "獨立出版常見 Q&A（及出版流程）",
+			"file": "page_pubqa.json",
+			"link": "/pubqa",
+			"note": ""
+		},
+		{
+			"title": "獨立出版實績案例",
+			"file": "page_pubex.json",
+			"link": "/pubex",
+			"note": ""
+		},
+		{
+			"title": "最新消息的目錄頁",
+			"file": "news.json",
+			"link": "/news",
+			"note": ""
+		},
+		{
+			"title": "獲獎／媒體報導目錄頁",
+			"file": "media.json",
+			"link": "/media",
+			"note": ""
+		},
+		{
+			"title": "實體書店目錄頁",
+			"file": "stores.json",
+			"link": "/stores",
+			"note": ""
+		},
+		{
+			"title": "網路書店目錄頁",
+			"file": "estores.json",
+			"link": "/estores",
+			"note": ""
+		},
+		{
+			"title": "電子書城目錄頁",
+			"file": "ebooks.json",
+			"link": "/ebookstores",
+			"note": ""
+		},
+		{
+			"title": "常見問題 Q&A",
+			"file": "qa.json",
+			"link": "/qa",
+			"note": ""
+		}
+	],
+
+	"htmlFiles": [
+		{
+			"title": "《頁尾》區塊",
+			"file": "footer.html",
+			"link": "/index",
+			"note": "位於網站下方的區塊，可自行修改內容。",
+			"multi": false
+		},
+		{
+			"title": "首頁：《活動／講座》區塊",
+			"file": "index_s2p2.html",
+			"link": "/index",
+			"note": "",
+			"multi": false
+		},
+		{
+			"title": "首頁：《專欄》區塊",
+			"file": "index_s2p3.html",
+			"link": "/index",
+			"note": "",
+			"multi": false
+		},
+		{
+			"title": "首頁：《廣告》區塊",
+			"file": "index_ad.html",
+			"link": "/index",
+			"note": "本廣告區塊可自行用別種排版方式改寫，並在組態檔中設定是否顯示。（2022-7-6 註：有改成使用內嵌，請在 page_index.json 修改）",
+			"multi": false
+		},
+		{
+			"title": "優惠活動頁面",
+			"file": "discountPages/chienhua_20211203.html",
+			"link": "/discount/chienhua_20211203",
+			"note": "有多個頁面，每一個優惠都是一個獨立 HTML 檔案。",
+			"multi": true
+		},
+		{
+			"title": "活動／講座頁面",
+			"file": "activityPages/chienhua_20210720.html",
+			"link": "/activity/chienhua_20210720",
+			"note": "有多個頁面，每一個活動都是一個獨立 HTML 檔案。",
+			"multi": true
+		},
+		{
+			"title": "專欄頁面",
+			"file": "columnPages/0N681101.html",
+			"link": "/column/0N681101",
+			"note": "有多個頁面，每一個專欄都是一個獨立 HTML 檔案。",
+			"multi": true
+		},
+		{
+			"title": "最新消息頁面",
+			"file": "mediaPages/2021_1202.html",
+			"link": "/mediaPage/2021_1202",
+			"note": "有多個頁面，每一個消息都是一個獨立 HTML 檔案。",
+			"multi": true
+		},
+		{
+			"title": "獲獎／媒體報導頁面",
+			"file": "columnPages/0N681101.html",
+			"link": "/column/0N681101",
+			"note": "有多個頁面，每一報導都是一個獨立 HTML 檔案。",
+			"multi": true
+		},
+		{
+			"title": "獨立出版服務介紹頁面",
+			"file": "pub.html",
+			"link": "/pub",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		},
+		{
+			"title": "團購服務頁面",
+			"file": "buy.html",
+			"link": "/buy",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		},
+		{
+			"title": "關於商鼎頁面",
+			"file": "about.html",
+			"link": "/about",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		},
+		{
+			"title": "投稿出版頁面",
+			"file": "pages/submit.html",
+			"link": "/page/submit",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		},
+		{
+			"title": "隱私權政策",
+			"file": "pages/privacy.html",
+			"link": "/page/privacy",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		},
+		{
+			"title": "折價券使用說明",
+			"file": "pages/getCoupon.html",
+			"link": "/page/getCoupon",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		},
+		{
+			"title": "購買辦法",
+			"file": "pages/howToBuy.html",
+			"link": "/page/howToBuy",
+			"note": "可完全依需求改寫。",
+			"multi": false
+		}
+	],
+
+	"imageFiles": [
+		{
+			"title": "各頁上方標題欄圖片、logo、公用圖片",
+			"file": "/",
+			"note": ""
+		},
+		{
+			"title": "首頁的各區塊圖片",
+			"file": "/index_XXXX",
+			"note": "包含首頁的「輪播」、「主題」、「活動」、「專欄」、「廣告」五個區塊的圖片。"
+		},
+		{
+			"title": "各項目的目錄頁圖片",
+			"file": "/XXXX複數型 或 /XXXX_home",
+			"note": "例如：「activities」資料夾放置「活動／講座」目錄頁所需圖片；「media_home」資料夾放置「獲獎／媒體報導」的目錄頁圖片。"
+		},
+		{
+			"title": "各項目的圖片",
+			"file": "/XXXX",
+			"note": "例如：「activity」資料夾放置「活動／講座」各頁面圖片；「media」資料夾放置「獲獎／媒體報導」的各頁圖片。"
+		},
+		{
+			"title": "重要頁面",
+			"file": "/YYYY",
+			"note": "某些重要頁面建立一個子資料夾來放置所需圖片。例如：「/about」－「關於商鼎」的圖片；「/pub」－「獨立出版服務」的圖片。"
+		},
+		{
+			"title": "其他",
+			"file": "",
+			"note": "未來如有需求，可自行新增資料夾來管理新增的圖片。"
+		}
+	],
+
+	"catalogs": [
+		{
+			"title": "優惠活動",
+			"link": "/discounts",
+			"sampleContent": "/discount/chienhua_20211203",
+			"note": ""
+		},
+		{
+			"title": "活動／講座",
+			"link": "/activities",
+			"sampleContent": "/activity/chienhua_20210720",
+			"note": ""
+		},
+		{
+			"title": "專欄",
+			"link": "/columns",
+			"sampleContent": "/column/0N681101",
+			"note": "本目錄頁有分頁導覽列"
+		},
+		{
+			"title": "最新消息",
+			"link": "/news",
+			"sampleContent": "/newsPage/2022_0420",
+			"note": "（內容頁路由為發佈日期）"
+		},
+		{
+			"title": "獲獎／媒體報導",
+			"link": "/media",
+			"sampleContent": "/mediaPage/2021_1202",
+			"note": "（內容頁路由為發佈日期）"
+		}
+	],
+
+	"discountSample": [
+		{
+			"title": "2021 服裝製作新書",
+			"link": "/discount/chienhua_20211203",
+			"filePath": "assets/html/discountPages/chienhua_20211203.html"
+		},
+		{
+			"title": "教師甄試 X 教戰策略",
+			"link": "/discount/chienhua_20211210",
+			"filePath": "assets/html/discountPages/chienhua_20211210.html"
+		},
+		{
+			"title": "台電招考",
+			"link": "/discount/chienhua_20211125",
+			"filePath": "assets/html/discountPages/chienhua_20211125.html"
+		}
+	],
+
+	"activitySample": [
+		{
+			"title": "財會稅務秘訣",
+			"link": "/activity/chienhua_20210831",
+			"filePath": "assets/html/activityPages/chienhua_20210831.html"
+		},
+		{
+			"title": "消防設備士考前報佛腳班",
+			"link": "/activity/chienhua_20210720",
+			"filePath": "assets/html/activityPages/chienhua_20210720.html"
+		},
+		{
+			"title": "郵政內外勤考前衝刺班",
+			"link": "/activity/chienhua_20210310",
+			"filePath": "assets/html/activityPages/chienhua_20210310.html"
+		}
+	],
+
+	"generalSample": [
+		{
+			"title": "404 警告",
+			"link": "/page/404",
+			"filePath": "assets/html/pages/404.html"
+		},
+		{
+			"title": "施工中",
+			"link": "/page/under_construction",
+			"filePath": "assets/html/pages/under_construction.html"
+		},
+		{
+			"title": "投稿出版",
+			"link": "/page/submit",
+			"filePath": "assets/html/pages/submit.html"
+		},
+		{
+			"title": "隱私政策",
+			"link": "/page/privacy",
+			"filePath": "assets/html/pages/privacy.html"
+		},
+		{
+			"title": "折價券使用說明",
+			"filePath": "assets/html/pages/getCoupon.html",
+			"link": "/page/getCoupon"
+		},
+		{
+			"title": "購買辦法",
+			"filePath": "assets/html/pages/howToBuy.html",
+			"link": "/page/howToBuy"
+		}
+		
+	]
+}

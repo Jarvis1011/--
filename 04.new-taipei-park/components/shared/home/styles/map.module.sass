@@ -1,0 +1,189 @@
+.home-map
+	background: url('/images/home/main-map.png') no-repeat top center
+	background-size: cover !important
+	min-height: 1000px
+	position: relative
+	.title
+		color: #272727
+		font-size: 2.5rem
+		font-weight: 700
+		opacity: 0.95
+		margin-bottom: 3px
+		margin-left: -5px
+	.content
+		color: #272727
+	.wrapper
+		background: rgba(255,255,255,0.8)
+		box-shadow: 3px 3px 8px rgba(0,0,0,0.15)
+		border-radius: 10px
+		border: 1px solid rgba(39, 39, 39, 0.2)
+		padding: 9px 15px 19px
+		font-size: 0.95rem
+		position: relative
+
+	.content01
+		position: absolute
+		max-width: 350px
+		top: 8%
+		left: 22%
+		z-index: 2
+	.deco01
+		position: absolute
+		top: 7.5%
+		left: 47.5%
+		z-index: 1
+
+	.content02
+		position: absolute
+		max-width: 340px
+		top: 31%
+		right: 5%
+		z-index: 2
+	.deco02
+		position: absolute
+		top: 15%
+		right: 3%
+		z-index: 1
+
+	.content03
+		position: absolute
+		max-width: 330px
+		top: 40%
+		left: 4%
+		z-index: 2
+	.deco03
+		position: absolute
+		top: 35%
+		left: 23%
+		z-index: 1
+	.deco04
+		position: absolute
+		top: 46%
+		left: 45%
+		z-index: 1
+
+	.content04
+		position: absolute
+		max-width: 400px
+		top: 68%
+		left: 18%
+		z-index: 2
+	.deco05
+		position: absolute
+		top: 75.5%
+		right: 0
+		z-index: 1
+
+.btn-main
+	background: rgb(2,117,184)
+	background: linear-gradient(100deg, rgba(2,117,184,1) 0%, rgba(55,166,139,1) 100%)
+	padding: 5px 10px
+	border: 1px solid #ffffff
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.3)
+	border-radius: 18px
+	color: #ffffff
+	font-size: 0.9rem
+	font-weight: 600
+	position: absolute
+	right: 10px
+	bottom: -18px
+	&:hover
+		color: #eeeeee
+		transition: 0.5s
+
+
+.mobile-deco01, .mobile-deco02, .mobile-deco03
+	display: none
+
+@media screen and ( max-width: 768px )
+	.home-map
+		background: url('/images/home/mobile-main-map-illustration.webp') no-repeat top center
+		background-size: cover !important
+		min-height: 1350px
+		position: relative
+		.mobile-deco01
+			display: block
+			position: absolute
+			top: 48%
+			left: 30%
+		.mobile-deco02
+			display: block
+			position: absolute
+			bottom: 0
+			left: 5%
+		.mobile-deco03
+			display: block
+			position: absolute
+			bottom: 3%
+			right: 5%
+		.title
+			font-size: 1.5rem
+			margin-left: 5px
+		.content01
+			position: absolute
+			max-width: 100%
+			top: 7%
+			left: 0
+			z-index: 2
+		.deco01
+			position: absolute
+			top: 2%
+			left: auto
+			right: 10%
+			z-index: 1
+			width: 30vw
+			max-width: 100%
+
+		.content02
+			position: absolute
+			max-width: 100%
+			top: 29%
+			right: 0
+			z-index: 2
+			.title
+				text-align: right
+			.btn-main
+				left: 10px
+				right: auto
+		.deco02
+			position: absolute
+			top: 25.5%
+			left: 3%
+			right: auto
+			z-index: 1
+			width: 50vw
+
+		.content03
+			position: absolute
+			max-width: 100%
+			top: 55%
+			left: 0
+			z-index: 2
+		.deco03
+			position: absolute
+			top: 50%
+			right: 0
+			left: auto
+			z-index: 1
+			width: 55vw
+		.deco04
+			display: none
+
+		.content04
+			position: absolute
+			max-width: 100%
+			top: 77.5%
+			left: 0
+			z-index: 2
+			.title
+				text-align: right
+			.btn-main
+				left: 10px
+				right: auto
+		.deco05
+			position: absolute
+			top: 76%
+			right: auto
+			left: 5%
+			z-index: 1
+			width: 58vw

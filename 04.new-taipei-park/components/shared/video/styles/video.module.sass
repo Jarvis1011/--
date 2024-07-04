@@ -1,0 +1,54 @@
+.video-wrapper
+	border-style: solid
+	border-width: 2px
+	// border-image: linear-gradient(118deg, #36a58a 0%, #0376b8 100%)
+	border: 2px solid #36a58a
+	border-radius: 8px
+	position: relative
+	margin-bottom: 20px
+	display: block
+	.img-wrapper
+		position: relative
+	.play-icon
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+		width: 55px
+		cursor: pointer
+	.title
+		color: #ffffff
+		font-size: 0.85rem
+		padding: 5px 20px
+		min-height: 65px
+		line-height: 20px
+		background: rgb(120,202,147)
+		background: radial-gradient(circle, rgba(120,202,147,1) 0%, rgba(2,117,184,1) 95%)
+		position: relative
+		.inside
+			position: absolute
+			width: 90%
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+
+.search-area-mobile
+	display: none
+
+@media (max-width: 978px)
+	.search-area-mobile
+		display: block
+		position: relative
+		input[type=text]
+			box-shadow: 0 0 7px rgba(0,0,0,0.15)
+			background: #fff
+			width: 100%
+			border-radius: 10px
+			font-size: 1.1rem
+		.btn-search
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 10px
+			border: none
+			background: none

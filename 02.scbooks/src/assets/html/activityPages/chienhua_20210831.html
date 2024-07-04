@@ -1,0 +1,485 @@
+
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<style>
+	.icon-list{
+		font-size: 2rem;
+		line-height: 1.3em;
+		margin-bottom: 0.2em;
+		font-weight: bold;
+		display: inline-flex;
+		align-items: top;
+	}
+	.icon-list-icon{
+		fill: rgb(18, 170, 69);
+		height: 1.1em;
+		width: 1.1em;
+		margin-right: 0.2em;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-top: 0.1em;
+	}
+	@media(max-width: 575px) {
+		.icon-list{
+			font-size: 1.6rem;
+		}
+	}
+
+	.symbol{
+		max-width: 220px;
+	}
+	.medium-size{
+		font-size: 20px;
+	}
+	.course-size{
+		font-size: 22px;
+	}
+
+	.num-item{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 5rem;
+		line-height: 4rem;
+		width: 3.6rem;
+		color: #ff8e25;
+		margin-top: 0px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	.teacher-intro{
+		font-size: 1.8rem;
+	}
+	@media(max-width: 575px) {
+		.teacher-intro{
+			font-size: 1.3rem;
+		}
+	}
+
+	.medium-height{
+		line-height: 1.4em;
+	}
+
+	h1.section{
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		font-weight: bold;
+		font-size: 2.8rem;
+		background-color: rgb(26, 161, 139);
+		color: #fff;
+
+		text-align: center;
+	}
+
+
+	
+	
+
+
+</style>
+
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/activities">活動／講座</a></li>
+				<li class="breadcrumb-item active" aria-current="page">財會稅務秘訣</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<!-- 主圖 -->
+		<img src="assets/images/activity/chienhua_20210831_1.jpg" class="w-100 img-fluid">
+		<img src="assets/images/activity/chienhua_20210831_2.jpg" class="w-100 img-fluid">
+		<img src="assets/images/activity/chienhua_20210831_3.jpg" class="w-100 img-fluid">
+
+
+
+		<h1 class="text-danger fw-bold text-center mt-5">你是否也有財務上的困惑？</h1>
+		
+		<div class="d-flex flex-column flex-lg-row mt-5 pb-4">
+
+			<img src="assets/images/activity/chienhua_20210831_4.jpg"
+				class="img-fluid flex-grow-0 flex-shrink-0"
+				style="max-width: 392px;">
+
+			<div class="flex-grow-1 flex-shrink-1 px-3 ps-lg-4 mt-4 mt-lg-2">
+				<p class="icon-list">
+					<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#check2-square"/></svg>
+					營收成長，卻沒看到現金？</p>
+				<p class="icon-list">
+					<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#check2-square"/></svg>
+					現金增加，卻面臨財務危機？</p>
+				<p class="icon-list">
+					<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#check2-square"/></svg>
+					研發能力強，智財權多，卻營運困難？</p>
+				<p class="icon-list">
+					<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#check2-square"/></svg>
+					獲利增加，卻沒錢繳稅，發放獎金紅利？</p>
+				<p class="icon-list">
+					<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#check2-square"/></svg>
+					客戶穩定成長中，卻想結束營業？</p>
+			</div>
+		</div>
+
+
+		<h1 class="text-center fw-bold mt-5">企業營運<span class="text-danger text-nowrap">不能只重視營收與獲利</span></h1>
+		<h3 class="text-center">要掌握公司流動的命脈＝現金流量</h3>
+
+
+		<div class="mt-5 pb-4 d-flex flex-column flex-lg-row align-items-center justify-content-center">
+			<img src="assets/images/activity/chienhua_20210831_5.jpg"
+				class="flex-grow-0 flex-shrink-0 mb-4 mb-lg-0"
+				>
+
+			<img src="assets/images/activity/chienhua_20210831_6.jpg"
+				class="flex-grow-0 flex-shrink-0 d-none d-lg-block"
+				>
+
+			<img src="assets/images/activity/chienhua_20210831_7.jpg"
+				class="flex-grow-1 flex-shrink-1 w-100"
+				style="max-width: 600px;"
+				>
+		</div>
+
+
+		<h1 class="text-center fw-bold mt-5 mb-4">從現金流入門到實務應用<br>
+			<span class="text-danger text-nowrap">建立財務預警診斷執行機制</span>
+		</h1>
+
+		<div class="ratio ratio-16x9">
+			<iframe src="https://www.youtube.com/embed/Abc7Qg7FjMs" 
+				title="YouTube video player" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</div>
+
+
+		<div class="row">
+			<div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+				<img src="assets/images/svg_icons/money.svg" class="symbol"/>
+				<div class="text-center">
+					<h3 class="fw-bold text-primary">現金流管理</h3>
+					<p class="medium-size">重要觀念與應用</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+				<img src="assets/images/svg_icons/money_3.svg" class="symbol"/>
+				<div class="text-center">
+					<h3 class="fw-bold text-primary">會計內控與稅務</h3>
+					<p class="medium-size">作業實務</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+				<img src="assets/images/svg_icons/money_4.svg" class="symbol"/>
+				<div class="text-center">
+					<h3 class="fw-bold text-primary">財務規劃</h3>
+					<p class="medium-size">成本控管分析</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-3 col-lg-3 d-flex flex-column align-items-center">
+				<img src="assets/images/svg_icons/money_2.svg" class="symbol"/>
+				<div class="text-center">
+					<h3 class="fw-bold text-primary">財務決策</h3>
+					<p class="medium-size">執行力</p>
+				</div>
+			</div>
+		</div>
+
+
+		<h1 class="section">推薦給</h1>
+		<!-- <img src="assets/images/activity/chienhua_20210831_8.jpg" class="w-100 img-fluid"> -->
+		
+
+		<p class="icon-list mb-3">
+			<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#person-check-fill"/></svg>
+			要掌握財務、會計、稅務核心觀念的新創企業老闆</p>
+		<p class="icon-list mb-3">
+			<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#person-check-fill"/></svg>
+			想要活化財務運用，讓管理決策更及時有效的中小企業經理人</p>
+		<p class="icon-list mb-3">
+			<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#person-check-fill"/></svg>
+			想建立財務預警診斷機制的財會主任，及各級主管同仁</p>
+		<p class="icon-list mb-3">
+			<svg class="icon-list-icon"><use xlink:href="assets/css/bootstrap-icons.svg#person-check-fill"/></svg>
+			對於現金流管理有興趣的，想學習的朋友</p>
+
+
+
+		<h1 class="text-center fw-bold mt-5"><span class="text-danger text-nowrap">獨創現金流黃金法則</span><span class="text-nowrap">徹底改善公司體制</span></span></h1>
+
+
+		<img src="assets/images/activity/chienhua_20210831_9.jpg" class="w-100 img-fluid mt-4 mb-4">
+
+		<h1 class="section">課程設計</h1>
+		<!-- <img src="assets/images/activity/chienhua_20210831_10.jpg" class="w-100 img-fluid mt-5"> -->
+
+		<h2 class="text-center fw-bold">以現金流管理，建立財務健康成長永續經營之道</h2>
+
+
+		<!-- 6項內容 -->
+		<div class="mt-5 p-2 p-md-4">
+			<div class="row gx-5 gy-4" >
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="d-flex">
+						<div class="num-item">1</div>
+						<div>
+							<h4 class="card-title fw-bold">現金流管理之重要觀念</h4>
+							<ul>
+								<li>現金流管理七大法則</li>
+								<li>現金流管理的應用</li>
+								<li>以現金流提升管理效能</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="d-flex">
+						<div class="num-item">2</div>
+						<div>
+							<h4 class="card-title fw-bold">現金流量表編製與應用</h4>
+							<ul>
+								<li>現金與企業活動之關聯與現金流決策</li>
+								<li>現金流量表編製重點及管理的八大技術</li>
+								<li>財務結構與財務槓桿</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="d-flex">
+						<div class="num-item">3</div>
+						<div>
+							<h4 class="card-title fw-bold">會計內控作業處理實務</h4>
+							<ul>
+								<li>財會稅整合建立內控管理</li>
+								<li>內控管理實例與常見問題</li>
+								<li>內控管理提升經營效率</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="d-flex">
+						<div class="num-item">4</div>
+						<div>
+							<h4 class="card-title fw-bold">稅務會計作業及法規實務</h4>
+							<ul>
+								<li>稅務類別與營業稅概述</li>
+								<li>營業稅申報案例分享</li>
+								<li>稅務規劃與個案研討</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="d-flex">
+						<div class="num-item">5</div>
+						<div>
+							<h4 class="card-title fw-bold">財務規劃成本控管分析</h4>
+							<ul>
+								<li>成本控管分析指標</li>
+								<li>掌握成本控管著力點</li>
+								<li>分析與改善企業成本</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="d-flex">
+						<div class="num-item">6</div>
+						<div>
+							<h4 class="card-title fw-bold">財務策略執行力</h4>
+							<ul>
+								<li>經營績效與執行力關聯</li>
+								<li>執行力之應用</li>
+								<li>個案研討</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		
+
+		<!-- 簡介 -->
+		<img src="assets/images/activity/chienhua_20210831_11.jpg" class="w-100 img-fluid mt-5">
+
+		<div class="p-2 p-md-4 mt-3 mt-md-2">		
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-xl-3">
+					<img src="assets/images/activity/chienhua_20210831_12.jpg" class="w-100 img-fluid">
+				</div>
+				<div class="col-12 col-sm-6 col-md-8 col-xl-9">
+					<p class="teacher-intro mt-4 mt-sm-0">劉郁純會計師是<span class="fw-bold text-danger">內控內稽、現金流管理與查核簽證等領域的專家</span>。擅長協助企業及組織建立有效之財會作業流程，做好現金流管理，建構系統化之內控制度，進而提升營運效能。</p>
+					<p class="teacher-intro">劉會計師累積多年實務經驗所<span class="fw-bold text-danger">獨創之現金流黃金法則</span>，是企業永續經營的關鍵要素。</p>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="fw-bold mt-5">現任</h2>
+		<ul class="teacher-intro text-start">
+			<li>郁傑營創顧問有限公司（Gloria & Partners）創辦人／執行長</li>
+			<li>兆豐證劵股份有限公司 監察人</li>
+			<li>安傑財會管理顧問有限公司（Angel Financl）負責人</li>
+			<li>安傑聯合會計師事務所（Glora CPAs' Firm）所／主持會計師</li>
+		</ul>
+
+
+		<h2 class="fw-bold mt-5">學歷</h2>
+		<ul class="teacher-intro text-start">
+			<li>國立政治大學會計研究所 碩士</li>
+			<li>國立台灣大學會計學系 學士</li>
+		</ul>
+
+
+		<h2 class="fw-bold mt-5">經歷</h2>
+		<ul class="teacher-intro text-start">
+			<li>衛福部 醫事司 醫療法人財務訪查委員（2020-至今）</li>
+			<li>衛福部 社會家庭署 身心障礙福利機構 評鑑委員(2020-至今)</li>
+			<li>中華稅務代理人協會監事</li>
+			<li>經濟部 SIIR 財務情境服務網 創新研發計畫主持人</li>
+			<li>台灣扶創智庫協會創會理事長</li>
+			<li>台北市會計師公會監事</li>
+			<li>經濟部中小企業處／榮譽指導員；創業財稅規劃顧問講師</li>
+			<li>安侯建業會計師事務所（KPMG）／審計經理級知識管理經理</li>
+			<li>多家流通服務業及醫療院所之財稅管理顧問</li>
+			<li>多家 IC 設計公司、電子公司、半導體業之ERP財務模組導入及內控制度顧問</li>
+		</ul>
+
+		
+
+		<h1 class="text-center fw-bold mt-5"><span class="text-danger text-nowrap">數百家客戶實績，</span><span class="text-nowrap">見證輔導品質</span></h1>
+		<h3 class="medium-height">劉會計師累積多年實務經驗所獨創之現金流黃金法則，是企業永續經營的關鍵要素，受邀輔導 IC 設計公司、電子公司、協會等數百家客戶，從帳務、管理制度到公司治理</h3>
+
+
+		<img src="assets/images/activity/chienhua_20210831_13.jpg" class="w-100 img-fluid mt-3 mt-lg-4 mb-5">
+
+		<h1 class="section">金牌獨家方案</h1>
+		<!-- <img src="assets/images/activity/chienhua_20210831_14.jpg" class="w-100 img-fluid mt-5"> -->
+
+
+		<img src="assets/images/activity/chienhua_20210831_15.jpg" class="w-100 img-fluid mt-4 mb-4">
+
+
+		<div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+			<div class="flex-grow-1 flex-shrink-1">
+				<img src="assets/images/activity/chienhua_20210831_16.jpg" class="w-100 img-fluid" style="max-width: 450px;">
+			</div>
+			<div class="flex-grow-1 flex-shrink-1">
+				<img src="assets/images/activity/chienhua_20210831_17.jpg" class="w-100 img-fluid" style="max-width: 120px;">
+			</div>
+			<div class="flex-grow-1 flex-shrink-1">
+				<img src="assets/images/activity/chienhua_20210831_18.jpg" class="w-100 img-fluid" style="max-width: 450px;">
+			</div>			
+		</div>
+
+		<img src="assets/images/activity/chienhua_20210831_19.jpg" class="w-100 img-fluid mt-4 mb-4">
+
+		<d class="d-grid px-5">
+			<a type="button" 
+				class="btn btn-lg btn-danger text-light d-inline-flex align-items-center justify-content-center rounded-pill fw-bold py-3" 
+				href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=20026" target="_blank">
+				<svg class="bi icon-light me-2">
+					<use xlink:href="assets/css/bootstrap-icons.svg#cart" />
+				</svg>
+				立即購買
+			</a>
+		</d>
+
+		<div style="height: 50px;"></div>
+		<h1 class="section">最佳入門基礎</h1>
+
+		<h1 class="text-center fw-bold mt-4">【看懂還不夠！企業經營<span class="text-nowrap">不可不知的財會稅務秘訣】</span><span class="text-danger text-nowrap">6 堂課程</span></h1>
+
+		<div class="d-flex justify-content-center">
+			<img src="assets/images/activity/chienhua_20210831_20.jpg" class="img-fluid mt-4">
+		</div>
+
+		<div class="row mt-4 px-3">
+			<div class="col-12 col-md-4 offset-xl-1 col-xl-4 offset-xxl-1 col-xxl-4">
+				<img src="assets/images/activity/chienhua_20210831_21.jpg" class="img-fluid">
+			</div>
+			<div class="col-12 col-md-8 col-xl-7 col-xxl-7">
+				<ul class="course-size mt-2">
+					<li>用 6 堂課，從財務現金流入門到實務應用</li>
+					<li>以非傳統深澀的方式講授，引領學員學習</li>
+					<li>非財會背景人員也能看懂、運用現金流量表</li>
+					<li>從七大法則拆解企業經營的重要財務觀念</li>
+					<li>以現金流管理的八大技術，提升策略執行力</li>
+					<li>利用財務報表作分析管理，找出決策的方向</li>
+					<li>課程開通後2年內無限次數重複複習</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-center">
+			<img src="assets/images/activity/chienhua_20210831_22.jpg" class="img-fluid">
+		</div>
+
+		
+		<d class="d-grid px-5 mt-4">
+			<a type="button" 
+				class="btn btn-lg btn-danger text-light d-inline-flex align-items-center justify-content-center rounded-pill fw-bold py-3" 
+				href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=20025" target="_blank">
+				<svg class="bi icon-light me-2">
+					<use xlink:href="assets/css/bootstrap-icons.svg#cart" />
+				</svg>
+				立即購買
+			</a>
+		</d>
+
+
+
+
+
+
+	</div>
+
+
+
+	<!-- 額外空間 -->
+	<div style="height: 80px;"></div>
+
+
+</div>
+

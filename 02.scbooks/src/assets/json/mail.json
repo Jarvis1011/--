@@ -1,0 +1,32 @@
+{	
+	"註解": "【XXXXX】是保留給要取代的內容。",
+
+	"resetMail": {
+		"註解": "重設密碼的通知郵件",
+
+		"subject": "【商鼎數位】重設密碼通知",
+
+		"html": "<h4>重設密碼通知</h4><p>本通知信為系統自動發出，請勿回信。</p><p>請<a href=\"【XXXXX】\" target=\"_blank\">按此連結</a>以重設您的密碼，本連結僅在發出後十分鐘內有效。若還有任何問題，請於上班時間聯繫客服人員。</p>",
+
+
+		"顯示屬性": "是否將郵件內容顯示在「忘記密碼」頁面中，供測試用",
+		"show": false
+	},
+
+	"newMamberMail": {
+		"註解": "註冊會員的通知郵件",
+
+		"subject": "【商鼎數位】歡迎加入商鼎會員",
+
+		"html": "<h4>新會員註冊通知</h4><p>（本通知信為系統自動發出，請勿回信。）</p><p>親愛的 【name】 您好，歡迎加入商鼎數位會員！以下是您的註冊資訊：</p><ul><li>會員帳號：【account】</li><li>密碼：【pwd】</li></ul><p>請保存以上資料，以備登入商鼎網站時使用。</p><ol><li>若您從未加入商鼎數位會員卻收到本信，請忽略本郵件，造成不便敬請見諒。</li><li>您可以隨時登入來修改您的會員資訊。</li></ol></p>"
+	},
+
+
+	"sign": {
+		"註解": "郵件的簽名檔",
+
+		"html": "<p style=\"margin-top: 60px;\">-------------------<br>商鼎數位出版<br>網站: <a href=\"http://www.scbooks.com.tw\" target=\"_blank\">http://www.scbooks.com.tw</a><br>電話：+886-2-2228-9070<br>客服信箱：<a href=\"mailto:scbkservice@gmail.com\" target=\"_blank\">scbkservice@gmail.com</a></p>"
+	}
+
+	
+}

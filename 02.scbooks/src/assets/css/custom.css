@@ -1,0 +1,540 @@
+
+/* 一般 */
+.cursor-pointer{
+	cursor: pointer !important;
+}
+
+.my-serif{
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* 因較晚使用 Bootstrap icon font */
+/* 覆蓋自訂的 bootstrap5_xcbooks.css 中的 bi */
+/* 設定 icon 尺寸 */
+.bi.size2{
+	font-size: 1.5em;
+}
+.bi.size3{
+	font-size: 2em;
+}
+
+/* 專欄文章區 */
+.article h1, h1.article,
+.article h2, h2.article,
+.article h3, h3.article,
+.article h4, h4.article,
+.article h5, h5.article,
+.article h6, h6.article{
+	font-weight: bold;
+	margin-bottom: 1rem;
+	margin-top: 1.2em;
+	line-height: 1.3em;
+}
+.article p, p.article{
+	line-height: 1.6rem;
+}
+
+.column-name{
+	font-size: 14px;
+	line-height: 14px;
+	display: inline-block;
+	border-width: 1px;
+	border-style: solid;
+	padding: 8px 8px;
+	border-radius: 4px;
+}
+
+/* 區塊 */
+.column-article-title{
+	background-color: #feffe9;
+	padding-top: 1.5rem;
+	padding-bottom: 3rem;
+}
+.column-article-content{
+	background-color: #fff;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+
+.media-article-title{
+	background-color: #ECEFF1;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+}
+
+.news-article-title{
+	background-color: #d7fff7;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+}
+
+.media-date{
+	text-align: right;
+	color: #B0BEC5;
+	margin-top: 2.5rem;
+}
+
+/* 文字 */
+.column-content p, 
+.column-content ul li, 
+.column-content ol li{
+	font-size: 18px;
+	line-height: 1.6em !important;
+}
+
+/* 圖說 */
+.img-info{
+	opacity: 0.6;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+	font-size: 16px !important;
+}
+.img-info.dark{
+	opacity: 1;
+}
+.column-article-title .img-info{
+	margin-bottom: 10px !important;
+}
+
+
+/* 引用區 */
+.column-content figure{
+	background-color: #E9ECEF;
+	padding: 2.5rem 2.5rem 1.8rem 2.5rem;
+	margin: 2.5rem 2rem;
+}
+@media(max-width: 499px) {
+    .column-content figure {
+		padding: 1rem;
+        margin: 2.5rem 0rem;
+    }
+}
+
+.column-content blockquote p{
+	font-size: 20px;
+	line-height: 28px !important;
+	font-family: 'Times New Roman', Times, '楷體', '標楷體', serif;	
+}
+
+.column-content .blockquote-footer{
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	font-size: 1rem !important;
+}
+
+/* 游標移入動畫 */
+.hover-img,
+.hover-img-small{
+	/* transform: scale(1.1); */
+	/* opacity: 0.8; */
+	transform: scale(1);
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	cursor: pointer;
+}
+.hover-img:hover{
+	/* transform: scale(1.1); */
+	/* opacity: 0.8; */
+	transform: scale(1.1);
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.hover-img-small:hover{
+	/* transform: scale(1.1); */
+	/* opacity: 0.8; */
+	transform: scale(1.05);
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+/* 陰影移入動畫 */
+
+/* 盒子陰影 */
+.hover-shadow{
+	box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 15%);
+	z-index: 0;
+}
+.hover-shadow:hover{
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+	z-index: 20;
+}
+
+/* 內容陰影 */
+.hover-drop-shadow{
+	filter: drop-shadow(0 0.2rem 0.2rem rgba(0, 0, 0, 0.3));
+	z-index: 0;
+}
+.hover-drop-shadow:hover{
+	filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.5));
+	z-index: 20;
+}
+
+/* 修復清單 ul 或 ol 太過內縮 */
+ul.fixed-left,
+ol.fixed-left{
+	margin-left: -0.5em;
+}
+
+
+ul.fixed-left-pl,
+ol.fixed-left-pl{
+	padding-left: 20px;
+}
+
+/* 行內程式碼 */
+code{
+	background-color: #ddd;
+	border-radius: 4px;
+	padding: 2px 6px;
+	color: rgb(148, 17, 17);
+}
+
+
+/* 欄列排列模擬的表格 */
+/* 表頭 */
+.info .table-data.head{
+	background-color: #2F3644;
+	color: rgba(255, 255, 255, 0.8);
+}
+.info .table-data.head.t2{
+	background-color: #442f37;
+	color: rgba(255, 255, 255, 0.8);
+}
+/* 內容 */
+.info .table-data{
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 6px;
+	height: 100%;
+}
+
+
+
+
+/* 影像地圖 */
+.img-map-ele{
+	/* background-color: rgba(255, 255, 0, 0.2); */
+	position: absolute;
+	z-index: 20;
+}
+
+
+/* 書本圖 */
+.book-img {
+    height: auto;
+    width: 210px;
+    max-width: 100%;
+}
+.book-img-2 {
+    height: 290px;
+    width: auto;
+    max-height: 100%;
+}
+.book-img-cart {
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+}
+.book-no{
+	color: #999;
+	border: 1px solid #999;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1em;
+	padding: 4px 10px;
+}
+.book-no.small{	
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 2px 6px;
+}
+
+.book-name{
+	color: rgb(192, 54, 0);
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-bottom: 0.5em;
+}
+.book-info{
+	color: #999;
+}
+
+.book-info-back{
+	box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.book-info-back:hover{
+	border-color: #aaa;
+	box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 20%) !important;
+
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.search-bookmark{
+	position: absolute;
+	top: -12px;
+	right: 2px;
+	font-size: 24px;
+	color: #ddd;
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.book-info-back:hover .search-bookmark{
+	color: rgb(224, 0, 0);
+	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+/* 試閱預覽圖限高 */
+.try-img{
+	max-height: 850px;
+}
+
+/* 中文字括號清單 */
+.ch-ol-1{
+	margin-left: 2em;
+	text-indent: -2em;
+}
+
+/****************/
+/* 圖片填滿 */
+.fit{
+	object-fit: cover;
+	object-position: center;
+}
+
+
+
+/* 一般頁面標題 */
+.page-photo-title{
+	background-color: rgba(255, 255, 255, 0.75);
+	position: absolute;
+	top: 0px;
+	padding: 70px 60px 20px 60px;
+	display: flex;
+	align-items: flex-end;
+	box-shadow: 0.5rem 0.5rem 1rem rgb(0 0 0 / 50%) !important;
+}
+@media(min-width: 1600px) {
+	.page-photo-title{
+		padding-top: 80px;
+	}
+}
+@media(min-width: 1800px) {
+	.page-photo-title{
+		padding-top: 90px;
+	}
+}
+
+/* .page-photo-title h1{
+	font-size: 40px !important;
+} */
+
+.page-photo{
+	min-height: 160px;
+	max-height: 200px;
+}
+.page-photo-title h1{
+	font-weight: bold;
+	margin: 0;
+	/* color: #fff; */
+}
+
+
+
+/***********/
+/* 使用者頁面標題 */
+.user-page-title{
+	background-color: #78909C;
+	font-weight: bold;
+	color: #fff;
+	padding-top: 2em;
+	padding-bottom: 0.8em;
+	text-align: center;
+}
+
+/* 購物車頁面標題 */
+.user-page-title.cart{
+	background-color: #00796B;
+}
+.user-page-title.pay{
+	background-color: #003f79;
+}
+
+.cart-label{
+	padding: 4px;
+	background-color: #999;
+	color: #fff;
+}
+
+.cart-price{
+	font-size: 24px;
+}
+/* 數量 + - 按鈕 */
+.plus-sign{
+	padding: 0 8px;
+}
+@media(max-width: 575px) {
+	.cart-price{
+		font-size: 20px;
+	}
+	.cart-label{
+		padding: 2px;
+		color: #fff;
+		font-size: 14px;
+	}
+	.plus-sign{
+		padding: 0 6px;
+	}
+}
+
+/* @media(max-width: 991px) {
+	.cart-price{
+		font-size: 22px;
+	}
+} */
+
+/* 價格專用 */
+.price-font{
+	font-family: "Century Gothic", "微軟正黑體", sans-serif !important;
+}
+
+.price-bg{
+	background-color: #fafafa;
+}
+.coupon-bg{
+	background-color: #ffdada;
+}
+
+
+.flex-num-item{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 5rem;
+	line-height: 4rem;
+	width: 3.6rem;
+	color: #ff8e25;
+	margin-top: 0px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.flex-content{
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+
+/* 簡介專用 */
+.intro-header{
+	border-bottom: 1px solid;
+	margin-bottom: 1.5rem;
+}
+.intro-para{
+	line-height: 1.75em;
+}
+.icon-color{
+	color: #03A9F4;
+	border-color: #03A9F4 !important;
+}
+.icon-color2{
+	color: #7B1FA2;
+	border-color: #7B1FA2 !important;
+}
+.icon-color3{
+	color: #FF9800;
+	border-color: #FF9800 !important;
+}
+.icon-color4{
+	color: #2a51ff;
+	border-color: #2a51ff !important;
+}
+
+.icon-header{
+	font-size: 75px;
+}
+
+
+
+/* 修飾移到外框按鈕字未反白問題 */
+.primary-hover-light:hover{
+	color: rgb(248, 249, 250);
+	background-color: #6ebcdb;
+}
+
+/* 頁面大標題 */
+.page-title{
+	font-weight: bold;
+	text-align: center;
+	/* border-bottom: 1px solid #000; */
+}
+
+/* pub 專用 */
+.pub-sec-title{
+	line-height: 1.5em;
+	text-align:center;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	border: 1px solid #03A9F4;
+	color: #03A9F4;
+
+	/* background-color: #fff; */
+}
+.pub-max-width{
+	max-width: 800px;
+}
+
+/* 公用 */
+.icon-header-light{
+	color: #81D4FA;
+	border-color: #81D4FA !important;
+}
+.icon-header-dark{
+	color: #E64A19;
+	border-color: #E64A19 !important;
+}
+
+
+/* 浮動按鈕 */
+.float-btn{
+	font-size: 20px;
+	line-height: 1.3em;
+	background-color: #fff;
+	font-weight: bold;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%) !important;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.float-btn:hover{
+	color: #fff !important;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 40%) !important;
+
+}
+
+/* 線上書城及電子書 */
+.ecard:hover{
+	color: #f00;
+	background-color: #FFFDE7;
+	border-color: #FFA726;
+	box-shadow: 0 0.5rem 0.75rem rgb(0 0 0 / 20%) !important;
+}
+.estore-icon{
+	width: 50px;
+	height: 50px;
+	margin-right: 0.75rem;
+}
+
+
+/* 說明 */
+.tab-title{
+	color: #EF6C00;
+	border-left: 8px solid #EF6C00;
+	padding-left: 10px;
+}
+
+/* QA */
+.main-ans{
+	font-size: 18px;
+	line-height: 1.8em;
+}

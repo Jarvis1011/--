@@ -1,0 +1,53 @@
+{
+	"註解":"本 QA 內容含有超連結，所以答案「A」的內容，請寫 HTML 文字（段落使用類別：main-ans）。超連結寫法：商鼎網站內請用 routerLink 屬性（並加上類別：「link-primary cursor-pointer」），寫相對網址；而外部連結，則寫一般的 href 屬性。",
+
+
+	"member": [
+		{
+			"Q": "如何註冊會員？",
+			"A": "<p class='main-ans'>歡迎至「<a class='link-primary cursor-pointer' routerLink='/newaccount'>註冊新會員</a>」網頁點選，填寫個人基本資料送出，即可註冊完成。</p>"
+		},
+		{
+			"Q": "忘記會員密碼應如何查詢？",
+			"A": "<p class='main-ans'>請至「<a class='link-primary cursor-pointer' routerLink='/forgetPassword'>忘記密碼</a>」頁面輸入您註冊時的 e-mail，系統會將重設密碼的連結寄到您的信箱中。</p>"
+		},
+		{
+			"Q": "忘記會員帳號應如何查詢？",
+			"A": "<p class='main-ans'>請 (1) 來信<a href='mailto://scbkservice@gmail.com'>客服信箱</a>、(2) <a href='https://www.messenger.com/t/100885359224755/' target='_blank'>商鼎數位出版粉絲團私訊</a>、(3) 或來電 +886-2-2228-9070 #211、221，提供註冊會員時所填的資料，例如：姓名、電話或是 e-mail，我們會盡速查詢後回覆您。</p>"
+		}
+	],
+	"order": [
+		{
+			"Q": "付款方式有哪些？",
+			"A": "<p class='main-ans'>結帳時可選擇以下任一付款方式：</p><p class='main-ans'>(1) 線上刷卡、(2) 超商取貨付款、(3) ATM 轉帳、(4) 郵政劃撥。</p><p class='main-ans'>如不方便使用網路訂購，歡迎您亦可直接來電 +886-2-2228-9070 #211、221，我們會立即協助您訂購。</p>"
+		},
+		{
+			"Q": "訂購付款後大概幾天會收到書？",
+			"A": "<p class='main-ans'>訂單確認後，我們會盡速以郵局掛號或宅配貨運為您寄送，約 3 個工作天內送達。超商取貨付款配送到店需 3~5 個工作天送達。</p>"
+		},
+		{
+			"Q": "如何查詢訂單？",
+			"A": "<p class='main-ans'>會員登入後，可於「<a routerLink='/orders' class='link-primary cursor-pointer'>訂單查詢</a>」查詢訂單進度。以非會員身分下訂之訂單查詢，請 (1) 來信<a href='mailto://scbkservice@gmail.com'>客服信箱</a>、(2) <a href='https://www.messenger.com/t/100885359224755/' target='_blank'>商鼎數位出版粉絲團私訊</a>、(3) 或來電 +886-2-2228-9070 #211、221，告知您的訂單大名或訂單編號，我們會盡速為您查詢。</p>"
+		},
+		{
+			"Q": "選擇超商取貨付款，卻未出現超商門市選單，應如何處理？",
+			"A": "<p class='main-ans'>訂單無法正常選擇超商門市，請 (1) 來信<a href='mailto://scbkservice@gmail.com'>客服信箱</a>、(2) <a href='https://www.messenger.com/t/100885359224755/' target='_blank'>商鼎數位出版粉絲團私訊</a>、(3) <a href='https://line.me/R/ti/p/@chienhuafan' target='_blank'>商鼎 Line 官方帳號私訊</a>、(4) 或來電 +886-2-2228-9070 #211、221，告知您的訂單大名及取件門市店名，我們會協助您處理。</p>"
+		},
+		{
+			"Q": "如何辦理退（換）貨？",
+			"A": "<p class='main-ans'>我們有七天的商品鑑賞期，如訂錯產品或商品瑕疵，於收到產品一星期內來電 +886-2-2228-9070 #211、221 告知，將完整商品及發票包裝妥善寄回本公司，我們會處理後續退（換）貨事項。</p>"
+		},
+		{
+			"Q": "收到錯誤商品應如何處理？",
+			"A": "<p class='main-ans'>如發現出貨寄錯商品，請盡速來電 +886-2-2228-9070 #211、221，我們會立即為您處理更換正確商品。</p>"
+		},
+		{
+			"Q": "如何取消訂單？",
+			"A": "<p class='main-ans'>1. 會員訂購：<br>請於登入會員後，於功能表中點選「<a routerLink='/orders' class='link-primary cursor-pointer'>訂單查詢</a>」，針對該筆訂單點選「取消訂單」即可。若訂單進度為「訂單進度：已收款」，則無法自行取消訂單，請來電 +886-2-2228-9070 #211、221 告知您的收件人大名，由專人為您取消訂單。</p><p class='main-ans'>2. 以非會員方式訂購：<br>請 (1) 來信<a href='mailto://scbkservice@gmail.com'>客服信箱</a>、(2) <a href='https://www.messenger.com/t/100885359224755/' target='_blank'>商鼎數位出版粉絲團私訊</a>、(3) 或來電 +886-2-2228-9070 #211、221，我們會立即為您取消訂單。</p>"
+		},
+		{
+			"Q": "選擇超商取貨付款方式，但沒有在領取期限內取貨該怎麼辦？",
+			"A": "<p class='main-ans'>若您的商品已到店超過取貨期限，商品將由物流中心退回本公司，訂單亦將自動取消。如您仍欲購買該商品，請重新下單訂購。</p><p class='main-ans'>※ 提醒您，若未在取貨期限內領取，將列入您未取件記錄，累計 2 次以上未取件紀錄，將影響您未來使用「超商取貨付款」的服務。</p>"
+		}
+	]
+}

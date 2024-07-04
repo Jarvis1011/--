@@ -1,0 +1,70 @@
+
+<!-- 是否自動輪播、輪播時間可透過 config 設定 -->
+<div [attr.id]="ID" class="carousel slide" data-bs-ride="carousel" 
+		[attr.data-bs-interval]="config.autoPlay"
+	>
+
+	<!-- 內容 -->
+	<div class="carousel-inner">		
+
+		<div *ngFor="let group of groups; let i = index"
+				class="carousel-item"
+				[ngClass]="(i==0) ? 'active' : ''"
+				[attr.data-bs-interval]="config.time"
+			>			
+			
+			<div class="row">
+				<div *ngFor="let item of group" [ngClass]="'col-' + (12 / columnNum)">
+					<div class="px-2 px-md-4">
+						<p class="text-center pt-4">
+							<a routerLink="{{item.link}}">
+								<img src="{{item.img}}" class="book-img hover-img">						
+							</a>
+						</p>
+							
+						<h4 class="text-center fw-bold text-truncate mb-3"><a routerLink="{{item.link}}">{{item.title}}</a></h4>
+
+						<p [ngClass]="'clamp-' + config.lineNum" class="mb-2">{{item.intro}}</p>
+
+						<p class="mb-0 text-start">作者：{{item.author}}</p>
+
+						<p class="mb-0 text-start">
+							<span class="text-decoration-line-through text-muted me-3">定價：{{item.price | currency:'TWD':'symbol-narrow':'1.0-0'}}</span>
+
+							<span class="d-inline-block">特價：<span class="text-danger fs-5">{{item.specialPrice| currency:'TWD':'symbol-narrow':'1.0-0'}}</span></span>
+						</p>
+
+						<!-- <div *ngIf="item.link" 
+							class="d-flex justify-content-center">
+							<a class="btn btn-info text-light px-4"
+								routerLink="{{item.link}}"
+							><i class="bi bi-info-circle me-2"></i>詳細資訊</a>						
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+
+			
+			
+		</div>
+	</div>
+
+	<!-- 控制，改寫使其高度縮減，以防擋到下方畫面其他按鈕，有使用 css 穿透屬性 -->
+	<div class="small-carousel-btn-box">
+		<button class="carousel-control-prev small-carousel-btn" type="button" 
+				[attr.data-bs-target]="'#' + ID" 
+				data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">上一個</span>
+		</button>
+		
+		<button class="carousel-control-next small-carousel-btn" type="button" 
+				[attr.data-bs-target]="'#' + ID" 
+				data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">下一個</span>
+		</button>
+	</div>
+	
+</div>

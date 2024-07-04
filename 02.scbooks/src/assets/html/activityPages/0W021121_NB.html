@@ -1,0 +1,513 @@
+﻿
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+
+<style>
+	.icon-list{
+		font-size: 2rem;
+		line-height: 1.3em;
+		margin-bottom: 0.2em;
+		font-weight: bold;
+		display: inline-flex;
+		align-items: top;
+	}
+	.icon-list-icon{
+		fill: rgb(18, 170, 69);
+		height: 1.1em;
+		width: 1.1em;
+		margin-right: 0.2em;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-top: 0.1em;
+	}
+	.symbol{
+		max-width: 220px;
+	}
+	.medium-size{
+		font-size: 20px;
+	}
+	.course-size{
+		font-size: 22px;
+	}
+
+	.num-item{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 5rem;
+		line-height: 4rem;
+		width: 3.6rem;
+		color: #ff8e25;
+		margin-top: 0px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	.teacher-intro{
+		font-size: 1.8rem;
+	}
+
+	
+	.test {
+		border: 1px solid blue;
+	}
+	/* 跑馬燈 start */
+	.marquee div{
+		display: block;
+		width: 100%;
+		height: 40px;
+		position: relative;
+		left: 100%;
+		overflow: hidden;
+		animation: marquee 5s linear infinite;
+	}
+
+	.marquee_0 {
+		height: 120px;
+	}
+	/* 跑馬燈 end */
+
+	.T_1 {
+		font-size: 1.5rem;
+	}
+	/* 對話框 start */
+	.chat {
+		position: relative;
+		max-width: 80%;
+		padding: 10px 6px;
+		border: 2px solid #ccc;
+		margin-top: 3px;
+		margin-left: 2px;
+		border-radius: 5px;
+		word-break: break-all;
+		font-size: 1.8rem;
+	}
+	.chat_two {
+		position: relative;
+		max-width: 70%;
+		padding: 10px 6px;
+		border: 2px solid #ccc;
+		margin-top: 3px;
+		margin-left: 30%;
+		border-radius: 5px;
+		word-break: break-all;
+		font-size: 1.8rem;
+	}
+
+	.triangle,
+	.triangle_two {
+		position: absolute;
+		top: 15px;
+		border-width: 10px;
+		border-style: solid;
+	}
+
+	.triangle {
+		left: -20px;
+		border-color: transparent #ccc transparent transparent;
+	}
+
+	.triangle_two {
+		right: -20px;
+		border-color: transparent transparent transparent #ccc;
+	}
+
+	.fill,
+	.fill_two {
+		position: absolute;
+		top: 15px;
+		border-width: 10px;
+		border-style: solid;
+	}
+
+	.fill {
+		left: -16px;
+		border-color: transparent #fff transparent transparent;
+	}
+
+	.fill_two {
+		right: -16px;
+		border-color: transparent transparent transparent #fff;
+	}
+
+	.u_icon {
+		font-size: 2em;
+		text-align: right;
+	}
+
+	/* 對話框 end */
+
+	.google-maps {
+        position: relative;
+        padding-bottom: 75%; 
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+	.btn_t{
+		font-size: xx-large;
+		font-weight: 700;
+	}
+	/* 手指動畫 start */
+
+    .finger {		
+        font-size: xx-large;
+        animation: finger ;
+        animation-duration: 1.2s;
+        animation-iteration-count: infinite;		
+    }
+    @keyframes finger{
+        50% {
+            color: transparent;
+        }
+    }
+
+    /* &ensp;<span class="finger"><i class="bi bi-hand-thumb"></i></span> */
+    /* 手指動畫 end */
+
+	.buy {
+		font-size: xx-large;
+		font-weight: 700;
+	}
+	@media(max-width: 575px) {
+		.icon-list{
+			font-size: 1.6rem;
+		}
+		.T_1 {
+		font-size: 0.8rem;
+		}
+		.chat {
+		font-size: 1rem;
+		margin-left: 15px;
+		}
+		.chat_two {
+		max-width: 90%;
+		font-size: 1rem;		
+		margin-left: 5%;
+		}
+		.finger {
+        font-size: larger;
+    	}
+		.buy {
+		font-size: larger;
+		}
+		.btn_t{
+			font-size: larger;
+		}
+		.marquee_0 {
+		height: 80px;
+	}
+	}
+
+	@media(max-width: 575px) {
+		.teacher-intro{
+			font-size: 1.3rem;
+		}
+		
+	}
+
+	.medium-height{
+		line-height: 1.4em;
+	}
+
+	h1.section{
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		font-weight: bold;
+		font-size: 2.8rem;
+		background-color: rgb(26, 161, 139);
+		color: #fff;
+
+		text-align: center;
+	}
+
+
+	
+	
+
+
+</style>
+<!-- Google Tag Manager (noscript) 心策-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZDDG7G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/activities">活動／講座</a></li>
+				<li class="breadcrumb-item active" aria-current="page">《與你相鬱的日子》新書暖心發表</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<div class="p-2 p-md-4 p-lg-5">
+			
+			<div class="position-relative">				
+				<img src="/assets/images/activity/0W021121/0W021121_01.jpg" alt="" class="img-fluid">
+				<a href="http://www.scbooks.com.tw/#/book/0W021121" target="_blank" class="position-absolute" style="top: 15%; left: 5%; height: 85%; width: 45%;"></a>
+			</div>
+			<img src="/assets/images/activity/0W021121/0W021121_02.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0W021121/0W021121_03.jpg" alt="" class="img-fluid">
+
+
+			<div style="background-color: #f7f7f5;">
+				<img src="/assets/images/activity/0W021121/0W021121_04.jpg" alt="" class="img-fluid">
+				<div class="mb-2">&ensp;</div>
+						
+				<!-- carousel start -->
+				<div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>			  
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active text-center"  data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_37.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item text-center" data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_36.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item text-center" data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_37.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item text-center" data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_118.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item text-center" data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_154.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item text-center" data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_156.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+						<div class="carousel-item text-center" data-bs-interval="1500">
+							<img src="/assets/images/activity/0W021121/0W021121_181.jpg" class="w-75 img-fluid" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>	
+				<!-- carousel end -->
+			</div>
+
+			
+			<div style="background-color: #f7f7f5;">
+				<div class="mb-2">&ensp;</div>
+				<img src="/assets/images/activity/0W021121/0W021121_05.jpg" alt="" class="img-fluid">
+				<div class="px-1 px-md-2 px-lg-4">
+					<!-- marquee start -->
+					<marquee width="100%" direction="up" scrollamount="2"  behavior="scorll" scrolldelay="1" scrollamount="1"; class="ps-3 marquee_0">
+						<div class="row fs-5 px-2">
+							<div class="col-12 col-md-6">● Masaki 鄭詩怡（諮商心理師、自媒體創作者）&emsp;</div>
+							<div class="col-12 col-md-6">● Vidamore&emsp;</div>
+							<div class="col-12 col-md-6">● 小鬱亂入Depressy trouble&emsp;</div>
+							<div class="col-12 col-md-6">● 木的諮商 MoodRadio&emsp;</div>
+							<div class="col-12 col-md-6">● 心理師乾杯 寶&emsp;</div>
+							<div class="col-12 col-md-6">● 心理師瘋舉重（周冠邑諮商心理師）&emsp;</div>
+							<div class="col-12 col-md-6">● 心靈角落 老白&emsp;</div>
+							<div class="col-12 col-md-6">● 王雅涵（諮商心理師）&emsp;</div>
+							<div class="col-12 col-md-6">● 王曉涵（臺大醫院附設癌醫中心分院身心科主治醫師）&emsp;</div>
+							<div class="col-12 col-md-6">● 林明政（台南市憂鬱症關懷協會創會長）&emsp;</div>
+							<div class="col-12 col-md-6">● 周冠邑（心理師）&emsp;</div>
+							<div class="col-12 col-md-6">● 唐欣妤臨床心理師（糖糖）&emsp;</div>
+							<div class="col-12 col-md-6">● 符力中（臨床心理師、健心運動心理創辦人）&emsp;</div>
+							<div class="col-12 col-md-6">● 張宇傑（擁抱心理諮商所副所長）&emsp;</div>
+							<div class="col-12 col-md-6">● 張家銘（台灣憂鬱症防治協會前理事長／林口長庚醫院精神科副教授主治醫師）&emsp;</div>
+							<div class="col-12 col-md-6">● 魚葛格（林繼宇精神科醫師）&emsp;</div>
+							<div class="col-12 col-md-6">● 黃鈞蔚（鈺璽診所院長）&emsp;</div>
+							<div class="col-12 col-md-6">● 管珮君（諮商心理師、家庭治療師、IG心理師陪你療癒自己@pei_ccft）&emsp;</div>
+							<div class="col-12 col-md-6">● 劉宇庭（諮商心理師）&emsp;</div>
+							<div class="col-12 col-md-6">● 鄧善庭（諮商心理師）&emsp;</div>
+							<div class="col-12 col-md-6">● 蔡嘉佳（作家）&emsp;</div>
+							<div class="col-12 col-md-6">● 謝筱柔諮商心理師（米露谷板橋心理治療所）&emsp;</div>
+						</div>
+					</marquee>
+					<!-- marquee end -->
+				</div>
+				
+			</div>
+
+			<div style="background-color: #f7f7f5;">
+				<img src="/assets/images/activity/0W021121/0W021121_06.jpg" alt="" class="img-fluid">
+				<!-- 對話 -->
+				<!-- <div class="px-2 px-md-3 px-xl-5">
+					<div class="mb-0 T_1">林明政（台南市憂鬱症關懷協會創會理事長）</div>
+					<div class="row">
+						<div class="col-1">
+							<div class="u_icon">
+								<i class="bi bi-person-circle"></i>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="chat">
+								<div class="triangle"></div>
+								<div class="fill"></div>
+								書中解說精闢、條理清晰，強烈建議除了病友與陪伴者外，每個人也都可以來閱讀本書，可以讓憂鬱症在不知不覺中找上門時有因應之道。
+							</div>
+						</div>
+					</div>
+					<div class="mb-0 T_1">魚葛格（林繼宇 精神科醫師）</div>
+					<div class="row">
+						<div class="col-1">
+							<div class="u_icon">
+								<i class="bi bi-person-circle"></i>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="chat">
+								<div class="triangle"></div>
+								<div class="fill"></div>
+								最真實、切身又帶著溫暖的圖文，陪伴讀者看見憂鬱症的漫漫長夜與煦煦晨光，一同尋找心靈的自由。
+							</div>
+						</div>
+					</div>					
+					
+					<div class="mb-0 T_1">王雅涵（諮商心理師）</div>
+					<div class="row">
+						<div class="col-1">
+							<div class="u_icon">
+								<i class="bi bi-person-circle"></i>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="chat">
+								<div class="triangle"></div>
+								<div class="fill"></div>
+								點點這本書，就像是黑暗中的亮光、黑暗中的色彩，相對於專業書籍滿滿的文字，這些溫暖的圖畫，讓你可以更輕鬆的往前走，和點點一起，經歷生命的改變。
+							</div>
+						</div>
+					</div>
+					<div class="mb-0 T_1">管珮君（諮商心理師、家庭治療師）</div>
+					<div class="row">
+						<div class="col-1">
+							<div class="u_icon">
+								<i class="bi bi-person-circle"></i>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="chat">
+								<div class="triangle"></div>
+								<div class="fill"></div>
+								點點擅長用簡單的圖示，表達複雜的憂鬱症狀，尤其是將憂鬱譬喻為難纏的蛇，不但清楚描述蛇是怎麼偷偷纏上且難以擺脫的複雜心境，更讓憂鬱症患者、陪伴者、甚至心理師等專業人員都能更細緻地了解憂鬱症者的心理困境。
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="position-relative">
+					<img src="/assets/images/activity/0W021121/0W021121_10.jpg" alt="" class="img-fluid">
+					<div class="position-absolute" style="top: 15%; left: 20%; height: 40%; width: 45%;">
+						<div class="chat_two">
+							<div class="triangle_two"></div>
+							<div class="fill_two"></div>
+							您的推薦是我的動力，謝謝～
+						</div>
+					</div>
+				</div> -->
+				<!-- 對話 -->
+				
+			</div>
+
+			<div style="background-color: #f7f7f5;">
+				<img src="/assets/images/activity/0W021121/0W021121_07.jpg" alt="" class="img-fluid">
+				<img src="/assets/images/activity/0W021121/0W021121_08.jpg" alt="" class="img-fluid">
+				<img src="/assets/images/activity/0W021121/0W021121_09.jpg" alt="" class="img-fluid">
+				<div class="row justify-content-end py-2">
+					<div class="col-12 col-md-6 text-center">
+						<button type="button" class="btn btn-outline-danger btn_t px-4" routerLink="/book/0W021121">加入購物車 
+							<span class="finger pt-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+  							<path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+							</svg></span>
+						</button>
+					</div>
+				</div>
+				
+			</div>	
+			<img src="/assets/images/activity/0W021121/0W021121_10.jpg" alt="" class="img-fluid">
+
+			<img src="/assets/images/activity/0W021121/0W02_documental_01.jpg" alt="" class="img-fluid img-thumbnail">
+			<p class="text-center">▲ 2023.03.24 誠品台大店 《與你相鬱的日子》新書暖心發表</p>
+			<img src="/assets/images/activity/0W021121/0W02_documental_02.jpg" alt="" class="img-fluid img-thumbnail">
+			<p class="text-center">▲ 2023.03.24 誠品台大店 《與你相鬱的日子》新書暖心發表</p>
+			<img src="/assets/images/activity/0W021121/0W02_documental_03.jpg" alt="" class="img-fluid img-thumbnail">
+			<p class="text-center">▲ 2023.03.24 誠品台大店 《與你相鬱的日子》新書暖心發表</p>
+			<!-- <div class="text-center mt-3">
+				<a type="button" class="btn btn-outline-primary btn_t px-4" href="https://forms.gle/aCoRQmJUEy5B9sgGA" target="_blank"> 3/24 Winnie 與你相遇誠品台大店 <span class="finger pt-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
+					<path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+				  </svg></span>
+				</a>
+			</div> -->
+
+			
+
+			
+
+			
+
+
+		
+
+
+		</div>
+		<!-- 主圖 -->
+		
+
+
+	<!-- 額外空間 -->
+	<!-- <div style="height: 80px;"></div> -->
+
+
+</div>
+

@@ -1,0 +1,252 @@
+﻿{
+  "導覽列命令固定寬度": "true/false，用來指定在功能表是否使用固定寬度",
+  "menu_fixedWidth": false,
+  "menu_width": "10em",
+
+  "導覽列顏色及是否漸層": "指定顏色，true/false 設定是否漸層（#E7F9F3）",
+  "menu_backColor": "#fff",
+  "menu_gradient": false,
+
+  "是否深色主題": "深色背景色設 menu_dark 為 true，淺色背景色設為 false",
+  "menu_dark": false,
+
+  "字體顏色主題": "使用 prime 顏色的主題，設為 false 時使用灰階",
+  "menu_color": false,
+
+  "子功能表 header 顏色": "若有設定子功能表標題，則套用此文字顏色",
+  "menu_subHeaderColor": "#42A5F5",
+
+  "導覽列陰影": "空字串、shadow-sm、shadow、shadow-lg",
+  "menu_shadow": "shadow-sm",
+
+  "logo 顏色變換": "色相旋轉（0~360度，http://koi.tspu.ru/kg/images/hsl_top.JPG），飽和度（1～100％，可超過），亮度（0% = 全黑；100% = 正常亮度；100% 以上愈白）",
+
+  "logo_hue": "190deg",
+  "logo_saturate": "350%",
+  "logo_brightness": "200%",
+
+  "導覽列結束": "******",
+
+  "首頁－主輪播區": "是否顯示標題、是否自動播放、自動播放時間（毫秒）",
+  "mainCarousel_showCaption": false,
+  "mainCarousel_autoPlay": true,
+  "mainCarousel_time": 5000,
+
+  "首頁－第二區－輪播區": "是否自動播放、自動播放時間（毫秒）",
+  "s2Carousel_autoPlay": false,
+  "s2Carousel_time": 5000,
+
+  "首頁－新書－輪播區": "是否自動播放、自動播放時間（毫秒）、文字區行數",
+  "newBook_autoPlay": false,
+  "newBook_time": 5000,
+  "newBook_line_num": 3,
+
+  "首頁－系列 1（編輯推薦）－輪播區": "是否自動播放、自動播放時間（毫秒）、文字區行數、是否顯示",
+  "ser_1_autoPlay": false,
+  "ser_1_time": 5000,
+  "ser_1_line_num": 3,
+  "ser_1_show": true,
+
+  "首頁－系列 2（生活風格）－輪播區": "是否自動播放、自動播放時間（毫秒）、文字區行數、是否顯示",
+  "ser_2_autoPlay": false,
+  "ser_2_time": 5000,
+  "ser_2_line_num": 3,
+  "ser_2_show": true,
+
+  "首頁－影音區": "文字區行數、是否顯示",
+  "video_line_num": 3,
+  "video_show": true,
+
+  "首頁結束": "******",
+
+  "專欄頁每頁筆數": "*********",
+  "columnsPerPage": 18,
+
+  "搜尋每頁筆數": "******",
+  "recordsPerPage": 24,
+
+  "關鍵字只搜尋商鼎書籍": "若設成 false 會一同搜尋千華的書籍 ",
+  "onlySearchSC": true,
+
+  "登入後儲存本地端天數": "********",
+  "localExpiredDays": 30,
+
+  "縣市清單": "來自政府資料開放平台，網址 https://data.gov.tw/dataset/101905，下載 json，並將「臺」字改成「台」，未來若行政區有變更，重新下載並更新本清單即可。（目前為由北到南排列）",
+
+  "cities": [
+    "基隆市",
+    "台北市",
+    "新北市",
+    "桃園市",
+    "新竹縣",
+    "新竹市",
+    "苗栗縣",
+    "台中市",
+    "彰化縣",
+    "南投縣",
+    "雲林縣",
+    "嘉義縣",
+    "嘉義市",
+    "台南市",
+    "高雄市",
+    "屏東縣",
+    "宜蘭縣",
+    "花蓮縣",
+    "台東縣",
+    "澎湖縣",
+    "金門縣",
+    "連江縣"
+  ],
+
+  "表單自動完成": "字串 on | off",
+  "autocomplete": "off",
+
+  "會員資料頁顯示會員ID": "*******",
+  "showID": true,
+
+  "會員資料頁及註冊頁顯示性別欄": "*******",
+  "showSex": true,
+
+  "顯示密碼欄位眼睛按鈕": "若設為 true，密碼欄位會顯示眼睛按鈕，按下後顯示密碼，再按一次回復。",
+  "showPasswordEye": true,
+
+  "只有驗證過 email 的會員才可登入": "若設成 false，沒完成驗證也可登入",
+  "onlyValidated": true,
+
+  "新會員註冊要驗證電子郵件": "若設成 false，新會員註冊不需經過驗證步驟",
+  "newEmailValidate": false,
+
+  "購物車內容儲存本地端天數": "*****",
+  "localCartDays": 1,
+
+  "結帳時預設顯示購物明細": "****",
+  "showSummary": true,
+
+  "購物車按鈕有內容時顯示「結帳」說明": "*****",
+  "showCartText": true,
+
+  "停用指定的結帳方式": "要停用的項目設為 true",
+  "disabledPayType": {
+    "ATM": false,
+    "POST_OFFICE": false,
+    "CREDIT_CARD": false,
+    "CONVENIENCE_STORE": false
+  },
+
+  "結帳": "設成 false 時，結帳不會上傳訂單，而是在結帳頁面下方顯示訂單資料，用來測試使用；設成 true 時可以正常結帳",
+  "sendOrder": true,
+
+  "會員訂單每頁筆數": "",
+  "ordersPerPage": 10,
+
+  "管理員訂單每頁筆數": "",
+  "managerOrdersPerPage": 10,
+
+  "網站管理員帳號": "gtest2 為開發者 Eric Liu 帳號",
+  "webManagers": [
+    "scwebmanager",
+    "gtest2",
+    "frankwang",
+    "test0021",
+    "6431",
+    "accounting02"
+  ],
+
+  "重設密碼的測試鈕": "",
+  "showResetTest": false,
+
+  "價格區": "********",
+
+  "書籍顯示特價": "*****",
+  "showSpecialPrice": true,
+
+  "書籍頁顯示vip價": "*****",
+  "showVIPPrice": false,
+
+  "各種特價訊息": "【】內不可變動，由程式碼修改",
+
+  "specialInfo": "指定期間特價優惠！【d1】～【d2】特價 【value】 元！",
+
+  "newBookInfo": "新書上市優惠！【d2】 之前一律 【percent】 折！",
+
+  "recommendInfo": "推薦優惠！【d1】～【d2】 期間，只要 【percent】 折！",
+
+  "discoupon": "本產品不適用折價券。",
+
+  "總是顯示特價訊息": "true-總是顯示，測試用；false-只有在期間內才顯示",
+  "alwaysShowPriceInfo": false,
+
+  "折價券折抵金額": "請用負數",
+  "couponValue": -100,
+
+  "運費計算": "修改時要注意上下 min 和 max 的交接處必須相鄰，訊息最後會全串在一起顯示在網頁上，留意尾部的標點符號",
+  "shippingFeeData": {
+    "default": [
+      {
+        "min": 0,
+        "max": 999,
+        "value": 60,
+        "msg": "商品總金額 999 元以下，運費 60 元；"
+      },
+      {
+        "min": 1000,
+        "max": 1000000,
+        "value": 0,
+        "msg": "商品總金額 1000 元以上免運費。"
+      }
+    ],
+    "activity": {
+      "date1": "2023-03-27",
+      "date2": "2023-04-20",
+      "fee": [
+        {
+          "min": 0,
+          "max": 299,
+          "value": 60,
+          "msg": "【優惠活動】期間，商品總金額 299 元以下，運費 60 元；"
+        },
+        {
+          "min": 299,
+          "max": 1000000,
+          "value": 0,
+          "msg": "商品總金額 299 元以上免運費。"
+        }
+      ]
+    },
+    "vipActivity": [
+      {
+        "min": 0,
+        "max": 999,
+        "value": 60,
+        "msg": "商品總金額 999 元以下，運費 60 元；"
+      },
+      {
+        "min": 1000,
+        "max": 1000000,
+        "value": 0,
+        "msg": "商品總金額 1000 元以上免運費。"
+      }
+    ]
+  },
+
+  "VIP的優惠活動": "【value】為設定vip兌換價格，請勿更改【min】此為同一件商品的贈書禮券數量，【max】為設定購物車全部商品贈送數量的上限",
+  "vipDiscount": {
+    "value": 500,
+    "min": 1,
+    "max": 3
+  },
+  "myModal_JumpOut": {
+    "id": {
+      "exampleModal": [
+        {
+          "display": "block"
+        }
+      ],
+      "vipIndexModal": [
+        {
+          "display": "none"
+        }
+      ]
+    }
+  }
+}

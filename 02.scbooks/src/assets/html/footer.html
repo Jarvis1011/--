@@ -1,0 +1,166 @@
+﻿<style>
+	/* 頁尾 */
+	footer{
+		position: relative;
+		min-height: 100px;
+		color: #6C757D;
+		padding: 32px 16px 16px 16px;
+		background-color: #f2f2f2;
+
+		text-align: left;
+	}
+	footer h4,
+	footer h5,
+	footer h6{
+		color: #585c61;
+		font-weight: bold;
+	}
+	footer p{
+		margin-bottom: 0px;
+	}
+
+	.footer-list{
+		list-style-type: circle;
+		text-indent: -4px;
+		padding-left: 20px;
+	}
+	/* .footer-list li{
+		
+	} */
+
+	
+	.note{
+		margin-top: 1rem;
+		/* background-color: rgba(255, 255, 255, 1); */
+		/* padding: 0.5rem 1rem; */
+		opacity: 0.7;
+	}
+	.footer-link{
+		color: #6C757D;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	.footer-link:hover{
+		color: #0DCAF0;
+	}
+
+
+	.help-link{
+		height: 40px;
+		width: 40px;		
+		position: absolute;
+
+		/* 如果不想讓一般使用者不小心按到說明連結鈕進入說明頁，請取消下行的註解 */
+		display: none;
+
+		background-color: rgba(0, 0, 0, 0);
+	}
+</style>
+
+
+<!-- 
+
+內部連結範本
+<p><a routerLink="/page/under_construction" class="footer-link">XXXXXX</a></p>
+
+外部連結範本
+<p><a href="http://xxxxxx" target="target_blank" class="footer-link">XXXXXX</a></p>
+
+-->
+
+<!-- 內容 -->
+<footer>
+	<div class="container-xxl">
+		<div class="row gx-4 gy-4">
+
+			<!-- 公司資訊 -->
+			<div class="col-12 col-md-12 col-lg-5 order-last order-lg-first">
+				<div class="f-box">
+					<h5>商鼎數位出版有限公司</h5>
+					<p>235 新北市中和區中山路三段 136 巷 10 弄 17 號 
+						<a href="https://goo.gl/maps/Z2jFdshhz2r5SfACA" class="footer-link text-decoration-underline" target="target-blank">〈地圖〉</a>
+					</p>
+					<p>電話：+886-2-2228-9070</p>
+					<p>傳真：+886-2-2228-9076</p>
+					<p>統一編號：24494539</p>
+					<p>客服信箱：<a href="mailto://scbkservice@gmail.com" class="footer-link text-decoration-underline">scbkservice@gmail.com</a></p>
+					<p>服務時間：週一～五 9:00～18:00</p>
+					<p class="note">人人都可以是作家！圖文出版、數位出版、本公司能為您量身定做，用著作點亮人生。</p>
+				</div>
+			</div>
+
+			<!-- 連結 -->
+			<div class="col-12 col-md-12 col-lg-7">
+				<div class="row gx-4 gy-4">
+
+					<!-- 1 -->
+					<div class="col-6 col-md-3">
+						<div class="f-box">
+							<h6>關於我們</h6>
+							<p><a routerLink="/about" class="footer-link">認識商鼎</a></p>
+							<!-- <p><a routerLink="/news" class="footer-link">最新消息</a></p> -->
+							<p><a routerLink="/media" class="footer-link">獲獎／媒體報導</a></p>
+							<p><a routerLink="/page/submit" class="footer-link">投稿出版</a></p>
+							<p><a routerLink="/pub" class="footer-link">來出書吧！獨立出版</a></p>		
+						</div>
+					</div>
+
+					<!-- 2 -->
+					<div class="col-6 col-md-3">
+						<div class="f-box">
+							<h6>經銷通路</h6>
+							<p><a routerLink="/stores" class="footer-link">實體書店</a></p>
+							<p><a routerLink="/estores" class="footer-link">網路書店</a></p>
+							<p><a routerLink="/ebookstores" class="footer-link">電子書城</a></p>
+
+						</div>
+					</div>
+
+					<!-- 3 -->
+					<div class="col-6 col-md-3">
+						<div class="f-box">
+							<h6>客服中心</h6>
+							<p><a routerLink="/newaccount" class="footer-link">註冊新會員</a></p>
+							<p><a routerLink="/forgetPassword" class="footer-link">忘記密碼</a></p>
+							<p><a routerLink="/qa" class="footer-link">常見問題 Q&A</a></p>
+							<p><a routerLink="/page/howToBuy" class="footer-link">訂購辦法</a></p>
+							<p><a routerLink="/page/payInfo" class="footer-link">付款資訊</a></p>
+
+							<!-- <p><a routerLink="/page/under_construction" class="footer-link">信用卡分期資訊</a></p> -->
+							<p><a routerLink="/page/getCoupon" class="footer-link">折價券說明</a></p>
+							<!-- <p><a routerLink="/page/under_construction" class="footer-link">團購辦法</a></p> -->
+							<p><a routerLink="/page/privacy" class="footer-link">隱私政策</a></p>
+						</div>
+					</div>
+
+					<!-- 4 -->
+					<div class="col-6 col-md-3">
+						<div class="f-box">
+							<h6>其他</h6>
+							<p><a href="https://www.chienhua.com.tw/" target="target_blank" class="footer-link">千華數位文化</a></p>
+							<p><a href=" https://shopee.tw/jnov80atsc" target="target_blank" class="footer-link">商鼎@蝦皮商城</a></p>
+							<p><a href="https://www.books.com.tw/web/sys_puballb/books/?pubid=bstripod" target="target_blank" class="footer-link">商鼎@博客來</a></p>
+							<p><a href="https://www.facebook.com/scbkservice" target="target_blank" class="footer-link"><i class="bi bi-facebook" style="color:#0c88ef"></i>商鼎數位出版</a></p>
+							<p><a href="https://www.facebook.com/profile.php?id=100089641163338" target="target_blank" class="footer-link"><i class="bi bi-facebook" style="color:#0c88ef"></i>來出書吧！商鼎為你設計出版</a></p>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+			
+
+		</div>
+
+		<div class="">
+			<p class="text-center mt-5 pt-3">© 2022 商鼎數位出版有限公司</p>
+		</div>
+
+		<!-- 說明文件連結 -->
+		<a class="help-link bottom-0 start-0" routerLink="/schelp"></a>
+		<a class="help-link bottom-0 end-0" routerLink="/schelp"></a>
+
+
+	</div>
+
+</footer>

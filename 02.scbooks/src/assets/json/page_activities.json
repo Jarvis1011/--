@@ -1,0 +1,85 @@
+﻿[
+	{
+		"title": "<與你相鬱的日子> 新書暖心發表",
+		"image": "assets/images/activities/0W021121_act_bn.jpg",
+		"link": "/activity/0W021121_NB",
+		"items": [
+			{ "icon": "calendar", "header": "活動時間", "content": "2023.03.24 下午 8 點" },
+			{ "icon": "geo-alt", "header": "活動地點", "content": "誠品台大店 B1閱讀空間 (台北市大安區新生南路三段 98 號)" }
+			
+		],
+		"contents": [
+			"現場購書優惠：新書 79 折"
+		],
+		"extralink": {
+			"link": "activity/0W021121_NB",
+			"buttonLabel": "活動紀錄"
+		}
+	},
+	
+	{
+		"title": "高雄城市書展-左圖右書 (港灣書展)",
+		"image": "assets/images/activities/2022_ksml_bleubook_400.jpg",
+		"link": "/activity/2022_ksml_bleubook",
+		"items": [
+			{ "icon": "calendar", "header": "活動時間", "content": "2022.09.24 ~ 2022.09.25" },
+			{ "icon": "geo-alt", "header": "活動地點", "content": "高雄市立圖書館總館 (高雄市前鎮區新光路 61 號)" }
+			
+		],
+		"contents": [
+			"現場購書優惠：單書 77 折、任選 3 本 72 折"
+		]
+	},
+	{
+		"title": "在自己的土地上徒步：帶著「陌生人」的觀點走綠道",
+		"image": "assets/images/activities/activities_20220919.jpg",
+		"link": "/mediaPage/2022_0919",
+		"items": [
+			{ "icon": "people-fill", "header": "主講人", "content": "顧蕙倩 博士" },
+			{ "icon": "calendar", "header": "活動時間", "content": "2022.09.19" }
+		],
+		"contents": [
+			"從文學的角度走讀淡蘭、樟之細路綠道的在地故事",
+			"回到台灣啟蒙時代的歷史敘事",
+			"連結古今"
+		]
+	},	
+	{
+		"title": "探險時代 臺灣山城海",
+		"image": "assets/images/activities/activities_default2_400.jpg",
+		"link": "https://www.chienhua.com.tw/chienhua_EDM/20220218/",
+		"items": [
+			{ "icon": "people-fill", "header": "主講人", "content": "顧蕙倩 博士 【現任教國立台北藝術大學、詩人、文學博士】" },
+			{ "icon": "calendar", "header": "活動時間", "content": "2022.03.12" }
+		],
+		"contents": [
+			"利用文學走進生活，從生活情境開啟創新學習。",
+			"秒懂情境式教案開發與書寫。",
+			"與您分享何謂地景寫作。"
+		],
+		"extralink": {
+			"link": "https://youtu.be/vOO3nPSnFWg",
+			"buttonLabel": "活動記錄"
+		}
+	},
+	{
+		"title": "素養學堂 從生活情境開啟創新學習",
+		"image": "assets/images/activities/activities_default3_400.jpg",
+		"link": "https://www.chienhua.com.tw/chienhua_EDM/20211005/20211005.html",
+		"items": [
+			{ "icon": "people-fill", "header": "主講人", "content": "謝龍卿 校長、顧蕙倩 博士" },
+			{ "icon": "calendar", "header": "活動時間", "content": "2021.10.31" }
+		],
+		"contents": [
+			"108 課綱為什麼重視自主學習？",
+			"自主學習計畫該怎麼做？",
+			"如何從生活情境引導自主學習？",
+			"怎麼引道孩子找到興趣？",
+			"做一份有亮點的學習歷程？"
+		],
+		"extralink": {
+			"link": "https://youtu.be/QSM6pLFFrCg",
+			"buttonLabel": "活動記錄"
+		}
+	}
+]

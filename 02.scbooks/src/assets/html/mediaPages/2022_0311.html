@@ -1,0 +1,87 @@
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+
+	routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<div class="media-article-title">
+	<div class="container-xxl max-w-article">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/media">獲獎／媒體報導</a></li>
+			</ol>
+		</nav>
+
+		<!-- 標題區 -->
+		<div class="row article">
+			<div class="col-12">
+				<h2 class="mt-2">捐資助學，桃李滿園</h2>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 內文區 -->
+<div class="column-article-content article column-content">
+
+	<div class="container-xxl max-w-article">
+
+		<p>千華數位文化（股）公司秉持「取之社會、回饋社會」的經營理念，積極推動各項公益回饋計畫。</p>
+
+		<p>2022 年捐贈各類精編優良的證照輔導教材，提供國立臺中教育大學莘莘學子有更豐沛的學習資源。</p>
+
+		<p>千華數位文化（股）公司將持續落實 ESG（環境、社會及公司治理）的精神，以永續發展目標（SDGs，sustainable development goals）為己任，深耕教育、嘉惠人文、培訓人才。</p>
+
+		<div class="row row-cols-1 row-cols-md-2 gy-3 mt-4">
+			<div class="col">
+				<p class="text-center mb-0">
+					<img src="assets/images/media/media_1-1.png" class="w-100 img-fluid" style="max-width: 400px;">
+				</p>
+				<p class="img-info text-center">▲ ESG 示意圖</p>
+			</div>
+			<div class="col">
+				<p class="text-center mb-0">
+					<img src="assets/images/media/media_1-2.png" class="w-100 img-fluid" style="max-width: 300px;">
+				</p>
+				<p class="img-info text-center">▲ 國立臺中教育大學致贈紀念獎牌表達感謝</p>
+			</div>
+		</div>
+
+
+		<p class="media-date">發布時間：2022 年 03 月 11 日</p>
+
+
+
+
+
+
+	</div>
+
+</div>

@@ -1,0 +1,57 @@
+﻿[
+	{
+		"name": "博客來網路書店",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_01.png",
+		"link": "https://www.books.com.tw/web/sys_puballb/books/?pubid=bstripod"
+	},
+	{
+		"name": "MOMO 購物網",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_06.png",
+		"link": "https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%95%86%E9%BC%8E&searchType=4&curPage=1&_isFuzzy=0&showType=chessboardType"
+	},
+	{
+		"name": "金石堂網路書店",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_02.png",
+		"link": "https://www.kingstone.com.tw/bookpublish/publist?pubno=11295"
+	},
+	{
+		"name": "PChome 24hr 書店",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_05.png",
+		"link": "https://ecshweb.pchome.com.tw/search/v3.3/?q=%E5%95%86%E9%BC%8E&scope=all&sortParm=new&sortOrder=dc"
+	},
+	{
+		"name": "蝦皮商城",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_13.png",
+		"link": "https://shopee.tw/jnov80atsc"
+	},
+	{
+		"name": "誠品網路書店",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_03.png",
+		"link": "https://www.eslite.com/Search?keyword=%E5%95%86%E9%BC%8E&final_price=0%2C&sort=manufacturer_date+desc&size=20&start=0"
+	},
+	{
+		"name": "三民網路書店",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_09.png",
+		"link": "https://m.sanmin.com.tw/search/index?ct=PU&PU=%e5%95%86%e9%bc%8e&ls=SD&vs=List&ls=ED"
+	},
+	{
+		"name": "讀冊生活",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/ebook9.png",
+		"link": "https://www.taaze.tw/search_go.html?keyType%5B%5D=3&keyword%5B%5D=%E5%95%86%E9%BC%8E%E6%95%B8%E4%BD%8D%E5%87%BA%E7%89%88&prodKind=0&prodCatId=0&catId=0&saleDiscStart=0&saleDiscEnd=0&salePriceStart=&salePriceEnd=&publishDateStart=&publishDateEnd=&prodRank=0&addMarkFlg=0&force=0&catFocus=&orgFocus=&mainCatFocus=&catNmFocus=&catIdFocus=&layout=A&nowPage=1&sort=publishdate"
+	},
+	{
+		"name": "五南文化廣場",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_10.png",
+		"link": "https://www.wunanbooks.com.tw/book_list_s.php?book_whit=0&book_data=%E5%95%86%E9%BC%8E&MM_update=form1"
+	},
+	{
+		"name": "灰熊愛讀書",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_07.png",
+		"link": "https://www.iread.com.tw/CategoryProds/Index?SearchKeyword=%E5%95%86%E9%BC%8E&filed=3"
+	},
+	{
+		"name": "YAHOO 奇摩購物中心",
+		"image": "https://www.chienhua.com.tw/BookStore/ImagesFolder/OBStore_14.png",
+		"link": "https://tw.mall.yahoo.com/search/product?p=%E5%95%86%E9%BC%8E%E6%96%87%E5%8C%96&sort=-ptime"
+	}
+]

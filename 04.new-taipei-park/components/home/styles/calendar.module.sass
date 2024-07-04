@@ -1,0 +1,409 @@
+@import "breakpoint"
+
+.home-calendar
+  background: #f7f4f0
+  padding: 35px 0
+  position: relative
+  z-index: 1
+.cover
+  display: flex
+  .title
+    color: #3462AD
+    font-size: 2.75rem
+    margin-top: 30px
+    width: 20%
+  .subtitle
+    color: #272727
+    font-size: 0.85rem
+  .sub
+    margin-top: 30px
+    color: #272727
+    font-size: 0.85rem
+    width: 60%
+    margin-left: 10px
+    margin-right: 15px
+    padding-top: 15px
+    hr
+      border: none
+      border-bottom: 1px dashed #3462AD
+      margin-bottom: 4px
+  .img-control
+    width: 60%
+    position: relative
+    .img-deco01
+      width: 90%
+      position: absolute
+      top: -50px
+      left: 50%
+      transform: translateX(-50%)
+    .img-deco02
+      position: absolute
+      right: 50px
+      bottom: -30px
+  .btn-control
+    text-align: right
+    width: 20%
+    padding-right: 20px
+    .btn-purple
+      display: none
+    .btn-blue
+      background: #3462AD
+      color: #ffffff
+      border-radius: 5px
+      padding: 0 50px
+      border: none
+      height: 50px
+      margin-top: 5px
+      font-weight: 600
+      margin-top: 45px
+
+  .calendar-control
+    width: 20%
+    text-align: right
+    .panel
+      margin: 5px 0
+    .btn-blue
+      font-size: 1.25rem
+      font-weight: 800
+      background: #3462AD
+    .text-big
+      font-size: 1.25rem
+      font-weight: 800
+    .text-small
+      font-size: 0.8rem
+    .text-blue
+      color: #3462AD
+      font-weight: 800
+
+.control_bar
+  margin-top: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  a
+    display: block
+    padding: 13px
+    background-color: #3462AD
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 3px
+    transition: .25s
+    &:hover
+      background-color: darken(#3462AD, 10%)
+  div
+    font-size: 1.5rem
+    color: #3462AD
+    font-weight: 900
+    margin: 0 20px
+.calendar-wrapper
+  position: relative
+  padding-top: 25px
+  .main_calendar
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-57.5%, -35%)
+    width: 70%
+    max-width: 700px
+    max-height: 500px
+    z-index: 10
+    +sm()
+      transform: translate(-50%, -30%)
+      width: 75%
+    .weekdays
+      display: flex
+      div
+        width: calc(100%/7)
+        font-weight: 900
+        padding: 8px 0
+        font-family: NotoSansCJKtc
+        +sm()
+          font-size: 0.85rem
+          padding: 0
+    .days
+      display: flex
+      flex-wrap: wrap
+      .day
+        position: relative
+        width: calc(100%/7)
+        font-weight: 900
+        border: 1px solid #ffffff
+        border-radius: 10px
+        height: 84px
+        display: flex
+        justify-content: center
+        align-items: center
+        +sm()
+          height: 48px
+        &.not_current_month
+          color: black
+        &.small
+          height: calc(84px * 5 / 6)
+          gap: 0 !important
+          +sm()
+            height: calc(48px * 5 / 6)
+        &.op05
+          opacity: 0.6
+          cursor: not-allowed !important
+        &.activity
+          background-color: #2b5331
+          color: #fff
+          border-radius: 10px
+          display: flex
+          justify-content: center
+          align-items: center
+          flex-direction: column
+          cursor: pointer
+          gap: 4px
+          &:hover
+            background-color: darken(#2b5331, 7.5%)
+          +sm()
+            gap: unset
+            line-height: 1.25
+          div
+            +sm()
+              font-size: 0.85rem
+              white-space: nowrap
+          .info
+            white-space: nowrap
+            display: flex
+            gap: 5px
+            +sm()
+              font-size: .85rem
+            .dot
+              background-color: #ffffff
+              border-radius: 99rem
+              width: 10px
+              height: 10px
+              display: block
+              +sm()
+                width: 4px
+                height: 4px
+        .close
+          position: absolute
+          top: -10px
+          right: -10px
+          width: 50px
+          height: 50px
+          z-index: 99
+        .detail_popup
+          position: absolute
+          box-sizing: content-box
+          top: -30px
+          left: -260px
+          width: 250px
+          min-height: calc(250px / 3)
+          max-height: 200px
+          padding: 15px
+          padding-bottom: 0px
+          background-color: #0f87ab
+          border-radius: 10px
+          z-index: 1
+          overflow-y: auto
+          &::-webkit-scrollbar
+            display: none
+          
+          &.to_right
+            top: -30px
+            left: unset
+            right: -260px
+            .triangle
+              right: unset
+              left: -14px
+              transform-origin: left
+              transform: scaleX(-1)
+          .wrapper
+            position: relative
+            display: flex
+            flex-direction: column
+            gap: 16px
+            .triangle
+              position: absolute
+              top: 27px
+              right: -24px
+              border-top: 8px solid transparent
+              border-bottom: 8px solid transparent
+              border-left: 10px solid #0f87ab
+            .item
+              display: flex
+              flex-direction: column
+              padding-bottom: 15px
+              border-bottom: 1px dashed #fff
+              text-align: left
+              &:last-child
+                border-bottom: none
+              .tag
+                font-size: 1rem
+                color: #0c0c0c
+                line-height: 1
+                background-color: #fff
+                border: 1px solid #0c0c0c
+                align-self: flex-start
+                margin-bottom: 5px
+                padding: 2px 4px
+              a
+                display: block
+                align-self: flex-start
+
+  .calendar
+    position: relative
+    z-index: 2
+  .deco01
+    position: absolute
+    top: 25px
+    left: 0
+  .deco02
+    position: absolute
+    top: 80px
+    right: 5px
+  .deco03
+    position: absolute
+    top: 70px
+    right: 150px
+  .deco04
+    position: absolute
+    bottom: 0
+    left: 0
+  .deco05
+    position: absolute
+    bottom: 20px
+    right: -35px
+    z-index: 2
+  .deco06
+    position: absolute
+    bottom: 33px
+    left: 90px
+    z-index: 2
+
+.btn-purple
+  background: rgb(184,50,2)
+  background: linear-gradient(270deg, rgba(184,50,2,1) 0%, rgba(129,55,166,1) 100%)
+  padding: 7px 20px
+  color: #ffffff !important
+  border-radius: 20px
+  font-size: 0.85rem
+  margin-top: 5px
+  display: inline-block
+  margin-right: 5px
+
+.poster
+  img
+    margin-bottom: -25px
+    width: 100%
+  .poster-image
+    height: 500px
+    background-size: cover !important
+    margin-bottom: -25px
+  .title
+    font-weight: 800
+    font-size: 1rem
+    height: 50px
+    margin-top: 8px
+  .date
+    background: #fff
+    padding: 5px
+    box-shadow: 3px -3px 6px rgba(0,0,0,0.15)
+    font-size: 0.7rem
+  .type
+    padding: 3px 7px
+    border: 1px solid #36a58a
+    font-size: 0.7rem
+    border-radius: 3px
+
+.calendar-mobile
+  display: none
+.divider
+  display: none
+
+@media (max-width: 980px)
+  .divider
+    display: block
+    border: none
+    border-bottom: 1px dashed #3462AD
+    margin-top: 25px
+    width: 22%
+  .subtitle
+    display: none
+  .calendar-mobile
+    display: block
+    width: 100%
+    position: relative
+    z-index: 1
+  .calendar
+    display: none
+  .cover
+    .btn-control
+      width: 40%
+      padding-right: 0
+      .btn-purple
+        display: inline-block
+        background: rgb(184,50,2)
+        padding: 7px 20px
+        color: #ffffff !important
+        border-radius: 20px
+        font-size: 0.85rem
+        margin-top: 5px
+        margin-right: 5px
+      .btn-blue
+        display: none
+    .img-control
+      display: none
+
+    .title
+      font-size: 2rem
+      width: 40%
+    .sub
+      width: 20%
+      margin-top: 0
+      padding-top: 10px
+      span
+        display: none
+    .text-big
+      display: none
+
+    .calendar-control
+      width: 40%
+    .panel
+      .text-small
+        display: none
+
+  .calendar-wrapper
+    position: relative
+    padding-top: 50px
+    max-width: 100%
+    .calendar
+      position: relative
+      z-index: 2
+      max-width: 100%
+    .deco01
+      display: none
+    .deco02
+      display: none
+    .deco03
+      display: none
+    .deco04
+      position: absolute
+      bottom: 0
+      left: -3vw
+      width: 10vw
+    .deco05
+      position: absolute
+      bottom: 2vw
+      right: -17vw
+      z-index: 2
+      width: 28vw
+    .deco06
+      position: absolute
+      bottom: 3vw
+      left: 0vw
+      z-index: 2
+      width: 10vw
+
+  .poster
+    .title
+      height: auto
+      min-height: 75px
+      max-height: 75px
+    .poster-image
+      height: 255px

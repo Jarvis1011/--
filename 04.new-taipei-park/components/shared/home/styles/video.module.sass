@@ -1,0 +1,121 @@
+.home-video
+	background: #f2f2f2
+	padding: 35px 0
+	position: relative
+	border-bottom: 1px solid #ffffff
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.2)
+	z-index: 2
+
+	.cover
+		display: flex
+		padding: 0% 10%
+		.title
+			color: #3462AD
+			font-size: 2.75rem
+			width: 33%
+		.sub
+			color: #272727
+			font-size: 0.85rem
+			width: 47%
+			margin-left: 10px
+			margin-right: 15px
+			padding-top: 14px
+			hr
+				border: none
+				border-bottom: 1px dashed #3462AD
+				margin-bottom: 4px
+		.btn-main
+			background: #3462AD
+			color: #ffffff
+			border-radius: 5px
+			padding: 0 30px
+			border: none
+			max-height: 50px
+			margin-top: 5px
+			font-weight: 600
+			width: 20%
+
+.video-wrapper
+	border-style: solid
+	border-width: 2px
+	// border-image: linear-gradient(118deg, #36a58a 0%, #0376b8 100%)
+	border: 2px solid #36a58a
+	border-radius: 8px
+	margin-left: 5% !important
+	width: 90% !important
+	position: relative
+	margin-bottom: 20px
+	.img-wrapper
+		position: relative
+	.play-icon
+		background: none
+		border: none
+		padding: 0
+		box-shadow: none
+		margin: 0
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+		cursor: pointer
+		img
+			width: 55px
+	.title
+		color: #ffffff
+		font-size: 0.85rem
+		padding: 5px 20px
+		min-height: 60px
+		line-height: 20px
+		background: rgb(120,202,147)
+		background: radial-gradient(circle, rgba(120,202,147,1) 0%, rgba(2,117,184,1) 95%)
+		position: relative
+		.inside
+			position: absolute
+			width: 90%
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+
+@media (max-width: 980px)
+	.home-video
+		padding-bottom: 0px
+		.cover
+			padding: 0% 5%
+			.title
+				padding-top: 10px
+				font-size: 2rem
+				width: 40%
+			.sub
+				font-size: 0rem
+				width: 30%
+				hr
+					margin-bottom: 4px
+				span
+					display: none
+			.btn-main
+				font-size: 1.25rem
+				padding: 0 10px
+				border: none
+				max-height: 50px
+				margin-top: 15px
+				font-weight: 600
+				width: 30%
+
+@media (max-width: 540px)
+	.home-video
+		padding-bottom: 0px
+		.cover
+			padding: 0% 5%
+			.title
+				padding-top: 15px
+				font-size: 1.5rem
+				width: 40%
+			.btn-main
+				font-size: 1.25rem
+				border-radius: 5px
+				padding: 0 10px
+				border: none
+				max-height: 50px
+				margin-top: 15px
+				font-weight: 600
+				width: 40%

@@ -1,0 +1,193 @@
+﻿
+
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+
+<style>
+	.icon-list{
+		font-size: 2rem;
+		line-height: 1.3em;
+		margin-bottom: 0.2em;
+		font-weight: bold;
+		display: inline-flex;
+		align-items: top;
+	}
+	.icon-list-icon{
+		fill: rgb(18, 170, 69);
+		height: 1.1em;
+		width: 1.1em;
+		margin-right: 0.2em;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-top: 0.1em;
+	}
+	.symbol{
+		max-width: 220px;
+	}
+	.medium-size{
+		font-size: 20px;
+	}
+	.course-size{
+		font-size: 22px;
+	}
+
+	.num-item{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 5rem;
+		line-height: 4rem;
+		width: 3.6rem;
+		color: #ff8e25;
+		margin-top: 0px;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	.teacher-intro{
+		font-size: 1.8rem;
+	}
+
+	
+	.test {
+		border: 1px solid blue;
+	}
+	
+	@media(max-width: 575px) {
+		.icon-list{
+			font-size: 1.6rem;
+		}
+		.T_1 {
+		font-size: 0.8rem;
+		}
+		.chat {
+		font-size: 1rem;
+		margin-left: 15px;
+		}
+		.chat_two {
+		max-width: 90%;
+		font-size: 1rem;		
+		margin-left: 5%;
+		}
+		.finger {
+        font-size: larger;
+    	}
+		.buy {
+		font-size: larger;
+		}
+		.btn_t{
+			font-size: larger;
+		}
+		.marquee_0 {
+		height: 80px;
+	}
+	}
+
+	@media(max-width: 575px) {
+		.teacher-intro{
+			font-size: 1.3rem;
+		}
+		
+	}
+
+	.medium-height{
+		line-height: 1.4em;
+	}
+
+	h1.section{
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		font-weight: bold;
+		font-size: 2.8rem;
+		background-color: rgb(26, 161, 139);
+		color: #fff;
+
+		text-align: center;
+	}
+
+
+	
+	
+
+
+</style>
+<!-- Google Tag Manager (noscript) 心策-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZDDG7G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/activities">活動／講座</a></li>
+				<li class="breadcrumb-item active" aria-current="page">解密 NFT 與區塊鏈 募資活動</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<div class="p-2 p-md-4 p-lg-5">
+			<img src="/assets/images/activity/0V011121/0V011121_01.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_02.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_03.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_04.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_05.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_06.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_07.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_08.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_09.jpg" alt="" class="img-fluid">
+			<img src="/assets/images/activity/0V011121/0V011121_10.jpg" alt="" class="img-fluid">
+
+			<div class="position-relative">
+				<img src="/assets/images/activity/0V011121/0V011121_11.jpg" alt="" class="img-fluid">
+				<a href="https://www.zeczec.com/projects/scbooks0V011121?token=hJHGzxw7k-tYj6tDWahePA" target="_blank" class="position-absolute" style="top: 5%; left: 18%; height: 50%; width: 60%;"></a>
+			</div>
+			
+			
+			
+		
+
+
+		</div>
+		<!-- 主圖 -->
+	</div>	
+
+
+	<!-- 額外空間 -->
+	<!-- <div style="height: 80px;"></div> -->
+
+
+</div>
+

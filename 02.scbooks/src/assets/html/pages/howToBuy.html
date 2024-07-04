@@ -1,0 +1,191 @@
+﻿
+<!--
+注意事項：
+
+外部載入的網頁，超連結使用 routerLink="..."，不使用 href="..."。
+-->
+
+<style>
+	.title{
+		font-size: 3rem;
+		color: #03A9F4;
+	}
+	.title-border{
+		border-color: #03A9F4 !important;
+		margin-bottom: 1.5rem;
+	}
+	.title-img{
+		width: 120px;
+		height: 60px;
+		margin-top: 4rem;
+	}
+	@media(min-width: 500px) {
+		.title-img{
+			width: 160px;
+			height: 80px;
+		}
+	}
+
+	@media(min-width: 768px) and (max-width: 849px) {
+		.title-img{
+			width: 120px;
+			height: 60px;
+		}
+	}
+
+	@media(min-width: 850px) {
+		.title-img{
+			width: 200px;
+			height: 100px;
+		}
+	}
+
+	@media(min-width: 1200px) {
+		.title-img{
+			width: 240px;
+			height: 120px;
+
+		}
+	}
+
+	.num{
+		font-size: 2em;
+		font-weight: bold;
+		color: #FF9800;
+	}
+
+</style>
+
+<div class="position-relative">
+	<img src="assets/images/header_how.jpg" class="img-fluid fit page-photo">
+	<div class="container-xxl">
+
+		<div class="page-photo-title">
+			<h1>購買辦法</h1>
+		</div>
+	</div>
+</div>
+
+<div class="py-4" >
+
+	<div class="container-xxl text-start">
+
+		<div class="row row-cols-1 row-cols-md-2 gy-3 gy-md-5">
+
+			<!-- 1. 線上訂購 -->
+			<div class="col pe-md-4 pe-xl-5">
+				<div class="d-flex justify-content-between align-items-baseline border-bottom title-border">
+					<!-- <i class="bi bi-globe2 title"></i> -->
+					<img src="assets/images/buy/buy1.jpg" class="title-img">
+					<h3><span class="num">1</span> 線上訂購</h3>
+				</div>
+
+				<p>在選定的書籍頁面中點擊「加入購物車」鈕後，即可點擊頁面右上角的「購物車」按鈕進入購物車結帳，你可以在「購物車」頁面中修改購買項目；或者你也可以點擊「直接結帳」按鈕，略過購物車，直接進入結帳程序。</p>
+
+				<img src="assets/images/buy/buy5.jpg" class="img-fluid w-100 border shadow-sm mb-4">
+
+
+				<p>進入結帳頁面後，只要依循頁面指示，即可完成結帳手續。<br>運費收取方式如下：</p>
+
+				<div class="alert alert-warning" role="alert">
+				結帳總金額未滿1000元，運費 60 元；結帳總金額達1000 元及以上，免運費。
+				</div>
+				<p>若活動期間運費有其他計算方式，則依活動內容為準。<br>付款方式，詳情請參考<a routerLink="/page/payInfo" class="link-primary cursor-pointer">付款資訊</a>。</p>
+
+			</div>
+
+
+			<!-- 2. 千華門市購買 -->
+			<div class="col ps-md-4 ps-xl-5">
+
+				<div class="d-flex justify-content-between align-items-baseline border-bottom title-border">
+					<!-- <i class="bi bi-building title"></i> -->
+					<img src="assets/images/buy/buy2.jpg" class="title-img">
+					<h3><span class="num">2</span> 商鼎門市購買</h3>
+				</div>
+
+				<p>居住於大台北地區的讀者，歡迎您駕臨親選，門市現場購買書籍皆享有 9 折優惠。（特價書籍、函授課程、個人批改與學習診斷測驗，恕不再折扣）</p>
+
+				<div class="alert alert-warning" role="alert">
+					<p class="mb-0"><span class="fw-bold">總處</span>：新北市中和區中山路三段 136 巷 10 弄 17 號</p>
+					<p class="mb-0"><span class="fw-bold">總機</span>：886-2-2228-9070</p>
+					<p class="mb-0"><span class="fw-bold">營業時間</span>：星期一至五 09:00~18:00　星期六、日公休</p>
+				</div>
+
+				<div class="w-100 mt-4" style="height: 300px;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1610.6507221355505!2d121.47463725012082!3d25.007301092755572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a820d5cd673d%3A0xad0b4e360f205bdd!2zMjM15paw5YyX5biC5Lit5ZKM5Y2A5Lit5bGx6Lev5LiJ5q61MTM25be3MTDlvIQxN-iZnw!5e0!3m2!1szh-TW!2stw!4v1656483466022!5m2!1szh-TW!2stw"
+					style="border:0; width: 100%; height: 100%;"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+
+			</div>
+
+
+			<!-- 3. 團購 -->
+			<div class="col pe-md-4 pe-xl-5">
+
+				<div class="d-flex justify-content-between align-items-baseline border-bottom title-border">
+					<!-- <i class="bi bi-people title"></i> -->
+					<img src="assets/images/buy/buy3.jpg" class="title-img">
+					<h3><span class="num">3</span> 團購</h3>
+				</div>
+
+				<p>如果有大量購書需求，我們提供了更優惠的價格給您，詳情請參考<a routerLink="/buy" class="link-primary cursor-pointer">團購服務</a>。</p>
+
+				<a routerLink="/buy" class="mt-4 btn btn-primary text-light px-4">前往團購服務</a>
+
+			</div>
+
+
+			<!-- 4. 特約經銷書店 -->
+			<div class="col ps-md-4 ps-xl-5">
+
+				<div class="d-flex justify-content-between align-items-baseline border-bottom title-border">
+					<!-- <i class="bi bi-book title"></i> -->
+					<img src="assets/images/buy/buy4.jpg" class="title-img">
+					<h3><span class="num">4</span> 特約經銷書店</h3>
+				</div>
+
+				<p>我們在全國各地都有特約書店，歡迎至最近的書店購買，亦可委託書店代為訂書。</p>
+
+				<a routerLink="/stores" class="mt-4 btn btn-primary text-light px-4">全國特約書店</a>
+
+
+			</div>
+
+			<!-- 5. 特約經銷書店 -->
+			<div class="col pe-md-4 pe-xl-5">
+
+				<div class="d-flex justify-content-between align-items-baseline border-bottom title-border">
+					<!-- <i class="bi bi-book title"></i> -->
+					<img src="assets/images/buy/notice.jpg" class="title-img">
+					<h3><span class="num"> </span>防詐騙提醒</h3>
+				</div>
+
+				<ol>
+					<li><span class="text-danger">商鼎數位出版不會以任何名義通知更改付款方式或要求您到ATM進行任何操作！</span>若您接獲類似電話，請勿提供任何個人金融資料，並請撥165反詐騙專線查詢或與我們客服中心聯繫。</li>
+					<li>詐騙電話通常在客服下班後於晚上或假日聯繫，商鼎數位出版客服時間為：週一至週五 09:00-18:00，客服人員不會於下班時間與您聯繫。</li>
+				</ol>
+
+				
+
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+	<!-- 間距 -->
+	<div style="height: 100px;"></div>
+</div>

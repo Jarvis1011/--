@@ -1,0 +1,794 @@
+<!--
+注意事項：
+
+1. 外部載入的網頁，超連結使用：
+
+	a. 網站內部：routerLink="..."，不使用 href="..."。
+		routerLink 必須放在最底的元素上，無法放在外包圍的元素上。
+
+	b. 網站外部：可使用標準的 a 元素，建議可加上 target="_blank"：
+		<a href="http://xxxxx" target="_blank">購買</a>
+
+2. 原始 Bootstrap 的標題及段落行距較小，標題與上下的間距也小，在長篇文章中為版面美觀，可在上層容器中加上 .article，或單獨加上 .article，如：
+
+	```
+	<div class="article">
+		<h1></h1>
+		<h2></h2>
+		<p></p>
+	</div>
+
+	或
+
+	<h1 class="article"></h1>
+	<p class="article"></p>
+
+	```
+
+3. 半形數字、字母和中文間最好有一個半形空白。
+
+ -->
+
+<style>
+
+	.bg-theme{
+		background-color: #3BB44B;
+	}
+	.color-theme{
+		color: #1e912d;
+	}
+	.main-text{
+		font-size: 28px;
+	}
+
+	@media(min-width: 768px) {
+		.fix-mt{
+			margin-top: -2rem;
+		}
+	}
+	@media(min-width: 992px) {
+		.fix-mt{
+			margin-top: -3rem;
+		}
+	}
+
+	.num-item{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 5rem;
+		line-height: 4rem;
+		width: 3.6rem;
+		color: #fff;
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		margin-top: 0px;
+		margin-right: 0.5rem;
+		background-color: #981cbe;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	
+	/*時間軸*/
+	.timeline-container{
+		position: relative;
+		/* background-color: #fafafa; */
+	}
+	.timeline{
+		padding-left: 52px;
+		padding-top: 8px;
+		text-align: left;
+		padding-bottom: 1.5rem;
+	}
+	.timeline::before{
+		content: '';
+		position: absolute;
+		top: 5px;
+		bottom: 0;
+		width: 4px;
+		background: #FF6801;
+		left: 18px;
+	}
+	.timeline::after{
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background: #FF6801;
+		border-radius: 50%;
+		top: 0px;
+		left: 0px;
+		border: 6px solid #ffc299;
+	}
+	.timeline h4{
+		color: #FF6801;
+		font-weight: bold;
+	}
+	
+	.timeline h4 span.time{
+		display: inline-block;
+		margin-right: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.timeline h4 span.time-title{
+		display: inline-block;
+		padding: 0.25rem 1.2rem;
+		margin-top: -0.25rem;
+		background-color: #FF6801;
+		color: #fff;
+		border-radius: 20px;
+	}
+
+	/* 帶符號標題 */
+	h5.list{
+		font-weight: bold;
+		padding-left: 1em;
+	}
+	h5.list::before{
+		content: "";
+		position: absolute;
+		width: 0.6em;
+		height: 0.6em;
+		margin-top: 0.3em;
+		margin-left: -1em;
+		background-color: #222;
+	}
+
+	/* 時間軸樣式 2 */
+	.t2.timeline::before{		
+		background: #ff016b;
+	}
+	.t2.timeline::after{
+		background: #ff016b;
+		border: 6px solid #ff8bbb;
+	}
+	.t2.timeline h4{
+		color: #ff016b;
+	}
+	.t2.timeline h4 span.time-title{		
+		background-color: #ff016b;
+	}
+
+	/* 時間軸樣式 3 */
+	.t3.timeline::before{		
+		background: #920fcf;
+	}
+	.t3.timeline::after{
+		background: #920fcf;
+		border: 6px solid #c076e2;
+	}
+	.t3.timeline h4{
+		color: #920fcf;
+	}
+	.t3.timeline h4 span.time-title{		
+		background-color: #920fcf;
+	}
+
+	/* 時間軸樣式 4 */
+	.t4.timeline::before{		
+		background: #0f82cf;
+	}
+	.t4.timeline::after{
+		background: #0f82cf;
+		border: 6px solid #73b1db;
+	}
+	.t4.timeline h4{
+		color: #0f82cf;
+	}
+	.t4.timeline h4 span.time-title{		
+		background-color: #0f82cf;
+	}
+
+	/* 時間軸樣式 5 */
+	.t5.timeline::before{		
+		background: #0f922f;
+	}
+	.t5.timeline::after{
+		background: #0f922f;
+		border: 6px solid #72d48a;
+	}
+	.t5.timeline h4{
+		color: #0f922f;
+	}
+	.t5.timeline h4 span.time-title{		
+		background-color: #0f922f;
+	}
+
+	/* 時間軸樣式 6 */
+	.t6.timeline::before{		
+		background: #6e3853;
+	}
+	.t6.timeline::after{
+		background: #6e3853;
+		border: 6px solid #a88999;
+	}
+	.t6.timeline h4{
+		color: #6e3853;
+	}
+	.t6.timeline h4 span.time-title{		
+		background-color: #6e3853;
+	}
+
+	/* Q&A */
+	.QA h5{
+		padding-left: 2em;
+		font-weight: bold;	
+	}
+	.QA h5 span{
+		display: inline-block;
+		width: 2em;
+		margin-left: -2em;
+	}
+	.QA ul{
+		margin-left: 2em;
+	}
+	.QA p{
+		margin-left: 2.5em;
+	}
+
+
+
+
+	
+
+	/* old */
+	.icon-list{
+		font-size: 2rem;
+		line-height: 1.3em;
+		margin-bottom: 0.2em;
+		font-weight: bold;
+		display: inline-flex;
+		align-items: top;
+	}
+	.icon-list-icon{
+		fill: rgb(18, 170, 69);
+		height: 1.1em;
+		width: 1.1em;
+		margin-right: 0.2em;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-top: 0.1em;
+	}
+	@media(max-width: 575px) {
+		.icon-list{
+			font-size: 1.6rem;
+		}
+	}
+
+	.symbol{
+		max-width: 220px;
+	}
+	.medium-size{
+		font-size: 20px;
+	}
+	.course-size{
+		font-size: 22px;
+	}
+
+	
+
+	.teacher-intro{
+		font-size: 1.8rem;
+	}
+	@media(max-width: 575px) {
+		.teacher-intro{
+			font-size: 1.3rem;
+		}
+	}
+
+	.medium-height{
+		line-height: 1.4em;
+	}
+
+	h1.section{
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+		padding-top: 0.4rem;
+		padding-bottom: 0.4rem;
+		font-weight: bold;
+		font-size: 2.8rem;
+		background-color: rgb(26, 161, 139);
+		color: #fff;
+
+		text-align: center;
+	}	
+	
+
+
+</style>
+
+
+<div class="pt-4">
+	<div class="container-lg max-w-title">
+
+		<!-- 麵包屑 -->
+		<nav aria-label="breadcrumb" class="mb-4 bread-nav">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/index">首頁</a></li>
+				<li class="breadcrumb-item"><a class="text-primary cursor-pointer" routerLink="/activities">活動／講座</a></li>
+				<li class="breadcrumb-item active" aria-current="page">消防設備士考前抱佛腳班</li>
+			</ol>
+		</nav>
+
+		<!-- 活動內容 -->
+		<!-- 主圖 -->
+		<img src="assets/images/activity/chienhua_20210720_1.jpg" class="w-100 img-fluid">
+
+		<div class="bg-theme text-white py-4 px-3 px-md-4 text-center">
+			<h4 class="main-text">臨時抱佛腳也能考的好！<span class="fw-bold">考前最後刺，千華名師給你最高效學習成果！</span></h4>
+			<h4 class="main-text"><span class="fw-bold">2021 年消防設備士重點總複習</span>，讓你快速掌握新版法規內容，輕鬆 PASS！</h4>
+		</div>		
+
+
+		<div class="text-center">
+			<h2 class="fw-bold color-theme mt-4">
+				2021 年 6 月最新修法內容，9 月立即要考，你準備了嗎？
+			</h2>
+			<h4 class="">消防設備士最重要的也是考試比例佔最多的法規</h4>
+			<h4 class="text-danger fw-bold mb-0">【各類場所消防安全設置標準】</h4>
+			<h4 class="text-danger fw-bold">2021 年 6 月 25 日總計修正高達 26 條文內容</h4>
+			<h4>考選部表示 2021 年 9 月份考試請依照最新法規作答！</h4>
+		</div>
+
+		<img src="assets/images/activity/chienhua_20210720_2.jpg" class="w-100 img-fluid">
+
+		<div class="d-flex flex-column align-items-center fix-mt" >
+			<img src="assets/images/activity/chienhua_20210720_4.jpg" class="img-fluid mb-2">
+			<img src="assets/images/activity/chienhua_20210720_3.jpg" class="img-fluid">
+		</div>
+		<h3 class="text-center mt-3">各科重點總複習，符合最新修法內容，給你最高效學習成果</h3>
+
+
+		<!-- 7 項內容 -->
+		<div class="mt-5">
+
+			<div class="row gx-5 gy-4 gy-md-5" >
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item" style="background-color: #FFDD00;">1</div>
+						<div>
+							<h3 class="card-title fw-bold">水系統</h3>
+							<p>以燃燒滅火的原理，統整水系統重點</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item" style="background-color: #FF6801;">2</div>
+						<div>
+							<h3 class="card-title fw-bold">警報系統</h3>
+							<ul class="mb-0">
+								<li>統合 6 大系統</li>
+								<li>歸納分析必考重點</li>
+								<li>降低背誦量</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item" style="background-color: #FF017E;">3</div>
+						<div>
+							<h3 class="card-title fw-bold">火災學</h3>
+							<ul class="mb-0">
+								<li>整合 4 大章節</li>
+								<li>搭配落點分析</li>
+								<li>掌握致勝關鍵</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item">4</div>
+						<div>
+							<h3 class="card-title fw-bold">避難系統</h3>
+							<ul class="mb-0">
+								<li>新修正規定</li>
+								<li>時事考題掌握，提升解題效率</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item" style="background-color: #003eb2;">5</div>
+						<div>
+							<h3 class="card-title fw-bold">消防法規</h3>
+							<ul class="mb-0">
+								<li>依命題比例層次解說</li>
+								<li>新修正規定與時事</li>
+								<li>脈絡清晰易理解</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item" style="background-color: #1ca6cf;">6</div>
+						<div>
+							<h3 class="card-title fw-bold">化學系統</h3>
+							<ul class="mb-0">
+								<li>串連重點觀念</li>
+								<li>講師獨家學習要點</li>
+								<li>落點分析掌握考試重點</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<div class="d-flex h-100">
+						<div class="num-item" style="background-color: #1e912d;">7</div>
+						<div>
+							<h3 class="card-title fw-bold">模擬測驗</h3>
+							<ul class="mb-0">
+								<li>6 次課前模擬測驗</li>
+								<li>1 次模擬考</li>
+								<li>提升應考即戰力</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- 適合學員 -->
+		<div class="d-flex justify-content-center" >
+			<img src="assets/images/activity/chienhua_20210720_5.jpg" class="img-fluid mt-5 mb-4">
+		</div>
+
+		<div class="row mx-md-5">
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_7.jpg" class="img-fluid mw-100">
+			</div>
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_8.jpg" class="img-fluid mw-100">
+			</div>
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_9.jpg" class="img-fluid mw-100">
+			</div>
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_10.jpg" class="img-fluid mw-100">
+			</div>
+		</div>
+
+		
+		<h4 class="fw-bold text-black text-center mt-0 mt-sm-3">
+			<span class="py-2 px-4 d-inline-block rounded-pill"
+				style="background-color: #c3eec8;"
+			>具備消防設備士基礎知識，已經報考 2021 消防設備士考生</span>
+		</h4>
+
+
+
+
+		<!-- 課綱 -->
+		<div class="d-flex justify-content-center mt-5" >
+			<img src="assets/images/activity/chienhua_20210720_4.jpg" class="img-fluid">
+		</div>
+		<div class="d-flex justify-content-center mb-3" >
+			<img src="assets/images/activity/chienhua_20210720_6.jpg" class="img-fluid">
+		</div>
+
+		<div class="row mx-md-5">
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_11.jpg" class="img-fluid mw-100">
+			</div>
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_12.jpg" class="img-fluid mw-100">
+			</div>
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_13.jpg" class="img-fluid mw-100">
+			</div>
+			<div class="col-6 col-sm-3 d-flex justify-content-center mb-4 mb-sm-0">
+				<img src="assets/images/activity/chienhua_20210720_14.jpg" class="img-fluid mw-100">
+			</div>
+		</div>
+
+
+		<div class="row mt-4">
+			<div class="col-12 col-md-6">
+
+				<!-- time 1 -->
+				<div class="timeline-container">
+					<div class="timeline">
+						<h4><span class="time">08/17(二) 19:30~21:30</span><span class="time-title">水系統</span></h4>
+
+						<h5 class="list">水系統設備設計概要</h5>
+						<p>以系統化統整各類場所、公共危險物品等場所應設水系統滅火設備</p>
+
+						<h5 class="list">水系統滅火設備</h5>
+						<p>室內外消防栓、自動撒水設備、水霧設備、泡沫設備、連結送水管設備與消防專用蓄水池</p>
+
+						<h5 class="list">滅火困難的場所與應設置防護設備</h5>
+
+					</div>
+				</div>
+
+
+				<!-- time 2 -->
+				<div class="timeline-container">
+					<div class="timeline t2">
+						<h4><span class="time">08/19(四) 19:30~21:30</span><span class="time-title">警報系統</span></h4>
+
+						<h5 class="list">警報系統設備設計概要</h5>
+						<p>以系統化統整各類場所、公共危險物品等場所應設警報系統設備</p>
+						<h5 class="list">火警自動警報設備</h5>
+						<h5 class="list">手動警報設備</h5>
+						<h5 class="list">緊急廣播設備</h5>
+						<h5 class="list">瓦斯漏氣火警自動警報設備</h5>
+
+					</div>
+				</div>
+
+
+				<!-- time 3 -->
+				<div class="timeline-container">
+					<div class="timeline t3">
+						<h4><span class="time">08/24(二) 19:30~21:30</span><span class="time-title">火災學</span></h4>
+
+						<h5 class="list">火災學概念</h5>
+						<p>火災基本特性、燃燒＆爆炸概論</p>
+						<h5 class="list">建築物火災</h5>
+						<p>煙霧特性、煙流動因素、火災種類</p>
+						<h5 class="list">各類火災特性</h5>
+						<p>電器火災、化學物質火災</p>					
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-12 col-md-6">
+
+				<!-- time 4 -->
+				<div class="timeline-container">
+					<div class="timeline t4">
+						<h4><span class="time">08/26(四) 19:30~21:30</span><span class="time-title">消防法規</span></h4>
+
+						<h5 class="list">新修正規定考點彙整</h5>
+						<ul>
+							<li>消防法＋施行細則</li>
+							<li>機構管理辦法</li>
+							<li>人員管理辦法</li>
+							<li>公共危險物品管理辦法</li>
+							<li>各類場所消防安全設置標準</li>
+							<li>審勘查作業基準</li>
+							<li>建築法系</li>
+						</ul>
+
+						<h5 class="list">時事考題說明</h5>
+
+					</div>
+				</div>
+
+
+				<!-- time 5 -->
+				<div class="timeline-container">
+					<div class="timeline t5">
+						<h4><span class="time">08/31(二) 19:30~21:30</span><span class="time-title">化學系統</span></h4>
+
+						<h5 class="list">二氧化碳滅火設備</h5>
+						<p>滅火原理、動作流程、系統元件</p>
+
+						<h5 class="list">乾粉滅火設備</h5>
+						<p>滅火原理、乾粉種類、動作流程、系統元件</p>
+
+						<h5 class="list">滅火器</h5>
+						<ul>
+							<li>滅火原理、乾粉種類、滅火效能值</li>
+							<li>海龍替代品滅火設備</li>
+						</ul>
+
+						<h5 class="list">滅火原理、替代品種類＆特性</h5>						
+
+					</div>
+				</div>
+
+
+				<!-- time 6 -->
+				<div class="timeline-container">
+					<div class="timeline t6">
+						<h4><span class="time">09/02(四) 19:30~21:30</span><span class="time-title">避難系統</span></h4>
+										
+						<h5 class="list">標示設備重點提示</h5>
+						<h5 class="list">避難設備重點提示</h5>
+						<h5 class="list">照明設備重點提示</h5>
+						<h5 class="list">搶救上必要設備重點提示</h5>
+						<h5 class="list">時事考題說明</h5>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+		<!-- 師資 -->
+		<img src="assets/images/activity/chienhua_20210720_15.jpg" class="w-100 img-fluid mt-4">
+
+
+		<h2 class="fw-bold text-white text-center mt-5 mb-4">
+			<span class="py-2 px-5 d-inline-block rounded-pill"
+				style="background-color: #0d2fc9;"
+			>強力專業師資</span>
+		</h2>
+
+		<div class="row gx-5 gy-4 gy-md-5" >
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+					<div class="d-flex h-100">
+						<div class="num-item bg-white text-start text-secondary pt-0">1</div>
+						<div>
+							<h3 class="card-title fw-bold">傅維廷 老師</h3>
+							<ul class="fixed-left">
+								<li>消防科技有限公司</li>
+								<li>多所大專院校講師</li>
+								<li>多所補教機構講師</li>
+							</ul>
+							<h5 class="list">授課科目</h5>
+							<p>【化學系統)、【火災學】</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+					<div class="d-flex h-100">
+						<div class="num-item bg-white text-start text-secondary pt-0">2</div>
+						<div>
+							<h3 class="card-title fw-bold">黃培誠 老師</h3>
+							<ul class="fixed-left">
+								<li>廷安消防設備師事務所負責人</li>
+								<li>消防設備師全聯會常務監事</li>
+								<li>內政部消防署防火管理人講師</li>
+								<li>多所大專院校講師</li>
+							</ul>
+							<h5 class="list">授課科目</h5>
+							<p>【水系統】、【警報系統】</p>
+						</div>						
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-5">
+					<div class="d-flex h-100">
+						<div class="num-item bg-white text-start text-secondary pt-0">3</div>
+						<div>
+							<h3 class="card-title fw-bold">李冠賢 老師</h3>
+							<ul class="fixed-left">
+								<li>中華大使風險管理防災指導中心負責人</li>
+								<li>台北市消防設備士公會常務理事</li>
+								<li>台北區消防檢修專業機構協會常務理事</li>
+								<li>多所大專院校講師</li>
+							</ul>
+							<h5 class="list">授課科目</h5>
+							<p>【消防法規】、【避難系統】</p>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+
+
+
+			<!-- 心得 -->
+			<div class="position-relative mt-4">
+				<img src="assets/images/activity/chienhua_20210720_16.jpg" class="w-100 img-fluid">
+
+				<a href="http://www.chienhua.com.tw/examList/ExamListDetail21.aspx" target="_blank" class="img-map-ele"
+					title="心得 1" style="left: 8.2%; top: 41.85%; width: 24.8%; height: 26.8%;"></a>
+
+				<a href="http://www.chienhua.com.tw/examList/ExamListDetail18.aspx" target="_blank" class="img-map-ele"
+					title="心得 2" style="left: 37.6%; top: 41.77%; width: 25.5%; height: 27.27%;"></a>
+
+				<a href="http://www.chienhua.com.tw/examList/ExamListDetail22.aspx" target="_blank" class="img-map-ele"
+					title="心得 3" style="left: 67.3%; top: 41.93%; width: 25.2%; height: 27.19%;"></a>
+
+				<a href="http://www.chienhua.com.tw/examList/ExamListDetail19.aspx" target="_blank" class="img-map-ele"
+					title="心得 4" style="left: 22.9%; top: 69.51%; width: 25%; height: 26.96%;"></a>
+
+				<a href="http://www.chienhua.com.tw/examList/ExamListDetail20.aspx" target="_blank" class="img-map-ele"
+					title="心得 5" style="left: 52.8%; top: 69.44%; width: 25.1%; height: 26.88%;"></a>
+			</div>
+
+
+			<!-- 購買 -->
+			<img src="assets/images/activity/chienhua_20210720_17.jpg" class="w-100 img-fluid mt-4">
+			<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=20009" target="_blank">
+				<img src="assets/images/activity/chienhua_20210720_18.jpg" class="w-100 img-fluid">
+			</a>
+			<a href="http://www.chienhua.com.tw/BookStore/bookDetail.aspx?BookID=20010" target="_blank">
+				<img src="assets/images/activity/chienhua_20210720_19.jpg" class="w-100 img-fluid">
+			</a>
+
+			<p class="text-muted text-center">※ 為千華消防舊學員（含混成學員）即可享有舊生優惠</p>
+
+			<!-- 說明 -->
+			<div class="p-3 text-white" style="background-color: #3AB549;">
+				<h5 class="fw-bold">退費機制</h5>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<ul class="mb-0">
+							<li class="mb-2">若未達開班人數 12 人，將會退款直播課程費用。</li>
+							<li class="mb-2">直播課程開課前三十日（含）以前申請退費者，全額退還已繳直播課程費用。</li>
+							<li class="mb-2">直播課程開課前二十九日內申請退費者，將退還已繳直播課程費用之九成。</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6">
+						<ul class="mb-0">
+							<li class="mb-2">直播課程開課後五日內申請退費者，將退還已繳課程費用之七成。</li>
+							<li class="mb-2">直播課程開課後未逾全期三分之一申請退費者，退還已繳課程費用之五成。</li>
+							<li class="mb-2">直播課程開課後逾全期三分之一申請退費申請者，課程費用不予退還。</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="p-3 d-flex justify-content-center" style="background-color: #F7B52B;">
+				<div class="text-start">
+					<p class="mb-0">主辦單位保留活動及課程大綱異動之權利，最新資訊請參考活動網頁。</p>
+					<p class="mb-0">客服電話：+886-2-2228-9070　客服信箱：<a href="mailto:chienhua@chienhua.com.tw">chienhua@chienhua.com.tw</a></p>
+					<p class="mb-0">上班時間：週一至五，AM 9:00 ~ PM 6:00，週六、日公休。</p>
+				</div>
+			</div>
+
+			<div class="p-3 d-flex justify-content-center" style="background-color: #707070;">
+				<div class="text-start text-white QA">
+					<h4 class="text-center fw-bold">線上直播課程常見 Q&A</h4>
+
+					<h5><span>Q1.</span>如何參與直播課程?</h5>
+					<ul>
+						<li>本公司將於課程開始前 5 天，以 E-mail 方式寄出課程相關資訊，敬請留意收信。</li>
+						<li>本講座為直播課程，使用 ZOOM 系統上課，請學員自行下載 ZOOM 軟體。</li>
+						<li>提醒您！本課程採私人權限「線上直播」，為維護您的權益，請學員以您報名時所填寫的姓名加入會議，以利課程助教審核加入。</li>
+						<li>課程開始前15~20分鐘會開放進場，建議提早入場，測試收看流湯度及瞭解課程注意事項。</li>
+						<li>觀看直播課程建議設備：桌機＞筆電＞平板＞手機</li>
+					</ul>
+
+					<h5><span>Q2.</span>課程進行方式是什麼?可以與講師交流、互動的機會嗎?</h5>
+					<ul>
+						<li>直播課程以老師講授方式進行，課程中老師會針對必考重點解析與課前測驗學員答題狀況進行。</li>
+						<li>課程開始前三天課程助教將會邀請講師與學員加入課程專屬群組，您可以於群組內提出問題，與講師交流互動。</li>
+						<li>課程進行中，學員可以留言發問，依狀況講師會在課堂中直接回答或留在結尾統一回答。</li>
+					</ul>
+
+
+					<h5><span>Q3.</span>線上直播會需要開聲音嗎?如何保護個人隱私?</h5>
+					<p>不需要，為確保有流暢的學習過程，皆關閉聲音功能，除講師畫面、簡報外，學員間不會看到彼此的資訊。</p>
+
+
+					<h5><span>Q4.</span>該如何瞭解自己的網路速度是否能觀看直播課程?</h5>
+					<p>至少需上傳速度＞1 Mbps， 下載速度＞8 Mbps，頻寬越大，延遲時間越短，畫質越清晰。（可用 Google 搜尋「網路測速」，即可測速。）</p>
+
+
+					<h5><span>Q5.</span>是否提供課程回放觀看?</h5>
+					<p>現場直播為了強化學習的專注力及學習曲線，暂不提供回放服務。</p>
+
+
+					<h5><span>Q6.</span>是否可以側錄?</h5>
+					<p>禁止側錄，線上系列課程之所有形式資料皆屬千華數位文化股份有限公司所有，因此側錄（違反著作權法第三條第一項第五款）、串流至其他平台及與其他人共享帳戶觀看（違反著作權法第三條第一項第十款），已造成侵權行為，本公司將保留法律追訴權。</p>
+
+
+					<h5><span>Q7.</span>是否可以開立統一編號?付款後大概多久可以收到發票?</h5>
+					<ul>
+						<li>可以，報名時填寫公司抬頭及統一編號。</li>
+						<li>課程確定開班後，發票將於一週內將寄出。</li>
+					</ul>
+
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+	<!-- 額外空間 -->
+	<div style="height: 80px;"></div>
+
+
+</div>

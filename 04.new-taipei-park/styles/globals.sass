@@ -1,0 +1,196 @@
+@import './_paginate.sass'
+
+html,
+body
+  padding: 0
+  margin: 0
+  font-family: "Microsoft JhengHei", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+
+body
+  background: #f7f4f0
+
+button:focus, a:focus, img:focus
+  border: 3px dashed red !important
+  background: #B0C4DE !important
+  outline: none
+
+input:focus, select:focus
+  outline: 3px dashed red !important
+  background: #B0C4DE !important
+
+*
+  box-sizing: border-box
+
+.app
+  overflow: hidden
+  min-height: 100vh
+
+a 
+  color: inherit
+  text-decoration: none
+  cursor: pointer
+  &:hover
+    text-decoration: none
+
+img
+  user-select: none
+  -webkit-user-drag: none
+
+.container
+  max-width: 1280px
+  // .row
+  //   display: flex
+  //   justify-content: center
+
+h1
+  cursor: pointer
+
+.banner-news
+  margin-top: 45px
+  margin-bottom: 25px
+
+.faq-tabs
+  button
+    padding: 0
+    flex-shrink: 0
+    display: inline-block
+    border: none
+    background-color: rgba(0, 0, 0, 0)
+    font-size: 1.25rem
+    color: #bbbbbb !important
+    font-weight: 800
+    transition: 0.5s
+    &:hover, &.active
+      color: #2a9a96 !important
+      transition: 0.5s
+      padding-bottom: 3px
+      border-bottom: 1px dotted #2a9a96
+  .border-right
+    border-color: #aaaaaa !important
+
+.slick-prev:before, .slick-next:before
+  display: none
+
+.slick-dots
+  transform: translateY(35px)
+  z-index: 5
+
+// facility-detail
+.circle_btn
+  width: 70px
+  height: 70px
+  border-radius: 99rem
+  display: grid
+  place-items: center
+  background-image: linear-gradient(225deg, #37a68b, #0275b8)
+  border: none
+  img
+    width: 30px !important
+    height: 30px
+.strip_btn
+  height: 70px
+  border-radius: 99rem
+  display: flex
+  place-items: center
+  background-image: linear-gradient(225deg, #37a68b, #0275b8)
+  color: #fff
+  padding: 0 36px
+  border: none
+  &:hover
+    color: #fff
+  img
+    width: 20px !important
+    height: 20px
+
+#marquee.slick-slider.slick-vertical
+  position: relative
+  span
+    height: 40px !important
+    line-height: 40px
+
+#tgos-map
+  div
+    background-size: 100% !important
+
+#map-popup, #map-popup-error
+  width: 200px
+  position: absolute
+  left: 0
+  bottom: 0
+  transform: translate(calc(-50% + 17.25px), -55px)
+  backdrop-filter: blur(3px)
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .3)
+  background-image: linear-gradient(233deg, rgba(95, 255, 215, 0.7), rgba(0, 161, 255, 0.9))
+  border-radius: 10px
+  .wrapper
+    position: relative
+    border-radius: 10px
+    padding: 15px
+    width: 100%
+    height: 100%
+    border: 5px solid rgba(255, 255, 255, .5)
+  .close-btn
+    position: absolute
+    top: 0
+    right: 0
+    //background-image: url('/images/maps/map-popup-btn-close.svg')
+    background-color: rgba(0, 0, 0, 0)
+    background-position: -6px -3px
+    background-repeat: no-repeat
+    border: none
+    width: 50px
+    height: 50px
+    transform-origin: center
+    transform: translate(50%, -50%) scale(1.2)
+  .title
+    text-align: center
+    color: white
+    font-size: 1.4rem
+    font-weight: bold
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .2)
+  hr
+    border-top: 1px dotted rgba(0, 0, 0, .3)
+    margin: 10px 0
+  .opt-container
+    display: flex
+    justify-content: center
+  .opt-button
+    border: none
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(0, 0, 0, 0)
+    margin: 0 10px
+    flex-direction: column
+    flex-shrink: 0
+    span
+      font-size: 0.9rem
+      color: white
+  .opt-container-maintenance
+    text-align: center
+    color: white
+    .opt-maintenance-title
+      font-weight: 600
+    .opt-maintenance-time
+      font-size: 0.8rem
+#map-popup-error
+  background-image: linear-gradient(233deg, rgba(255, 95, 221, 0.7), rgba(255, 122, 0, 0.9))
+.slick-detail
+  .slick-list
+    max-height: 700px
+    img
+      object-fit: cover
+      height: 100%
+  .slick-dots
+    bottom: 0
+
+@media (max-width : 980px)
+  .banner-news
+    .slick-slider
+      padding-bottom: 30px
+      ul
+        bottom: 5px
+
+  .slick-dots
+    transform: translateY(0px)
+    z-index: 5

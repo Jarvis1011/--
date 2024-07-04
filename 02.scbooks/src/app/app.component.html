@@ -1,0 +1,495 @@
+<!-- 導覽列 -->
+<nav
+    class="navbar navbar-expand-lg fixed-top  {{ config.menu_shadow }}"
+    [ngClass]="{
+    'bg-gradient': config.menu_gradient,
+    'navbar-dark': config.menu_dark,
+    'navbar-light': !config.menu_dark && !config.menu_color
+  }"
+    [style.background-color]="config.menu_backColor"
+>
+    <div class="container-fluid">
+        <!-- logo -->
+        <a
+            class="navbar-brand d-inline-flex align-items-center"
+            routerLink="index"
+        >
+            <!-- 小圖 -->
+            <img
+                src="assets/images/logo-{{ config.menu_dark ? 'dark' : 'light' }}.svg"
+                class="d-block d-sm-none logo-small"
+                height="32"
+                [ngStyle]="{
+          filter:
+            'hue-rotate(' +
+            config.logo_hue +
+            ') ' +
+            'saturate(' +
+            config.logo_saturate +
+            ') ' +
+            'brightness(' +
+            config.logo_brightness +
+            ')'
+        }"
+            />
+
+            <!-- 大圖 -->
+            <img
+                src="assets/images/logo-{{
+          config.menu_dark ? 'dark' : 'light'
+        }}-long.svg"
+                class="d-none d-sm-block"
+                height="32"
+                [ngStyle]="{
+          filter:
+            'hue-rotate(' +
+            config.logo_hue +
+            ') ' +
+            'saturate(' +
+            config.logo_saturate +
+            ') ' +
+            'brightness(' +
+            config.logo_brightness +
+            ')'
+        }"
+            />
+
+            <!-- <img src="assets/images/logo-{{config.menu_dark ? 'dark' : 'light'}}-long.svg" height="32"
+
+			[ngStyle]="{'filter': 'hue-rotate(' + config.logo_hue + ') ' + 'saturate(' + config.logo_saturate + ') ' + 'brightness(' + config.logo_brightness + ')'}"
+			> -->
+        </a>
+
+        <div class="order-5 d-flex align-items-center">
+            <!-- 右側獨立功能表 -->
+            <ul class="navbar-nav flex-row align-items-center me-1 me-lg-0">
+                <!-- 搜尋：begin -->
+
+                <!-- 大畫面 ＞ xl -->
+                <div class="me-3 d-none d-xl-block">
+                    <div class="input-group position-relative">
+                        <input
+                            class="form-control search-box"
+                            list="sugg1"
+                            placeholder="書名、作者、書號"
+                            #search
+                            type="search"
+                            [(ngModel)]="searchStr"
+                            (search)="onSearch($event)"
+                        />
+
+                        <button
+                            class="btn btn-primary text-light pt-1"
+                            type="submit"
+                            (click)="onSearch($event)"
+                        >
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                        <!-- 建議清單 -->
+                        <!-- <datalist id="sugg1">
+							<option *ngFor="let item of suggestions" value="{{item}}">
+						</datalist> -->
+                    </div>
+                </div>
+
+                <!-- 小畫面 < xl -->
+                <li class="nav-item d-xl-none">
+                    <div class="dropdown position-relative">
+                        <a
+                            class="p-0 nav-link icon-nav"
+                            id="searchButton"
+                            href="#"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <i class="bi size2 bi-search me-3"></i>
+                        </a>
+
+                        <ul
+                            class="dropdown-menu dropdown-menu-end search-menu"
+                            aria-labelledby="searchButton"
+                        >
+                            <li class="dropdown-item">
+                                <div class="input-group position-relative">
+                                    <input
+                                        class="form-control search-box"
+                                        list="sugg2"
+                                        placeholder="書名、作者、書號"
+                                        #search_sm
+                                        type="search"
+                                        [(ngModel)]="searchStr"
+                                        (search)="onSearch($event)"
+                                    />
+
+                                    <button
+                                        class="btn btn-primary text-light pt-1"
+                                        type="submit"
+                                        (click)="onSearch($event)"
+                                    >
+                                        <i class="bi bi-search"></i>
+                                    </button>
+
+                                    <!-- 建議清單 -->
+                                    <!-- <datalist id="sugg2">
+										<option *ngFor="let item of suggestions" value="{{item}}">
+									</datalist> -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 搜尋：end -->
+
+                <!-- 帳號 -->
+                <li class="nav-item">
+                    <div class="dropdown position-relative">
+                        <a
+                            class="p-0 nav-link icon-nav"
+                            aria-expanded="false"
+                            type="button"
+                            id="accountBtn"
+                            data-bs-toggle="dropdown"
+                        >
+                            <i class="bi size2 bi-person-circle me-3"></i>
+                            <!-- <span class="tooltiptext navi">會員管理</span> -->
+                        </a>
+                        <ul
+                            class="dropdown-menu dropdown-menu-end account-menu"
+                            aria-labelledby="accountBtn"
+                            style="width: max-content"
+                        >
+                            <div *ngIf="us.isLogin">
+                                <div
+                                    class="d-flex align-items-center flex-nowrap px-3 text-primary"
+                                >
+                                    <div>
+                                        <i
+                                            class="bi bi-person-circle"
+                                            style="font-size: 2em"
+                                        ></i>
+                                    </div>
+                                    <div class="px-2">
+                                        <span
+                                            class="vip-status pe-2"
+                                            *ngIf="us.user?.isVip"
+                                            >VIP</span
+                                        >
+                                        {{ loginName }}
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center flex-nowrap px-3 text-primary"
+                                    *ngIf="us.user?.isVip && us.user?.usedVipCoupon"
+                                >
+                                    <div class="px-2">
+                                        <span class="text-danger"
+                                            ><i
+                                                class="bi bi-exclamation-circle"
+                                            ></i>
+                                            {{ vipStatusTips }}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                            </div>
+
+                            <li *ngIf="!us.isLogin">
+                                <a class="dropdown-item" routerLink="/login"
+                                    ><i
+                                        class="bi bi-box-arrow-in-right me-2"
+                                    ></i
+                                    >登入／註冊</a
+                                >
+                            </li>
+
+                            <li *ngIf="us.isLogin">
+                                <a class="dropdown-item" routerLink="/orders"
+                                    ><i class="bi bi-bag me-2"></i>訂單查詢</a
+                                >
+                            </li>
+
+                            <li *ngIf="us.isLogin">
+                                <a class="dropdown-item" routerLink="/member"
+                                    ><i class="bi bi-person-badge me-2"></i
+                                    >檢視／修改會員資料</a
+                                >
+                            </li>
+
+                            <li *ngIf="us.isLogin">
+                                <a class="dropdown-item" routerLink="/changepwd"
+                                    ><i class="bi bi-key me-2"></i>變更密碼</a
+                                >
+                            </li>
+
+                            <!-- 管理員專用 -->
+                            <div *ngIf="us.isManager">
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <h6 class="dropdown-header">網站管理</h6>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        routerLink="/orderManage"
+                                        ><i class="bi bi-bag-check me-2"></i
+                                        >訂單管理</a
+                                    >
+                                </li>
+                            </div>
+
+                            <!-- 登出 -->
+                            <li *ngIf="us.isLogin">
+                                <hr class="dropdown-divider" />
+                            </li>
+
+                            <li *ngIf="us.isLogin">
+                                <a
+                                    class="dropdown-item cursor-pointer"
+                                    (click)="logout()"
+                                    ><i class="bi bi-box-arrow-left me-2"></i
+                                    >登出</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						Dropdown button
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div> -->
+
+                <!-- 購物車 -->
+                <li class="nav-item position-relative">
+                    <a
+                        class="p-0 nav-link icon-nav"
+                        aria-current="page"
+                        routerLink="/cart"
+                        [ngClass]="{ 'opacity-100': cartTotal > 0 }"
+                    >
+                        <!-- 有無商品圖示不同 -->
+                        <i
+                            class="bi size2 bi-cart me-3"
+                            *ngIf="cartTotal == 0"
+                        ></i>
+
+                        <i
+                            class="bi size2 bi-cart-check-fill me-3 text-danger"
+                            *ngIf="cartTotal > 0"
+                        ></i>
+                    </a>
+
+                    <!-- 數量 -->
+                    <span
+                        class="position-absolute badge rounded-pill bg-danger"
+                        style="right: 0px; top: -8px"
+                        *ngIf="cartTotal > 0"
+                    >
+                        {{ cartTotal }}
+                    </span>
+
+                    <!-- 說明 -->
+                    <span
+                        class="position-absolute bg-dark text-white text-nowrap px-1 rounded-1"
+                        style="font-size: 12px; right: 12px; bottom: -16px"
+                        *ngIf="cartTotal > 0 && config.showCartText"
+                        >結帳</span
+                    >
+                </li>
+            </ul>
+
+            <!-- 小螢幕的功能表切換鈕 -->
+            <button
+                class="navbar-toggler order-5"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <!-- 主功能表： offcanvas menu -->
+        <div
+            class="offcanvas offcanvas-end shadow-none"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
+        >
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <a
+                        routerLink="index"
+                        data-bs-dismiss="offcanvas"
+                        class="btn btn-primary text-light"
+                    >
+                        <i class="bi bi-house me-1"></i>
+                        {{ menuTitle }}</a
+                    >
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+
+            <div class="offcanvas-body sidebar-bg">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li
+                        *ngFor="let item of menu"
+                        class="nav-item px-1"
+                        [ngClass]="item.dropDownID ? 'dropdown' : ''"
+                    >
+                        <a
+                            class="nav-link fix-dark-color {{
+                item.dropDownID ? 'dropdown-toggle' : ''
+              }}"
+                            [ngClass]="activeMenu(urlStr, item.active)"
+                            [id]="item.dropDownID ? item.dropDownID : ''"
+                            [attr.role]="item.dropDownID ? 'button' : ''"
+                            [attr.data-bs-toggle]="item.dropDownID ? 'dropdown' : ''"
+                            [attr.aria-expanded]="item.dropDownID ? false : ''"
+                            [attr.data-bs-dismiss]="item.dropDownID ? '' : 'offcanvas'"
+                            [attr.data-bs-auto-close]="autoClose()"
+                            href="#"
+                            (click)="goto(item.link, item.dropDownID)"
+                            *ngIf="!item.memberShow || (item.memberShow === 'Y' && us.isLogin)"
+                        >
+                            <!--
+						routerLink="{{item.link}}"
+						(mouseover)="showSubMenu(item)"
+						(mouseout)="hideSubMenu(item)"
+						-->
+
+                            {{ item.title }}</a
+                        >
+
+                        <!-- 子功能表 -->
+                        <ul
+                            *ngIf="hasDropDown(item)"
+                            class="dropdown-menu fix-side-menu px-lg-2 side-menu-shadow"
+                            [attr.aria-labelledby]="item.dropDownID"
+                        >
+                            <!-- pc 版的子功能表 -->
+                            <div class="d-flex pc-menu">
+                                <!-- 多重子功能表 -->
+                                <div
+                                    *ngFor="let group of item.subMenu"
+                                    [style.width]="
+                    config.menu_fixedWidth ? config.menu_width : 'auto'
+                  "
+                                >
+                                    <!-- [style.width.em]="item.menuWidth" -->
+
+                                    <!-- 子功能表標題 -->
+                                    <li>
+                                        <h6
+                                            *ngIf="group.header"
+                                            class="dropdown-header sub-header"
+                                            [style.color]="config.menu_subHeaderColor"
+                                        >
+                                            {{ group.header }}
+                                        </h6>
+                                    </li>
+
+                                    <li *ngFor="let subItem of group.items">
+                                        <a
+                                            class="dropdown-item text-truncate cursor-pointer"
+                                            (click)="goto(subItem.link, '')"
+                                            >{{
+                      subItem.title }}</a
+                                        >
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- pc 版子功能表 end -->
+
+                            <!-- 手機版的子功能表，使用手風琴 -->
+                            <div class="moble-menu">
+                                <div class="accordion" id="accordionMenu">
+                                    <div
+                                        *ngFor="let group of item.subMenu; let i = index"
+                                        class="accordion-item"
+                                    >
+                                        <h2
+                                            class="accordion-header"
+                                            [id]="'head-' + i"
+                                            *ngIf="group.header"
+                                        >
+                                            <button
+                                                class="accordion-button"
+                                                [ngClass]="i == 0 ? '' : 'collapsed'"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                [attr.data-bs-target]="'#collapse-' + group.header"
+                                                aria-expanded="true"
+                                                [attr.aria-controls]="'collapse-' + group.header"
+                                            >
+                                                {{ group.header }}
+                                            </button>
+                                        </h2>
+                                        <div
+                                            [id]="'collapse-' + group.header"
+                                            class="accordion-collapse collapse"
+                                            [ngClass]="i == 0 ? 'show' : ''"
+                                            [attr.aria-labelledby]="'head-' + i"
+                                            data-bs-parent="#accordionMenu"
+                                        >
+                                            <div class="accordion-body p-0">
+                                                <!-- 手風琴內部 -->
+                                                <ul
+                                                    class="list-group list-group-flush"
+                                                >
+                                                    <a
+                                                        *ngFor="let subItem of group.items"
+                                                        class="list-group-item list-group-item-action"
+                                                        data-bs-dismiss="offcanvas"
+                                                        (click)="goto(subItem.link, '')"
+                                                        >{{ subItem.title }}</a
+                                                    >
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 手機版子功能表 end -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- 讀入 html 字串並顯示 -->
+<!-- <div [innerHtml]="testHtml"></div> -->
+
+<!-- 各分頁內容 -->
+<div class="main-page">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- footer -->
+
+<div
+    [innerHtml]="footer_page_html | safeHtml"
+    (click)="onDataClick($event)"
+></div>
